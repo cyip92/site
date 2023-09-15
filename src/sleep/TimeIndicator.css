@@ -1,0 +1,44 @@
+.o-time-indicator {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  height: 100%;
+  width: 0.2rem;
+}
+
+.o-time-indicator .o-time-indicator-text {
+  position: absolute;
+  width: 18rem;
+  background-color: #888;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem 0;
+  border-radius: 6px;
+  visibility: visible;
+  top: 110%;
+}
+
+.o-time-indicator-text::after {
+  position: absolute;
+  content: " ";
+  bottom: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #888 transparent;
+}
+
+.o-time-tooltip--left {
+  left: -1rem;
+}
+
+.o-time-tooltip--left::after {
+  left: 0.8rem;
+}
+
+.o-time-tooltip--right {
+  right: -1rem;
+}
+
+.o-time-tooltip--right::after {
+  right: 0.8rem;
+}

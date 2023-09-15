@@ -1,0 +1,52 @@
+.c-single-sleep {
+  position: absolute;
+  background: #ccc;
+  border: 0.1rem solid red;
+  border-radius: 0.4rem;
+  top: 45%;
+  height: 35%;
+  /* Approx. equal to 4/168 (168 hours per week), minus the border width */
+  width: calc(2.381% - 0.1rem);
+}
+
+.c-single-sleep .o-sleep-box-tooltip {
+  position: absolute;
+  width: 20rem;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 0.1rem 0;
+  border-radius: 6px;
+  visibility: hidden;
+  top: -120%;
+  z-index: 1;
+}
+
+.c-single-sleep:hover .o-sleep-box-tooltip {
+  visibility: visible;
+}
+
+.o-sleep-box-tooltip::after {
+  position: absolute;
+  content: " ";
+  top: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #444 transparent transparent transparent;
+}
+
+.o-sleep-box-tooltip--left {
+  left: -0.3rem;
+}
+
+.o-sleep-box-tooltip--left::after {
+  left: 0.8rem;
+}
+
+.o-sleep-box-tooltip--right {
+  right: -0.3rem;
+}
+
+.o-sleep-box-tooltip--right::after {
+  right: 0.8rem;
+}

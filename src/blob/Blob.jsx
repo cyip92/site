@@ -2,7 +2,7 @@ import { useState } from 'react';
 import blob from '../assets/blob.png';
 import './Blob.css';
 
-function Blob() {
+export const Blob = () => {
   const [pats, setCount] = useState(0);
   const incPats = () => setCount(p => p + 1);
   const quantStr = c => c === 1 ? "time" : "times";
@@ -30,4 +30,4 @@ function Blob() {
   )
 }
 
-export default Blob
+export default Blob;
