@@ -1,0 +1,40 @@
+.c-time-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11rem;
+}
+
+.c-single-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 24rem;
+  height: 1rem;
+  padding: 0.5rem 0;
+}
+
+.o-time-zone-btn {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 1.5rem;
+}
+
+.o-reset-btn {
+  position: relative;
+  width: 15rem;
+  height: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.c-results {
+  height: 2rem;
+  padding: 1rem 0;
+}

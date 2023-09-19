@@ -10,6 +10,7 @@ export const SleepPageContainer = () => {
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
         <SleepInfo />
+        <div className="o-divider" />
         <SleepFAQ />
       </div>
     </>

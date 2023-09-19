@@ -5,9 +5,14 @@
  */
 export const TimeManager = {
   days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-  pageInputs: {},
+  offsetList: [...Array(27).keys()].map(n => n - 12)
+    .concat([-9.5, -3.5, 3.5, 4.5, 5.5, 5.75, 6.5, 8.75, 9.5, 10.5, 12.75])
+    .sort((a, b) => a - b),
+  // Arbitrary time (near time of implementation) which has 0 "week time"
+  zeroWeekReference: 1694944800000,
 
-  // Date.getTimezoneOffset() returns a value in minutes to UTC (eg. in UTC-5 it returns 300)
+  // Date.getTimezoneOffset() returns a value in minutes to UTC (eg. in UTC-5 it returns 300). This function returns
+  // the UTC offset in hours (eg. UTC-5 returns -5)
   get localTimeZone() {
     return -new Date().getTimezoneOffset() / 60;
   },
@@ -30,6 +35,33 @@ export const TimeManager = {
     return [...Array(16).keys()]
       .map(n => 14 * (n - 2) + this.localSleepOffset)
       .filter(n => n >= -4 && n <= 168);
+  },
+
+  get hasTestTime() {
+    return this.testTime !== undefined && this.testZone !== undefined;
+  },
+
+  // Returns a difference in time (in hours) between the test time and right now (positive = test is in the future)
+  get testTimePresentOffset() {
+    if (!this.hasTestTime) return 0;
+    const diffMs = (this.testTime - 3600000 * this.testZone) - (Date.now() - 3600000 * this.localTimeZone);
+    return diffMs / 3600000;
+  },
+
+  // Given a time in the local time zone, find what 0-168 time it would've corresponded to
+  get testDataWeekTime() {
+    if (!this.hasTestTime) return 0;
+    const weekLength = 1000 * 3600 * 168;
+    const testTimeAdj = this.testTime - 3600000 * this.testZone - this.zeroWeekReference;
+    const thisWeekMs = ((testTimeAdj % weekLength) + weekLength) % weekLength;
+    return 168 * (thisWeekMs / weekLength);
+  },
+
+  get testTimeData() {
+    const data = this.fullSleepData(this.testDataWeekTime);
+    if (this.testTime < 1649048400000) data.extra = "I was not doing this sleep pattern this long ago.";
+    if (this.testTime > 1709272800000) data.extra = "I will likely not be sleeping like this that far in the future.";
+    return data;
   },
   
   // Returns a string representing the time of week in a more human-readable format (Day HH:MM AM/PM)
@@ -59,18 +91,54 @@ export const TimeManager = {
     return `${this.days[DHMSArray[0]]} ${timeStr} ${meridian}`;
   },
 
-  // Takes in a number of hours, returns an appropriately-formatted HH:MM:SS string
+  // Takes in a number of hours, returns a "X hours, Y minutes" string
   toDurationString(hours) {
-    const hr = Math.floor(hours);
-    const min = Math.floor((60 * hours) % 60);
-    const sec = Math.floor((3600 * hours) % 60);
-    const padNum = num => (num < 10 ? `0${num}` : num);
-    return `${padNum(hr)}:${padNum(min)}:${padNum(sec)}`;
+    let hr = Math.floor(hours);
+    let min = Math.round((60 * hours) % 60);
+    if (min === 60) {
+      hr++;
+      min = 0;
+    }
+
+    const quantify = (num, str) => num === 1 ? `${num} ${str}` :  `${num} ${str}s`;
+    const parts = [];
+    if (hr !== 0) parts.push(quantify(hr, "hour"));
+    if (min !== 0) parts.push(quantify(min, "minute"));
+    return parts.length === 0
+      ? "less than a minute"
+      : parts.join(" and ");
+  },
+
+  // Takes in a number of hours, returns an English phrase denoting the gap
+  toDurationStringApprox(hours) {
+    const suffix = hours > 0 ? " in the future" : " ago";
+    const hr = Math.abs(hours);
+    if (hr < 1 / 60) return "right now";
+    if (hr < 1) return `${(60 * hr).toFixed(1)} minutes ${suffix}`;
+    if (hr < 24) return `about ${hr.toFixed(1)} hours ${suffix}`;
+    if (hr < 24 * 60) return `about ${(hr / 24).toFixed(1)} days ${suffix}`;
+    if (hr < 24 * 365) return `about ${(hr / (24 * 7)).toFixed(1)} weeks ${suffix}`;
+    return `over a year ${suffix}`;
+  },
+
+  // Adjust a decimals into HH:MM and append a + for positive offsets
+  formatUTCString(offset) {
+    if (offset === 0) return "UTC±0:00";
+    const absNum = Math.abs(offset);
+    const numStr = absNum === Math.floor(absNum)
+      ? `${absNum}:00`
+      : `${Math.floor(absNum)}:${60 * (absNum - Math.floor(absNum))}`;
+    const signStr = offset > 0 ? "+" : "-";
+    return `UTC${signStr}${numStr}`;
   },
 
   // Returns an object with all sleep information aggregated together
   fullSleepData(checkTime = this.currentTime) {
-    const cycleTime = checkTime - this.sleepTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b));
+    // Before the first sleep time, 
+    const startTimes = this.sleepTimes.filter(t => t < checkTime);
+    const cycleTime = checkTime - (startTimes.length === 0
+      ? this.sleepTimes[this.sleepTimes.length - 1] - 168
+      : startTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b)));
     
     return {
       isSleeping: cycleTime <= 4,
@@ -79,4 +147,5 @@ export const TimeManager = {
     };
   },
 }
+
 export default TimeManager;

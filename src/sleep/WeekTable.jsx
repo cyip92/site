@@ -15,7 +15,7 @@ export const WeekTable = () => {
         <div className="c-sleep">
           { TimeManager.sleepTimes.map(o => <SingleSleep offset={o} key={o} />) }
         </div>
-        <TimeIndicator />
+        <TimeIndicator color="red" />
       </div>
     </>
   )

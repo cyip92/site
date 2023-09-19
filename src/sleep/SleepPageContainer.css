@@ -11,3 +11,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.o-divider {
+  position: relative;
+  width: 65rem;
+  height: 0;
+  border: 0.2rem solid gray;
+  border-radius: 20rem / 0.2rem;
+}
