@@ -1,7 +1,8 @@
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
 import WeekTable from "./WeekTable";
-import "./SleepPageContainer.css";
+import TimeInput from "./TimeInput";
+import "./styles/SleepPageContainer.css";
 
 export const SleepPageContainer = () => {
   return (
@@ -9,9 +10,15 @@ export const SleepPageContainer = () => {
       <div className="c-page-layout">
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
-        <SleepInfo />
+        <div className="c-text-elements">
+          <SleepInfo />
+          <br />
+          <TimeInput />
+        </div>
         <div className="o-divider" />
-        <SleepFAQ />
+        <div className="c-faq">
+          <SleepFAQ />
+        </div>
       </div>
     </>
   )

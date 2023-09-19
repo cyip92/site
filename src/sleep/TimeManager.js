@@ -10,16 +10,17 @@ export const TimeManager = {
     .sort((a, b) => a - b),
   // Arbitrary time (near time of implementation) which has 0 "week time"
   zeroWeekReference: 1694944800000,
+  // Note: The props inputTime, inputZone, and inputZoneIndex are asigned and unassigned within TimeInput.jsx
 
-  // Date.getTimezoneOffset() returns a value in minutes to UTC (eg. in UTC-5 it returns 300). This function returns
-  // the UTC offset in hours (eg. UTC-5 returns -5)
+  // Returns the UTC offset in hours (eg. UTC-5 returns -5)
   get localTimeZone() {
+    // Note: Date.getTimezoneOffset() returns a value in minutes to UTC (eg. in UTC-5 it returns 300)
     return -new Date().getTimezoneOffset() / 60;
   },
 
   // Returns the number of hours from "time 0" from which the first sleep interval starts. Can be negative.
   get localSleepOffset() {
-    // The other numbers are due to the sleep pattern "starting" at 8 AM on Sunday in UTC-5
+    // The numbers here are due to the sleep pattern "starting" at 8 AM on Sunday in UTC-5
     return (this.localTimeZone + 5) + 8;
   },
   
@@ -37,35 +38,53 @@ export const TimeManager = {
       .filter(n => n >= -4 && n <= 168);
   },
 
-  get hasTestTime() {
-    return this.testTime !== undefined && this.testZone !== undefined;
+  // Checks for whether or not the otherwise undefined input props have been set due to user input
+  get hasInputTime() {
+    return this.inputTime !== undefined && this.inputZone !== undefined;
   },
 
-  // Returns a difference in time (in hours) between the test time and right now (positive = test is in the future)
-  get testTimePresentOffset() {
-    if (!this.hasTestTime) return 0;
-    const diffMs = (this.testTime - 3600000 * this.testZone) - (Date.now() - 3600000 * this.localTimeZone);
+  // Returns a difference in time (in hours) between the input time and right now (positive = input is in the future)
+  get inputTimePresentOffset() {
+    if (!this.hasInputTime) return 0;
+    const diffMs = (this.inputTime - 3600000 * this.inputZone) - (Date.now() - 3600000 * this.localTimeZone);
     return diffMs / 3600000;
   },
 
-  // Given a time in the local time zone, find what 0-168 time it would've corresponded to
-  get testDataWeekTime() {
-    if (!this.hasTestTime) return 0;
+  // Returns the time the input time corresponds to
+  get inputDataWeekTime() {
+    if (!this.hasInputTime) return 0;
     const weekLength = 1000 * 3600 * 168;
-    const testTimeAdj = this.testTime - 3600000 * this.testZone - this.zeroWeekReference;
-    const thisWeekMs = ((testTimeAdj % weekLength) + weekLength) % weekLength;
+    const inputTimeAdj = this.inputTime - 3600000 * this.inputZone - this.zeroWeekReference;
+    const thisWeekMs = ((inputTimeAdj % weekLength) + weekLength) % weekLength;
     return 168 * (thisWeekMs / weekLength);
   },
 
-  get testTimeData() {
-    const data = this.fullSleepData(this.testDataWeekTime);
-    if (this.testTime < 1649048400000) data.extra = "I was not doing this sleep pattern this long ago.";
-    if (this.testTime > 1709272800000) data.extra = "I will likely not be sleeping like this that far in the future.";
+  // Returns a data object for the input time, with an additional comment if it's very far in the past/future
+  get inputTimeData() {
+    const data = this.fullSleepData(this.inputDataWeekTime);
+    if (this.inputTime < 1649048400000) data.extra = "I was not doing this sleep pattern this long ago.";
+    if (this.inputTime > 1709272800000) data.extra = "I am unlikely to be sleeping like this that far in the future.";
     return data;
   },
+
+  // Returns an object with all sleep information aggregated together
+  fullSleepData(checkTime = this.currentTime) {
+    // Before the first sleep time, 
+    const startTimes = this.sleepTimes.filter(t => t < checkTime);
+    const cycleTime = checkTime - (startTimes.length === 0
+      ? this.sleepTimes[this.sleepTimes.length - 1] - 168
+      : startTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b)));
+    
+    return {
+      isSleeping: cycleTime <= 4,
+      nextChangeIn: cycleTime <= 4 ? 4 - cycleTime : 14 - cycleTime,
+      nextChangeAt: checkTime + (cycleTime <= 4 ? 4 - cycleTime : 14 - cycleTime),
+    };
+  },
   
-  // Returns a string representing the time of week in a more human-readable format (Day HH:MM AM/PM)
+  // Returns "Day HH:MM AM/PM"
   toDateTimeString(time) {
+    // Turn the time into an array of [day_of_week, hour, minute]
     let timeMin = Math.round(10080 * (time / 168));
     const DHMSArray = [];
     const factors = [60, 24, 7];
@@ -91,7 +110,7 @@ export const TimeManager = {
     return `${this.days[DHMSArray[0]]} ${timeStr} ${meridian}`;
   },
 
-  // Takes in a number of hours, returns a "X hours, Y minutes" string
+  // Returns a "X hours, Y minutes"
   toDurationString(hours) {
     let hr = Math.floor(hours);
     let min = Math.round((60 * hours) % 60);
@@ -109,7 +128,7 @@ export const TimeManager = {
       : parts.join(" and ");
   },
 
-  // Takes in a number of hours, returns an English phrase denoting the gap
+  // Returns an English phrase describing a relative time
   toDurationStringApprox(hours) {
     const suffix = hours > 0 ? " in the future" : " ago";
     const hr = Math.abs(hours);
@@ -121,7 +140,7 @@ export const TimeManager = {
     return `over a year ${suffix}`;
   },
 
-  // Adjust a decimals into HH:MM and append a + for positive offsets
+  // Adjust a decimals into HH:MM and appends a + for positive offsets
   formatUTCString(offset) {
     if (offset === 0) return "UTC±0:00";
     const absNum = Math.abs(offset);
@@ -130,21 +149,6 @@ export const TimeManager = {
       : `${Math.floor(absNum)}:${60 * (absNum - Math.floor(absNum))}`;
     const signStr = offset > 0 ? "+" : "-";
     return `UTC${signStr}${numStr}`;
-  },
-
-  // Returns an object with all sleep information aggregated together
-  fullSleepData(checkTime = this.currentTime) {
-    // Before the first sleep time, 
-    const startTimes = this.sleepTimes.filter(t => t < checkTime);
-    const cycleTime = checkTime - (startTimes.length === 0
-      ? this.sleepTimes[this.sleepTimes.length - 1] - 168
-      : startTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b)));
-    
-    return {
-      isSleeping: cycleTime <= 4,
-      nextChangeIn: cycleTime <= 4 ? 4 - cycleTime : 14 - cycleTime,
-      nextChangeAt: checkTime + (cycleTime <= 4 ? 4 - cycleTime : 14 - cycleTime),
-    };
   },
 }
 

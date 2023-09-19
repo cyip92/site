@@ -1,16 +1,14 @@
-
-import "./SleepFAQ.css";
 export const SleepFAQ = () => {
   return (
     <>
-      <div className="c-faq">
+      <div>
         <h2>Frequently Asked Questions</h2>
 
         <h3>What is this page for?</h3>
         People in the world generally wake up and go to sleep once a day. Consistency depends on lifestyle,
-        but sleep usually starts with local night time and ends at local morning for most people. This would be
-        a 24-hour sleep cycle. I follow a <b>14-hour</b> sleep cycle instead, and this page exists to provide an
-        easier way for myself and others to ensure that sleep does not interfere with any plans.
+        but sleep usually starts during local night time and ends at local morning for most people. This would be
+        a 24-hour sleep cycle. I follow a <b>14-hour</b> sleep cycle instead, and this page mainly exists to provide an
+        easier way for myself and others to ensure that my sleep pattern does not interfere with any potential plans.
         <br />
         <br />
         Some of you may notice a similarity to <a href="https://xkcd.com/320/">a certain xkcd comic</a>, but that is
@@ -18,16 +16,16 @@ export const SleepFAQ = () => {
 
 
         <h3>How does this sleep pattern work?</h3>
-        First, one of the biggest misconceptions: I do not <i>sleep</i> for 14 hours at a time.
-        I am awake for 10 hours and then sleep for 4 hours; this whole cycle repeats a total of every 14 hours.
+        One of the biggest misconceptions: I do not <i>sleep</i> for 14 hours at a time.
+        I am awake for 10 hours and then sleep for 4 hours; this whole <i>cycle</i> repeats a total of every 14 hours.
         By comparison, most people tend towards 17 hours awake and 7 hours asleep, repeating every 24 hours. The broad
         term for this modified cycle is &quot;polyphasic sleep&quot; if you want to look into it more.
         <br />
         <br />
-        Since 14 does not divide evenly into 24, this means that my sleep shifts forward by 4 hours every day. After
-        6 days, this adds up to an entire day. Therefore, a 14-hour cycle still lines up with the
-        days of the week. If I am asleep at, say, 5 AM on a Tuesday, then I will always be asleep at that time
-        of <i>week</i>.
+        Since 24 is not divisible by 14, this means that my sleep gets delayed 4 hours later every day. After
+        6 days, this adds up to an entire extra day. Thus, a 14-hour cycle still consistently lines up with
+        the week. If I am asleep at (for example) 5 AM on a Tuesday in your timezone, then I will always be
+        asleep at that time of <i>week</i> for you.
         <br />
         <br />
         This does have the side effect that my sleep does not line up with the day/night cycle <i>anywhere</i> in the
@@ -36,28 +34,29 @@ export const SleepFAQ = () => {
 
 
         <h3>Why did you decide to do this?</h3>
-        The 2020 COVID lockdown caused a lot of many people&apos;s social life to shift to being online for a few
-        months. At the time I was still trying to finish up an advanced degree which mostly involved a lot of
-        independent work in a laboratory, so the lack of an in-person social life continued onward even as places
-        started to open up again. After that, I spent the better part of the next year or so finishing up some
-        old projects which were also collaborations with others online. During that time, my social life gradually
-        became more weighted towards people in very widespread time zones.
+        The 2020 COVID lockdown caused many people&apos;s social lives to shift to being online. At the time
+        I was still trying to finish up an advanced degree which mostly involved a lot of independent work in a
+        laboratory, so the lack of an in-person social life continued onward for me even as places
+        started to open up again. After finishing the degree, I spent the better part of the next year finishing up
+        old projects which were also collaborations with others online. My life gradually
+        became more weighted towards interacting with people in very widespread time zones.
         <br />
         <br />
-        Fast forward to Spring 2022 and I signed a contract for a software development contractor based in
-        Finland through a connection from one of the aforementioned projects. A few problems now arose: the world
-        was open enough that a mostly normal pre-COVID life was possible again, I did not want to give up my overseas
-        social life, and Finland is 8 hours ahead of my local time zone.
+        Fast forward to Spring 2022 and I signed a contract for a <a href="https://vertics.co/">software development
+        contractor based in Finland</a> through a connection from one of these projects. A few problems
+        now arose: the world
+        was open enough that a mostly normal pre-COVID life was possible again, I did not want to give up my heavily
+        overseas social life, and Finland is 8 hours ahead of my local time zone.
         <br />
         <br />
         With all of those factors, I decided that a shifting sleep cycle would have been the best compromise solution
         for everything - I could able to interact with anyone in anywhere in the world, as long as it is the
-        appropriate day of the week. I have been doing this since then - about a year and a half ago.
+        appropriate day of the week. I have been doing this since then, about a year and a half ago.
 
 
         <h3>Do you plan to do this for the rest of your life?</h3>
-        Definitely not. I will be moving to the UK in early 2024, and plan to be dropping this odd sleep cycle in favor
-        of the more sensible 24-hour cycle once I arrive and settle in over there.
+        Definitely not. I will be moving to the UK in early 2024, and plan to be dropping this sleep cycle in favor
+        of the more sensible 24-hour cycle everyone else does once I settle in over there.
         The time difference between the UK and Finland being only 2 hours also makes my professional life more
         manageable as well.
 
@@ -65,7 +64,7 @@ export const SleepFAQ = () => {
         <h3>Are you even getting enough sleep?</h3>
         My 14-hour cycle lets me sleep 12 times over the course of a week, meaning that I get a total of 48 hours
         per week. Averaged out, this is about 6.86 hours per day. This assumes I fall asleep immediately when I am
-        supposed to, but I have gotten good at this from past experiences with modified sleep patterns. I also have
+        supposed to, but I became able to do this through past experiences with polyphasic sleep. I also have
         gotten by with less sleep with some of these previous times as well.
 
 
@@ -98,10 +97,10 @@ export const SleepFAQ = () => {
 
 
         <h3>Would you recommend doing this?</h3>
-        For the most part, no. Definitely not &quot;just for fun&quot; without a reason or goal in mind.
+        For the most part, no. Definitely not &quot;just for fun&quot; without some reason or goal in mind.
         <br />
         <br />
-        My past experiences with an 8-hour cycle taught me that I was giving
+        My past experiences with the 8-hour and 12-hour cycles taught me that I was giving
         up 4 hours of daylight time in exchange for 6 hours in the middle of the night. The numbers are
         different for the 14-hour cycle, but the idea is the same - a lot of the time you gain
         is going to be when everyone else is sleeping. It can also be difficult to stay awake in the dead of the night
@@ -117,6 +116,10 @@ export const SleepFAQ = () => {
 
 
         <h3>I want to do something like this anyway, do you have any tips?</h3>
+        First and foremost: There are probably better resources online for advice on how to do this, I am simply
+        offering my personal advice and experience here.
+        <br />
+        <br />
         The first week will be the toughest part by far, do not expect to get a reasonable amount of sleep during that
         time. At least in my experience, if you strictly stick to the new pattern you set for yourself, sooner or later
         your body will realize that you mean business and it needs to get its act together on
@@ -132,13 +135,9 @@ export const SleepFAQ = () => {
         <br />
         <br />
         People on a 24-hour cycle have the outside world to keep them in line if they stay up late and/or oversleep,
-        but you do not and can end up slipping back into a really poor 24-hour cycle. You
-        will need to be strict on your wake-up and sleep times, perhaps stricter than any
-        other point in your life.
-        <br />
-        <br />
-        Lastly, you need to stick to the pattern. You will have to sleep even if you
-        would rather stay up, and you will have to give up on social obligations if they disrupt your sleep cycle.
+        but you do not and can end up slipping back into a really poor 24-hour cycle. You will need to be strict on
+        your wake-up and sleep times, perhaps stricter than you ever have been. This means you will need to sleep
+        even if you want to stay up, and you will have to give up on social obligations if they disrupt your cycle.
         The alternative is that you will be struggling to fix your sleep over the next few days and trust me, a messed
         up polyphasic sleep cycle puts you in a way worse spot than simply staying up too late on a 24-hour cycle.
       </div>
