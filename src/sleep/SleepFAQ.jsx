@@ -22,10 +22,10 @@ export const SleepFAQ = () => {
         term for this modified cycle is &quot;polyphasic sleep&quot; if you want to look into it more.
         <br />
         <br />
-        Since 24 is not divisible by 14, this means that my sleep gets delayed 4 hours later every day. After
-        6 days, this adds up to an entire extra day. Thus, a 14-hour cycle still consistently lines up with
-        the week. If I am asleep at (for example) 5 AM on a Tuesday in your timezone, then I will always be
-        asleep at that time of <i>week</i> for you.
+        While 24 is not divisible by 14, 168 (the number of hours in a week) <i>is</i> divisible by 14.
+        So while my 14-hour pattern shifts around on every individual day, it still aligns consistently with the
+        entire week. For example, if I am asleep at 5 AM on a Tuesday in your timezone, then I will always
+        be asleep at that time of <i>week</i> for you.
         <br />
         <br />
         This does have the side effect that my sleep does not line up with the day/night cycle <i>anywhere</i> in the

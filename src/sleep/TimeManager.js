@@ -67,7 +67,7 @@ export const TimeManager = {
     return data;
   },
 
-  // Returns an object with all sleep information aggregated together
+  // Returns an object with all sleep information aggregated together (all times are in hours)
   fullSleepData(checkTime = this.currentTime) {
     // Before the first sleep time, 
     const startTimes = this.sleepTimes.filter(t => t < checkTime);
@@ -85,7 +85,7 @@ export const TimeManager = {
   // Returns "Day HH:MM AM/PM"
   toDateTimeString(time) {
     // Turn the time into an array of [day_of_week, hour, minute]
-    let timeMin = Math.round(10080 * (time / 168));
+    let timeMin = Math.floor(10080 * (time / 168));
     const DHMSArray = [];
     const factors = [60, 24, 7];
     for (const factor of factors) {
@@ -113,7 +113,7 @@ export const TimeManager = {
   // Returns a "X hours, Y minutes"
   toDurationString(hours) {
     let hr = Math.floor(hours);
-    let min = Math.round((60 * hours) % 60);
+    let min = Math.ceil((60 * hours) % 60);
     if (min === 60) {
       hr++;
       min = 0;
@@ -132,10 +132,14 @@ export const TimeManager = {
   toDurationStringApprox(hours) {
     const suffix = hours > 0 ? " in the future" : " ago";
     const hr = Math.abs(hours);
+    const min = Math.floor((60 * hr) % 60);
+    const quantify = (num, str) => num === 1 ? `${num} ${str}` :  `${num} ${str}s`;
     if (hr < 1 / 60) return "right now";
-    if (hr < 1) return `${(60 * hr).toFixed(1)} minutes ${suffix}`;
-    if (hr < 24) return `about ${hr.toFixed(1)} hours ${suffix}`;
-    if (hr < 24 * 60) return `about ${(hr / 24).toFixed(1)} days ${suffix}`;
+    if (hr < 1) return `about ${quantify(min, "minute")} ${suffix}`;
+    if (hr < 24) return `about ${quantify(Math.floor(hr), "hour")}, ${quantify(min, "minute")} ${suffix}`;
+    if (hr < 24 * 60) {
+      return `about ${quantify(Math.floor(hr / 24), "day")}, ${quantify(Math.floor(hr % 24), "hour")} ${suffix}`;
+    }
     if (hr < 24 * 365) return `about ${(hr / (24 * 7)).toFixed(1)} weeks ${suffix}`;
     return `over a year ${suffix}`;
   },
