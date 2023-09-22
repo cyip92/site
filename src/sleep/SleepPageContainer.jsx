@@ -1,3 +1,5 @@
+import Navbar from "../common/Navbar";
+
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
 import WeekTable from "./WeekTable";
@@ -8,6 +10,8 @@ export const SleepPageContainer = () => {
   return (
     <>
       <div className="c-page-layout">
+        <Navbar />
+        <br />
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
         <div className="c-text-elements">

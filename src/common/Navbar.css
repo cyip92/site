@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  color: black !important;
+}
+
+a:hover {
+  background-color: white;
+}
+
+.c-main-options {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #777;
+  width: 100%;
+  height: 3rem;
+  top: 0;
+}
+
+.o-single-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid;
+  border-color: white;
+  width: 15rem;
+  height: 2.6rem;
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    background-color: #aaa;
+  }
+
+  .c-main-options {
+    background-color: #444;
+  }
+
+  .o-single-option {
+    border-color: #aaa;
+  }
+}

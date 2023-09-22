@@ -1,3 +1,5 @@
+import Navbar from "../common/Navbar";
+
 import { useState } from 'react';
 import blob from '../assets/blob.png';
 import './Blob.css';
@@ -17,7 +19,8 @@ export const Blob = () => {
 
   return (
     <>
-      <div>
+      <div className="c-page-layout">
+        <Navbar />
         <img
           className={squished ? "blob" : null}
           src={blob}
