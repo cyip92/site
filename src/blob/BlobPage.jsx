@@ -1,10 +1,14 @@
 import Navbar from "../common/Navbar";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import blob from '../assets/blob.png';
-import './Blob.css';
+import './BlobPage.css';
 
-export const Blob = () => {
+export const BlobPage = () => {
+  useEffect(() => {
+    document.title = "Pat the blob!";
+  }, []);
+
   const [pats, setCount] = useState(0);
   const incPats = () => setCount(p => p + 1);
   const quantStr = c => c === 1 ? "time" : "times";
@@ -33,4 +37,4 @@ export const Blob = () => {
   )
 }
 
-export default Blob;
+export default BlobPage;

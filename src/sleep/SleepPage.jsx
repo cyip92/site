@@ -1,12 +1,17 @@
 import Navbar from "../common/Navbar";
+import { useEffect } from 'react';
 
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
 import WeekTable from "./WeekTable";
 import TimeInput from "./TimeInput";
-import "./styles/SleepPageContainer.css";
+import "./styles/SleepPage.css";
 
-export const SleepPageContainer = () => {
+export const SleepPage = () => {
+  useEffect(() => {
+    document.title = "Sleep Pattern";
+  }, []);
+  
   return (
     <>
       <div className="c-page-layout">
@@ -28,4 +33,4 @@ export const SleepPageContainer = () => {
   )
 }
 
-export default SleepPageContainer;
+export default SleepPage;

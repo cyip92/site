@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import Navbar from "../common/Navbar";
 import blob from '../assets/blob.png';
-import './Home.css';
+import './Homepage.css';
 
-export const Home = () => {
+export const Homepage = () => {
+  useEffect(() => {
+    document.title = "Website Home";
+  }, []);
+
   return (
     <>
       <div className="c-page-layout">
@@ -17,4 +22,4 @@ export const Home = () => {
   )
 }
 
-export default Home;
+export default Homepage;

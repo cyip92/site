@@ -1,17 +1,17 @@
 import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
-import SleepPageContainer from '../sleep/SleepPageContainer'
-import Blob from '../blob/Blob';
-import Home from '../home/Home';
+import SleepPage from '../sleep/SleepPage'
+import BlobPage from '../blob/BlobPage';
+import Homepage from '../home/Homepage';
 
 const Main = () => {
-  const rootDir = "/sleep-page";
+  const rootDir = "/site";
   return (
     <>
       <Router>
         <Routes>
-          <Route path={rootDir} element={<Home />} />
-          <Route path={`${rootDir}/sleep`} element={<SleepPageContainer />} />
-          <Route path={`${rootDir}/blob`} element={<Blob />} />
+          <Route path={`${rootDir}/`} element={<Homepage />} />
+          <Route path={`${rootDir}/sleep`} element={<SleepPage />} />
+          <Route path={`${rootDir}/blob`} element={<BlobPage />} />
         </Routes>
       </Router>
     </>
