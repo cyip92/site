@@ -2,13 +2,12 @@ import { Link } from "react-router-dom";
 import './Navbar.css';
 
 export const Navbar = () => {
-  const rootDir = "/site";
   return (
     <>
       <div className="c-main-options">
-        <Link className="o-single-option" to={`${rootDir}/`}>Home Page</Link>
-        <Link className="o-single-option" to={`${rootDir}/sleep`}>Weekly Sleep Pattern</Link>
-        <Link className="o-single-option" to={`${rootDir}/blob`}>You can pat the blob</Link>
+        <Link className="o-single-option" to="/">Home Page</Link>
+        <Link className="o-single-option" to="/sleep">Weekly Sleep Pattern</Link>
+        <Link className="o-single-option" to="/blob">You can pat the blob</Link>
       </div>
     </>
   )

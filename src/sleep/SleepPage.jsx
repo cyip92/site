@@ -1,4 +1,3 @@
-import Navbar from "../common/Navbar";
 import { useEffect } from 'react';
 
 import SleepFAQ from "./SleepFAQ";
@@ -15,7 +14,6 @@ export const SleepPage = () => {
   return (
     <>
       <div className="c-page-layout">
-        <Navbar />
         <br />
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />

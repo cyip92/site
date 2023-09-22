@@ -1,5 +1,3 @@
-import Navbar from "../common/Navbar";
-
 import { useState, useEffect } from 'react';
 import blob from '../assets/blob.png';
 import './BlobPage.css';
@@ -24,7 +22,6 @@ export const BlobPage = () => {
   return (
     <>
       <div className="c-page-layout">
-        <Navbar />
         <img
           className={squished ? "blob" : null}
           src={blob}
