@@ -8,6 +8,7 @@ import SleepPage from './sleep/SleepPage'
 import BlobPage from './blob/BlobPage';
 import HomePage from './home/HomePage';
 import ErrorPage from './common/ErrorPage';
+import UnfinishedPage from './common/UnfinishedPage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<HomePage />} />
           <Route path="/sleep" element={<SleepPage />} />
           <Route path="/blob" element={<BlobPage />} />
+          <Route path="/unfinished" element={<UnfinishedPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import blob from '../assets/blob.png';
-import './HomePage.css';
+import blobthink from '../assets/blobthink.png';
 
 export const HomePage = () => {
   useEffect(() => {
@@ -12,9 +11,16 @@ export const HomePage = () => {
       <div className="c-page-layout">
         <h3>Home Page</h3>
         <br />
-        <img src={blob} />
+        <img src={blobthink} />
         <br />
-        This website is currently still under construction!
+        Welcome to my professional website!
+        <br />
+        <br />
+        Almost everything is currently still being worked on, feel free to check back over the next
+        few days to see as content gets filled out!
+        <br />
+        <br />
+        The blobs will probably be mostly disappearing once the site is nearly finished (sorry)
       </div>
     </>
   )

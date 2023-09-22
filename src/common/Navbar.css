@@ -5,14 +5,6 @@
   text-align: center;
 }
 
-a {
-  color: black !important;
-}
-
-a:hover {
-  background-color: white;
-}
-
 .c-main-options {
   position: absolute;
   display: flex;
@@ -20,8 +12,11 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   background-color: #aaa;
+  border-bottom-style: solid;
+  border-width: 0.2rem;
+  border-color: white;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   top: 0;
 }
 
@@ -29,26 +24,29 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.2rem solid;
-  border-color: white;
+  color: black;
   width: 15rem;
-  height: 2.6rem;
+  height: 3.5rem;
+}
+
+.o-single-option:hover {
+  background-color: #777;
+  color: white;
 }
 
 @media (prefers-color-scheme: light) {
-  a {
-    color: white !important;
-  }
-
-  a:hover {
-    background-color: #aaa;
-  }
-
   .c-main-options {
-    background-color: #444;
+    background-color: #777;
+    border-color: black;
   }
 
   .o-single-option {
     border-color: #aaa;
+    color: #ccc;
+  }
+
+  .o-single-option:hover {
+    background-color: #333;
+    color: white;
   }
 }

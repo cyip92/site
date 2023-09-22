@@ -6,7 +6,10 @@ export const Navbar = () => {
     <>
       <div className="c-main-options">
         <Link className="o-single-option" to="/">Home Page</Link>
+        <Link className="o-single-option" to="/unfinished">About Me</Link>
+        <Link className="o-single-option" to="/unfinished">Long-term Projects</Link>
         <Link className="o-single-option" to="/sleep">Weekly Sleep Pattern</Link>
+        <Link className="o-single-option" to="/unfinished">Antimatter Dimensions Retrospective</Link>
         <Link className="o-single-option" to="/blob">You can pat the blob</Link>
       </div>
     </>

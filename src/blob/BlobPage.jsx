@@ -29,6 +29,8 @@ export const BlobPage = () => {
         />
         <br />
         You have patted blob {pats} {quantStr(pats)}.
+        <br />
+        (There is nothing else to do here. This may change in the future.)
       </div>
     </>
   )

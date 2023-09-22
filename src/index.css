@@ -63,6 +63,13 @@ button:focus-visible {
   width: 100%;
 }
 
+.c-page-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
