@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import Navbar from "../common/Navbar";
 import blob from '../assets/blob.png';
-import './Homepage.css';
+import './HomePage.css';
 
-export const Homepage = () => {
+export const HomePage = () => {
   useEffect(() => {
     document.title = "Website Home";
   }, []);
@@ -12,7 +12,7 @@ export const Homepage = () => {
     <>
       <div className="c-page-layout">
         <Navbar />
-        <h3>Homepage</h3>
+        <h3>Home Page</h3>
         <br />
         <img src={blob} />
         <br />
@@ -22,4 +22,4 @@ export const Homepage = () => {
   )
 }
 
-export default Homepage;
+export default HomePage;

@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="c-main-options">
-        <Link className="o-single-option" to={`${rootDir}/`}>Homepage</Link>
+        <Link className="o-single-option" to={`${rootDir}/`}>Home Page</Link>
         <Link className="o-single-option" to={`${rootDir}/sleep`}>Weekly Sleep Pattern</Link>
         <Link className="o-single-option" to={`${rootDir}/blob`}>You can pat the blob</Link>
       </div>

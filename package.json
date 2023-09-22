@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://cyip92.github.io/sleep-page",
+  "homepage": "https://cyip92.github.io/site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
