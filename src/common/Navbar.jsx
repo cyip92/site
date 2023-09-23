@@ -9,7 +9,7 @@ export const Navbar = () => {
         <Link className="o-single-option" to="/unfinished">About Me</Link>
         <Link className="o-single-option" to="/unfinished">Long-term Projects</Link>
         <Link className="o-single-option" to="/sleep">Weekly Sleep Pattern</Link>
-        <Link className="o-single-option" to="/unfinished">Antimatter Dimensions Retrospective</Link>
+        <Link className="o-single-option" to="/ADdevlog">Antimatter Dimensions Retrospective</Link>
         <Link className="o-single-option" to="/blob">You can pat the blob</Link>
       </div>
     </>

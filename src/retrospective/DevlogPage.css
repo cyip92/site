@@ -1,0 +1,15 @@
+#root {
+  max-width: 75rem;
+  margin: 8rem auto 0;
+  padding: 0 0 4rem;
+  text-align: center;
+}
+
+.c-devlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}

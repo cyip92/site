@@ -6,6 +6,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom';
 import Navbar from "./common/Navbar";
 import SleepPage from './sleep/SleepPage'
 import BlobPage from './blob/BlobPage';
+import DevlogPage from './retrospective/DevlogPage';
 import HomePage from './home/HomePage';
 import ErrorPage from './common/ErrorPage';
 import UnfinishedPage from './common/UnfinishedPage';
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<HomePage />} />
           <Route path="/sleep" element={<SleepPage />} />
           <Route path="/blob" element={<BlobPage />} />
+          <Route path="/ADdevlog" element={<DevlogPage />} />
           <Route path="/unfinished" element={<UnfinishedPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
