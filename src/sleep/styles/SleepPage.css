@@ -1,29 +1,22 @@
-#root {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .c-text-elements {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  text-align: left;
   width: 100%;
+  text-align: left;
 }
 
 .o-divider {
   position: relative;
-  width: 90%;
-  height: 0;
   border: 0.2rem solid gray;
   border-radius: 20rem / 0.2rem;
+  width: 90%;
+  height: 0;
 }
 
 .c-faq {
-  text-align: left;
   width: 100%;
   padding: 1.5rem;
+  text-align: left;
 }

@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 :root {
   --color-blob: #fcc21b;
 }
 
 .c-squish-state {
   position: relative;
-  border: 0.2rem black solid;
-  height: 2rem;
+  border: 0.2rem solid;
+  border-color: white;
   width: 25rem;
+  height: 2rem;
 }
 
 .o-squish-bar {
-  background-color: var(--color-blob);
   height: 100%;
+  background-color: var(--color-blob);
 }
 
 .o-max-indicator {
   position: absolute;
-  border: 0.1rem black solid;
   top: 0;
-  height: 2rem;
-  margin-top: -0.1rem;
+  border: 0.1rem red solid;
+  height: 1.9rem;
 }
 
 .c-power-bar {
   position: relative;
-  border: 0.1rem black solid;
-  height: 1rem;
+  border: 0.1rem solid;
+  border-color: white;
   width: 25rem;
+  height: 1rem;
 }
 
 .o-power-bar {
-  background-color: black;
   height: 100%;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  .c-squish-state {
+    border-color: black;
+  }
+
+  .o-power-bar {
+    background-color: black;
+  }
+
+  .c-power-bar {
+    border-color: black;
+  }
 }

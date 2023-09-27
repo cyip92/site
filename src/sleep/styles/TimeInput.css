@@ -17,21 +17,21 @@
 
 .o-time-zone-btn {
   position: relative;
-  text-align: center;
-  font-weight: bold;
+  border-radius: 1.5rem;
   width: 2rem;
   height: 2rem;
   padding: 0;
-  border-radius: 1.5rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .o-reset-btn {
   position: relative;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
   width: 15rem;
   height: 2.2rem;
   padding: 0.2rem;
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
 }
 
 .p-btn-color {
@@ -39,14 +39,14 @@
   color: black;
 }
 
+.c-results {
+  height: 5rem;
+  padding: 1rem 0;
+}
+
 @media (prefers-color-scheme: light) {
   .p-btn-color {
     background-color: #666;
     color: white;
   }
-}
-
-.c-results {
-  height: 5rem;
-  padding: 1rem 0;
 }

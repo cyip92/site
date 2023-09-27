@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import DevlogFAQ from './FAQ.jsx';
-import './DevlogPage.css';
+import DevlogSidebar from './DevlogSidebar.jsx';
+import './styles/DevlogPage.css';
 
 export const DevlogPage = () => {
   useEffect(() => {
@@ -9,8 +10,13 @@ export const DevlogPage = () => {
 
   return (
     <>
-      <div className="c-devlog">
-        <DevlogFAQ />
+      <div className="c-devlog-full-page">
+        <div className="c-devlog-sidebar">
+          <DevlogSidebar />
+        </div>
+        <div className="c-devlog-main-content">
+          <DevlogFAQ />
+        </div>
       </div>
     </>
   )
