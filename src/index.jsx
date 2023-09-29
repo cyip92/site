@@ -10,6 +10,7 @@ import DevlogPage from './retrospective/DevlogPage';
 import HomePage from './home/HomePage';
 import ErrorPage from './common/ErrorPage';
 import UnfinishedPage from './common/UnfinishedPage';
+import LogEntries from './retrospective/entries/index.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -20,7 +21,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<HomePage />} />
           <Route path="/sleep" element={<SleepPage />} />
           <Route path="/blob" element={<BlobPage />} />
-          <Route path="/ADdevlog" element={<DevlogPage />} />
+          <Route path="/ADdevlog">
+            <Route index element={<DevlogPage specialKey="Introduction" />} />
+            <Route path="/ADdevlog/FAQ" element={<DevlogPage specialKey="FAQ" />} />
+            {
+              Object.keys(LogEntries.Entries).map(key =>
+                <Route key={key} path={`/ADdevlog/${key}`} element={<DevlogPage entryKey={Number(key)}/>} />
+              )
+            }
+            <Route path="*" element={<DevlogPage specialKey="MissingEntry" />} />
+          </Route>
           <Route path="/unfinished" element={<UnfinishedPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
