@@ -13,7 +13,7 @@ export const DevlogPage = props => {
   // The content for the text pane of this page is pulled from a file within the entries subfolder
   const ContentComponent = props.specialKey
     ? LogEntries[props.specialKey]
-    : LogEntries.Entries[props.entryKey];
+    : LogEntries.Entries[props.entryKey].content;
 
   return (
     <>

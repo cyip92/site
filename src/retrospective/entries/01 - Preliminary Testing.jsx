@@ -76,9 +76,10 @@ export const PreTesting = () => {
           </div>
         </div>
         <br />
-        <br />
         Throughout this month, not even the testers knew anything about the update at all, not even that it was being
         tested and developed. All of this was going to change near the end of July 2018.
+        <br />
+        <br />
       </div>
     </>
   )

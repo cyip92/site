@@ -1,16 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+import LogEntries from './entries/index.js';
+import './styles/DevlogSidebar.css';
+
+function singleLink(route, current, text, key) {
+  const isCurrentRoute = current === route;
+  return (
+    <div key={key}>
+      {
+        isCurrentRoute
+          ? <span className="o-current-indicator">▶</span>
+          : null
+      }
+      <Link to={route}>{text}</Link> 
+    </div>
+  )
+}
 
 export const DevlogSidebar = () => {
+  const currentRoute = useLocation().pathname;
   return (
     <>
+      { singleLink("/ADdevlog", currentRoute, "Introduction", "intro") }
+      { singleLink("/ADdevlog/FAQ", currentRoute, "FAQ Page", "faq") }
       <div>
-        <Link to="/ADdevlog">Introduction</Link>
-      </div>
-      <div>
-        <Link to="/ADdevlog/FAQ">FAQ Page</Link>
-      </div>
-      <div>
-        <Link to="/ADdevlog/1">Entry 1</Link>
+        Entries:
+        <br />
+        {
+          Object.keys(LogEntries.Entries).map(key =>
+            singleLink(`/ADdevlog/${key}`, currentRoute, `${key} - ${LogEntries.Entries[key].title}`, `entry${key}`)
+          )
+        }
       </div>
     </>
   )

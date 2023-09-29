@@ -11,7 +11,10 @@ export const LogEntries = {
   FAQ,
   MissingEntry,
   Entries: {
-    1: PreTesting,
+    1: {
+      content: PreTesting,
+      title: "Humble Beginnings"
+    },
   }
 };
 

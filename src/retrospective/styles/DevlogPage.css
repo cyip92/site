@@ -1,14 +1,15 @@
 .c-devlog-full-page {
-  position: relative;
+  position: absolute;
+  top: var(--navbar-height);
   display: grid;
-  grid-template-columns: 10rem auto;
-  margin: 8rem auto 0;
-  width: 100%;
+  grid-template-columns: 14rem auto;
+  margin: 2rem auto;
+  width: 75rem;
   height: 100%;
-  text-align: center;
 }
 
 .c-devlog-main-content {
+  margin-top: -2rem;
   width: calc(100% - 4rem);
   padding: 0 4rem;
   text-align: left;
@@ -18,9 +19,8 @@
   position: sticky;
   top: var(--navbar-height);
   display: grid;
-  grid-auto-rows: 2rem 2rem auto;
-  border: 0.2rem black solid;
+  grid-auto-rows: 2rem 3rem auto;
   height: 40rem;
-  padding: 2rem;
-  text-align: center;
+  padding: 1.5rem;
+  text-align: left;
 }

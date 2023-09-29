@@ -44,6 +44,8 @@ export const FAQ = () => {
         <br />
         Hopefully that answers any questions you may have had about what I plan to write!
         Click <Link to="/ADdevlog/1">here</Link> to start reading from the very beginning of Reality development.
+        <br />
+        <br />
       </div>
     </>
   )
