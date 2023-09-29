@@ -18,8 +18,9 @@
   position: sticky;
   top: var(--navbar-height);
   display: grid;
-  grid-auto-rows: 5rem auto;
+  grid-auto-rows: 2rem 2rem auto;
   border: 0.2rem black solid;
   height: 40rem;
+  padding: 2rem;
   text-align: center;
 }

@@ -1,0 +1,17 @@
+.c-entries-two-col {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 35% 65%;
+  width: 100%;
+}
+
+.c-entries-figure {
+  position: relative;
+  text-align: center;
+  padding: 0 0.8rem;
+}
+
+.c-entries-img {
+  position: relative;
+  width: 100%;
+}
