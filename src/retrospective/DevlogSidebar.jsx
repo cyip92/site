@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 import LogEntries from './entries/index.js';
-import './styles/DevlogSidebar.css';
+import './styles/DevlogPage.css';
 
 function singleLink(route, current, text, key) {
   const isCurrentRoute = current === route;
@@ -9,7 +9,7 @@ function singleLink(route, current, text, key) {
     <div key={key}>
       {
         isCurrentRoute
-          ? <span className="o-current-indicator">▶</span>
+          ? <span className="o-current-sidebar-indicator">▶</span>
           : null
       }
       <Link to={route}>{text}</Link> 

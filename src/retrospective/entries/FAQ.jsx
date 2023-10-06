@@ -4,7 +4,6 @@ export const FAQ = () => {
   return (
     <>
       <div>
-        <h1>Frequently Asked Questions</h1>
         <h3>How are you planning to format this retrospective?</h3>
         It will mainly be a series of somewhat short blog-like entries on this site, of likely a similar reading length
         to this page, which I will post regularly.
@@ -44,8 +43,6 @@ export const FAQ = () => {
         <br />
         Hopefully that answers any questions you may have had about what I plan to write!
         Click <Link to="/ADdevlog/1">here</Link> to start reading from the very beginning of Reality development.
-        <br />
-        <br />
       </div>
     </>
   )

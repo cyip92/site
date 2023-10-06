@@ -11,9 +11,9 @@ export const DevlogPage = props => {
   }, []);
 
   // The content for the text pane of this page is pulled from a file within the entries subfolder
-  const ContentComponent = props.specialKey
+  const ContentObject = props.specialKey
     ? LogEntries[props.specialKey]
-    : LogEntries.Entries[props.entryKey].content;
+    : LogEntries.Entries[props.entryKey];
 
   return (
     <>
@@ -22,7 +22,15 @@ export const DevlogPage = props => {
           <DevlogSidebar />
         </div>
         <div className="c-devlog-main-content">
-          <ContentComponent />
+          <h1>{ ContentObject.title }</h1>
+          <div className="o-devlog-dates">
+            <i>
+              { ContentObject.posted ? `Entry Posted: ${ContentObject.posted}` : null }
+              <br />
+              { ContentObject.span ? `Development: ${ContentObject.span}` : null }
+            </i>
+          </div>
+          <ContentObject.content />
         </div>
       </div>
     </>

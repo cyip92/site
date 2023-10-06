@@ -8,17 +8,30 @@ import PreTesting from './01 - Preliminary Testing.jsx';
 import WaveZero from './02 - Wave Zero.jsx';
 
 export const LogEntries = {
-  Introduction,
-  FAQ,
-  MissingEntry,
+  Introduction: {
+    content: Introduction,
+    title: "A Retrospective for The Reality Update"
+  },
+  FAQ: {
+    content: FAQ,
+    title: "Frequently Asked Questions"
+  },
+  MissingEntry: {
+    content: MissingEntry,
+    title: "Retrospective Entry Not Found"
+  },
   Entries: {
     1: {
       content: PreTesting,
-      title: "Humble Beginnings"
+      title: "Humble Beginnings",
+      posted: "September 29th, 2023",
+      span: "June/July 2018",
     },
     2: {
       content: WaveZero,
-      title: "Wave Zero Testers"
+      title: "Wave Zero Testers",
+      posted: "October 6th, 2023",
+      span: "July to September 2018",
     },
   }
 };

@@ -12,7 +12,6 @@ export const WaveZero = () => {
   return (
     <>
       <div>
-        <h1>Wave Zero Testers</h1>
         <h3>Gameplay and Testing</h3>
         On July 27th 2018, Hevi shared the test link with the rest of the testing team in the patch testing channel.
         Many long-term members of the Antimatter Dimensions Discord server are aware of the fact that we periodically
@@ -37,36 +36,41 @@ export const WaveZero = () => {
         <ul>
           <li>
             All achievements returned gradually over 4 days (0.9x per reality) and still couldn&apos;t be completed
-            early - you were forced to wait
+            early - you were forced to wait it out
           </li>
           <li>
             The second reality took about 8 days to complete, much of which was spent waiting for achievements
-            or time theorems (for the reality study, which still cost 5e9 TT)
+            or time theorems for the reality study (which still cost 5e9 TT)
           </li>
           <li>
             Reality Machine scaling wasn&apos;t linear below 10, so the majority of players felt like it
-            wasn&apos;t worth pushing for more
+            wasn&apos;t worth pushing for more and generally the per-reality rewards felt very weak
           </li>
           <li>
-            You didn&apos;t have a choice for your glyphs, every reality would just give you whatever the next
-            pre-seeded glyph would be
+            You didn&apos;t have a choice for your glyphs; every reality would just give you whatever the next
+            pre-seeded glyph would be and refreshing wouldn&apos;t change it
           </li>
           <li>
             The first glyph&apos;s effect was the only thing which wasn&apos;t random, and everything else in
-            glyph generation was competely random without any worst-case mitigation logic
+            glyph generation (including the <i>rarity</i> of the first glyph) was competely random without any
+            worst-case mitigation logic
           </li>
         </ul>
         There was only one test channel when things started up, although a few hours after the internal release,
         Hevi made two more test-specific channels - one for bug reports and one for suggestions. These two channels
-        ultimately ended up being temporary (with all their contents eventually being ported into the Github repo),
-        but until then they did a good job keeping things organized.
+        ultimately ended up being temporary (with all their remaining contents being copied into the Github
+        repository), but until then they did a decent job at organizing things.
 
         <h3>Community Management</h3>
-        It would be nearly a month until anything official was posted about testing starting up again, although many
+        It would be nearly a month until anything official was posted about how testing started again, although many
         testers dropped hints about it in more casual settings almost immediately. On the 30th, just a few days after
-        it began, Hevi told the team: <b>Don&apos;t post anything about the update without my permission, no
-        &quot;funny spoilers that nobody is going to get xD&quot;</b> which set the expectation that testers should
-        be tight-lipped about content moving forward.
+        it began, Hevi acknowledged that talking about testing externally was acceptable, but additionally said:
+        <div className="o-quote-box">
+          Don&apos;t post anything about the update without my permission, no &quot;funny spoilers that nobody is
+          going to get xD&quot;
+        </div>
+        This generally set the expectation that testers should be tight-lipped about specifics on content moving
+        forward, and this mindset stuck with the team for a fair bit of the development time.
         <br />
         <br />
         Anyone who returned to the game after a very long break will be all too familiar with feeling clueless about
@@ -164,8 +168,8 @@ export const WaveZero = () => {
         </div>
         <br />
         This caused testing at the forefront to pause for a week or so while everyone tried to work through what was
-        causing the numbers to be uncontrollable and how to fix that. It turned out this would be the first of many
-        times throughout development this would happen - not only for glyph effects, but just in general.
+        causing the numbers to be uncontrollable and how to fix that. It turned out this would be the first of a few
+        times throughout development we would have to rebalance glyph effects.
         <br />
         <br />
         Bug reports and fixes continued to come in and new content was gradually being added to the game, and then
@@ -175,8 +179,6 @@ export const WaveZero = () => {
         <br />
         <br />
         <i>(Jeez, at this rate of entries, we might be here for a while.)</i>
-        <br />
-        <br />
       </div>
     </>
   )

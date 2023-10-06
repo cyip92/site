@@ -6,7 +6,6 @@ export const PreTesting = () => {
   return (
     <>
       <div>
-        <h1>Humble Beginnings</h1>
         On June 26th 2018, Hevipelle sent me a message on Discord about testing what was, at the time, a version
         of the game which barely differed at all from the public version of the Time Dilation update. This point
         effectively marked the very beginning of development for the Reality Update. For the following month, I
@@ -81,8 +80,6 @@ export const PreTesting = () => {
         <br />
         Throughout this month, not even the testers knew anything about the update at all, not even that it was being
         tested and developed. All of this was going to change near the end of July 2018.
-        <br />
-        <br />
       </div>
     </>
   )

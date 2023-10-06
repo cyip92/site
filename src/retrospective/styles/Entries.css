@@ -42,3 +42,10 @@
   width: 33%;
   padding: 0.2rem;
 }
+
+.o-quote-box {
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 0.1rem solid #888;
+  padding: 0.2rem;
+}

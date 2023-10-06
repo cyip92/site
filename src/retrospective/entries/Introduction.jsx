@@ -4,7 +4,6 @@ export const Introduction = () => {
   return (
     <>
       <div>
-        <h1>A Retrospective for The Reality Update</h1>
         <a href="https://ivark.github.io/AntimatterDimensions/">Antimatter Dimensions</a> is an Idle Incremental game
         created by a Finnish developer who goes by the online alias of <b>Hevipelle</b>. It started development in
         2016 and had been under long-term development until the end of 2022, when the final content update (called
