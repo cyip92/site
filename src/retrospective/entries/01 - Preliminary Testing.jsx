@@ -1,5 +1,6 @@
 import commands from '../../assets/retrospective/1/automator_tree.png';
 import "../styles/Entries.css";
+import CaptionedFigure from "./CommonElements";
 
 export const PreTesting = () => {
   return (
@@ -47,12 +48,14 @@ export const PreTesting = () => {
         <br />
         <br />
         
-        <div className="c-entries-img-left">
-          <div className="c-entries-figure">
-            <img src={commands} className="c-entries-img" />
-            <i>The scrapped &quot;automator command unlock tree&quot; and its expensive commands</i>
+        <div className="c-entries-columns">
+          <div className="c-col-narrow">
+            <CaptionedFigure
+              imgPath={commands}
+              caption={"The scrapped \"automator command unlock tree\" and its expensive commands"}
+            />
           </div>
-          <div>
+          <div className="c-col-wide">
             A brief summary of we did during this month:
             <br />
             <li>

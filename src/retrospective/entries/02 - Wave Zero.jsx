@@ -1,5 +1,4 @@
 import weakAD from '../../assets/retrospective/2/admultlv2.png';
-import strongAD from '../../assets/retrospective/2/admultlv24.png';
 import challenge from '../../assets/retrospective/2/autochall.png';
 import dilPow from '../../assets/retrospective/2/dilationpow.png';
 import largeIPow from '../../assets/retrospective/2/ipow.png';
@@ -7,6 +6,7 @@ import zeroMult from '../../assets/retrospective/2/mult0.png';
 import useless from '../../assets/retrospective/2/repdtmult.png';
 import duplicity from '../../assets/retrospective/2/duplicity.png';
 import "../styles/Entries.css";
+import CaptionedFigure from "./CommonElements";
 
 export const WaveZero = () => {
   return (
@@ -99,8 +99,8 @@ export const WaveZero = () => {
           </li>
         </ul>
         
-        <div className="c-entries-img-right">
-          <div>
+        <div className="c-entries-columns">
+          <div className="c-col-wide">
             And naturally, a few things were suggested or made which ultimately didn&apos;t get into the final version
             of the game. Here&apos;s the first two notable ones, and there will certainly be many more in the future:
             <ul>
@@ -115,16 +115,54 @@ export const WaveZero = () => {
               </li>
             </ul>
           </div>
-          <div className="c-entries-figure">
-            <img src={duplicity} className="c-entries-img" />
-            <i>The teaser image Omsi posted of a Glyph of Duplicity and its effect</i>
+          <div className="c-col-narrow">
+            <CaptionedFigure
+              imgPath={duplicity}
+              caption={"The teaser image Omsi posted of a Glyph of Duplicity and its effect"}
+            />
           </div>
         </div>
         As people reached the end of the existing content (3rd row of Reality upgrades), it became clear that glyph
-        effect values needed some very serious rebalancing, as you can see many examples of below: 
-        <div>
-          <b>PLACEHOLDER FOR IMAGE ARRAY</b>
+        effect values needed some very serious rebalancing. The actual values in the glyph effect formulas started off
+        as throwing numbers at the wall and seeing what stuck, and this resulted in wildly inconsistent relative
+        strength. Here are a few of the more amusing examples from the testing channels that people posted:
+        <div className="c-figure-group">
+          <div className="c-figure-row">
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={weakAD}
+              caption={"Some effects were comically weak"}
+            />
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={largeIPow}
+              caption={"Others, unbelievably strong"}
+            />
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={challenge}
+              caption={"And one was useless to the point of eventually getting replaced"}
+            />
+          </div>
+          <div className="c-figure-row">
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={dilPow}
+              caption={"The weakest effects at low level/rarity almost rounded down to nothing"}
+            />
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={useless}
+              caption={"Or sometimes, actually nothing"}
+            />
+            <CaptionedFigure
+              containerClass="c-single-figure"
+              imgPath={zeroMult}
+              caption={"... or even worse"}
+            />
+          </div>
         </div>
+        <br />
         This caused testing at the forefront to pause for a week or so while everyone tried to work through what was
         causing the numbers to be uncontrollable and how to fix that. It turned out this would be the first of many
         times throughout development this would happen - not only for glyph effects, but just in general.
