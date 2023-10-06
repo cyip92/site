@@ -1,4 +1,4 @@
-import commands from '../../assets/retrospective/automator_tree.png';
+import commands from '../../assets/retrospective/1/automator_tree.png';
 import "../styles/Entries.css";
 
 export const PreTesting = () => {
@@ -47,7 +47,7 @@ export const PreTesting = () => {
         <br />
         <br />
         
-        <div className="c-entries-two-col">
+        <div className="c-entries-img-left">
           <div className="c-entries-figure">
             <img src={commands} className="c-entries-img" />
             <i>The scrapped &quot;automator command unlock tree&quot; and its expensive commands</i>

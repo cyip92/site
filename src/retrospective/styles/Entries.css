@@ -1,8 +1,22 @@
-.c-entries-two-col {
+.c-entries-img-left {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 35% 65%;
   width: 100%;
+}
+
+.c-entries-img-right {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 65% 35%;
+  width: 100%;
+}
+
+.c-figure-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .c-entries-figure {
