@@ -52,7 +52,7 @@ export const WaveZero = () => {
           </li>
           <li>
             The first glyph&apos;s effect was the only thing which wasn&apos;t random, and everything else in
-            glyph generation (including the <i>rarity</i> of the first glyph) was competely random without any
+            glyph generation (including the <i>rarity</i> of the first glyph) was completely random without any
             worst-case mitigation logic
           </li>
         </ul>
@@ -75,7 +75,7 @@ export const WaveZero = () => {
         <br />
         Anyone who returned to the game after a very long break will be all too familiar with feeling clueless about
         the game mechanics. Most of the testers felt this way as well, although there were concerns about the
-        implcations of testers asking basic questions (eg. how to do IC4/IC5) publicly. This is because the fact that
+        implications of testers asking basic questions (eg. how to do IC4/IC5) publicly. This is because the fact that
         Reality was a new reset layer, and many people in the community at the time didn&apos;t expect the next update
         to be another reset. This fact would still remain unknown until the end of the year (which is to say, nearly
         half a year later).
@@ -111,7 +111,7 @@ export const WaveZero = () => {
               <li>
                 Testers figured out that you could &quot;peek&quot; at your next glyph result and then refresh the page
                 if you wanted to push more to make it stronger first. This led to the tester (and later on code
-                contrbutor) Iker writing a quick script which displayed the next 15 or so glyphs
+                contributor) Iker writing a quick script which displayed the next 15 or so glyphs
               </li>
               <li>
                 A new glyph type: Glyph of duplicity (suggested as an idea; a similar concept was implemented briefly

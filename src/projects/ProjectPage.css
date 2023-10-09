@@ -1,0 +1,31 @@
+.c-project-layout {
+  text-align: left;
+  margin-top: var(--navbar-height);
+}
+
+.c-project-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c-single-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #aaa;
+  color: black;
+  margin: 1rem;
+  border: 0.25rem solid #888;
+  border-radius: 1rem;
+  width: calc(50% - 4.5rem);
+  min-width: 22rem;
+  padding: 1rem;
+}
+
+.c-img-fixed-size {
+  object-fit: contain;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
