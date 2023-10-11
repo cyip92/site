@@ -3,6 +3,10 @@
   margin-top: var(--navbar-height);
 }
 
+.c-project-description {
+  width: 65rem;
+}
+
 .c-project-cards {
   display: flex;
   flex-direction: row;
@@ -16,12 +20,12 @@
   justify-content: flex-start;
   background-color: #aaa;
   color: black;
-  margin: 1rem;
-  border: 0.25rem solid #888;
+  margin: 0.3rem;
+  border: 0.2rem solid #888;
   border-radius: 1rem;
-  width: calc(50% - 4.5rem);
+  width: calc(50% - 2rem);
   min-width: 22rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .c-img-fixed-size {

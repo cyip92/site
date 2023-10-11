@@ -5,7 +5,7 @@ import './index.css';
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import Navbar from "./common/Navbar";
 import SleepPage from './sleep/SleepPage'
-import ProjectPage from './projects/ProjectPage'
+import { Projects, ProjectPage } from './projects/ProjectPage'
 import BlobPage from './blob/BlobPage';
 import DevlogPage from './retrospective/DevlogPage';
 import HomePage from './home/HomePage';
@@ -20,7 +20,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/projects">
+            <Route index element={<ProjectPage />} />
+            {
+              Projects
+                .filter(p => p.component)
+                .map(Proj => <Route key={Proj.id} path={`/projects/${Proj.id}`} element={<Proj.component />} />
+              )
+            }
+          </Route>
           <Route path="/sleep" element={<SleepPage />} />
           <Route path="/blob" element={<BlobPage />} />
           <Route path="/ADdevlog">

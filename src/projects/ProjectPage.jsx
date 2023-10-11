@@ -1,22 +1,28 @@
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import "./ProjectPage.css";
 
-import research from '../assets/projects/vacuum_chamber.png';
+import research from '../assets/projects/physics/vacuum_chamber.png';
 import logoAD from '../assets/projects/AD_loading.png';
 import noImg from '../assets/projects/no_image.png';
 
-const Projects = [
+import PhysicsProjectPage from './entries/PhysicsProjectPage';
+
+export const Projects = [
   {
+    id: "physics",
     image: research,
     title: "Rare Earth Laser Physics",
     category: "Education",
     date: "September 2014 to March 2021",
     fields: "Atomic/Optical Physics, Electronics, Python",
     description: `Research on the element Holmium, under the guidance of Mark Saffman, with the intent to
-      control ultracold Holmium atoms for use in Quantum Computing.`
+      control ultracold Holmium atoms for use in Quantum Computing.`,
+    component: PhysicsProjectPage,
   },
   {
+    id: "AD",
     image: logoAD,
     title: "Antimatter Dimensions",
     category: "Game Development",
@@ -26,6 +32,7 @@ const Projects = [
       features, and many paradigm shifts which alter the gameplay loop.`
   },
   {
+    id: "platformer",
     image: noImg,
     title: "2D Puzzle Platformer",
     category: "Game Development",
@@ -35,6 +42,7 @@ const Projects = [
       rather remain confidential until we can present a Minimum Viable Product.`
   },
   {
+    id: "incremental",
     image: noImg,
     title: "Idle/Incremental Webgame",
     category: "Game Development",
@@ -67,11 +75,13 @@ const Projects = [
         { proj.description }
         <br />
         <br />
-        {
-          proj.link
-            ? <button>More Information</button>
-            : <button disabled>Info Unavailable</button>
-        }
+        <div>
+          {
+            proj.component
+              ? <Link to={`/projects/${proj.id}`}><button>More Information</button></Link>
+              : <button disabled>Info Unavailable</button>
+          }
+        </div>
       </div>
     </>
   )

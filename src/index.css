@@ -23,6 +23,8 @@
   --navbar-height: 4rem;
 }
 
+/* #region Global Tags */
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -64,6 +66,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* #endregion Global Tags */
+
+/* #region Common containers */
+
 .c-site-layout {
   display: flex;
   flex-direction: column;
@@ -78,6 +84,35 @@ button:focus-visible {
   justify-content: flex-start;
   align-items: center;
 }
+
+.c-entries-columns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.c-col-narrow {
+  position: relative;
+  text-align: center;
+  border: 0.15rem solid #888;
+  width: 30%;
+  padding: 1rem;
+}
+
+.c-col-wide {
+  position: relative;
+  width: 65%;
+}
+
+.c-inset-img {
+  position: relative;
+  width: 100%;
+}
+
+/* #endregion Common containers */
 
 @media (prefers-color-scheme: light) {
   :root {

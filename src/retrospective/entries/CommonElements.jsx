@@ -6,7 +6,7 @@ export const CaptionedFigure = props => {
   return (
     <>
       <div className={props.containerClass}>
-        <img src={props.imgPath} className="c-entries-img" />
+        <img src={props.imgPath} className="c-inset-img" />
         <i>{ props.caption }</i>
       </div>
     </>
