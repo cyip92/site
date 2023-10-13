@@ -16,9 +16,24 @@
   padding: 0.2rem;
 }
 
+.c-single-figure--small {
+  padding: 0.2rem 0.5rem;
+}
+
 .o-quote-box {
   font-size: 0.9rem;
   font-weight: bold;
   border: 0.1rem solid #888;
   padding: 0.2rem;
+}
+
+.c-centered-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.o-small-center-img {
+  width: 70%;
 }

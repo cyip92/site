@@ -6,6 +6,7 @@ import MissingEntry from './MissingEntry.jsx';
 // to the file name) for the sake of keeping the contents of said files easier to search through and edit
 import PreTesting from './01 - Preliminary Testing.jsx';
 import WaveZero from './02 - Wave Zero.jsx';
+import NewDevs from './03 - New Developers.jsx';
 
 export const LogEntries = {
   Introduction: {
@@ -32,6 +33,12 @@ export const LogEntries = {
       title: "Wave Zero Testers",
       posted: "October 6th, 2023",
       span: "July to September 2018",
+    },
+    3: {
+      content: NewDevs,
+      title: "New Developers!",
+      posted: "October 13th, 2023",
+      span: "September/October 2018",
     },
   }
 };
