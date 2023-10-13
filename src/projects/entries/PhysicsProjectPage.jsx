@@ -12,6 +12,7 @@ export const PhysicsProjectPage = () => {
     <>
       <div className="c-project-layout c-project-description">
         <div className="c-centered-image">
+          <u><h1>Rare Earth Laser Physics</h1></u>
           <img src={opticalTable} className="o-header-image" />
         </div>
 

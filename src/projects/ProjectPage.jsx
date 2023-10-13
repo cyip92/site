@@ -8,6 +8,7 @@ import logoAD from '../assets/projects/AD_loading.png';
 import noImg from '../assets/projects/no_image.png';
 
 import PhysicsProjectPage from './entries/PhysicsProjectPage';
+import AntimatterDimensionsProjectPage from './entries/AntimatterDimensionsProjectPage';
 
 export const Projects = [
   {
@@ -29,7 +30,8 @@ export const Projects = [
     date: "June 2018 to July 2023",
     fields: "HTML, CSS, Javascript, Vue.js",
     description: `An incremental game with multiple layers of unlockable content, very thorough automation
-      features, and many paradigm shifts which alter the gameplay loop.`
+      features, and many paradigm shifts which alter the gameplay loop.`,
+      component: AntimatterDimensionsProjectPage,
   },
   {
     id: "platformer",
@@ -47,7 +49,7 @@ export const Projects = [
     title: "Idle/Incremental Webgame",
     category: "Game Development",
     date: "Ongoing, design drafting started February 2023",
-    fields: "HTML, CSS, Javascript, React (?)",
+    fields: "HTML, CSS, Javascript, Vue.js",
     description: `An incremental game centered around a resource system which appears to be novel and
       not seen in other incrementals, together the Lead Design Consultant for Antimatter Dimensions.`
   },

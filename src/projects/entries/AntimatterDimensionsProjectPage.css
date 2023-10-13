@@ -1,0 +1,32 @@
+.c-centered-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.c-col-img-dimensions {
+  position: relative;
+  width: 35%;
+  padding-right: 1rem;
+}
+
+.c-col-text-dimensions {
+  position: relative;
+  width: 65%;
+}
+
+.c-col-img-automator {
+  position: relative;
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.o-header-image {
+  width: 80%;
+}
+
+.o-centered-image {
+  width: 60%;
+}
