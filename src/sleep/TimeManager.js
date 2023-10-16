@@ -9,8 +9,8 @@ export const TimeManager = {
     .concat([-9.5, -3.5, 3.5, 4.5, 5.5, 5.75, 6.5, 8.75, 9.5, 10.5, 12.75])
     .sort((a, b) => a - b),
   // Arbitrary time (near time of implementation) which has 0 "week time"
-  zeroWeekReference: 1694944800000,
-  // Note: The props inputTime, inputZone, and inputZoneIndex are asigned and unassigned within TimeInput.jsx
+  zeroWeekReference: 1694959200000,
+  // Note: The props inputTime, inputZone, and inputZoneIndex are assigned and unassigned within TimeInput.jsx
 
   // Returns the UTC offset in hours (eg. UTC-5 returns -5)
   get localTimeZone() {
@@ -35,7 +35,7 @@ export const TimeManager = {
     // Sleep occurs 12 times per week, but this is padded by 2 on each side to account for very far away time zones
     return [...Array(16).keys()]
       .map(n => 14 * (n - 2) + this.localSleepOffset)
-      .filter(n => n >= -4 && n <= 168);
+      .filter(n => n >= -14 && n <= 182);
   },
 
   // Checks for whether or not the otherwise undefined input props have been set due to user input
@@ -54,7 +54,7 @@ export const TimeManager = {
   get inputDataWeekTime() {
     if (!this.hasInputTime) return 0;
     const weekLength = 1000 * 3600 * 168;
-    const inputTimeAdj = this.inputTime - 3600000 * this.inputZone - this.zeroWeekReference;
+    const inputTimeAdj = this.inputTime - this.zeroWeekReference + 3600000 * this.inputZone;
     const thisWeekMs = ((inputTimeAdj % weekLength) + weekLength) % weekLength;
     return 168 * (thisWeekMs / weekLength);
   },
@@ -69,11 +69,9 @@ export const TimeManager = {
 
   // Returns an object with all sleep information aggregated together (all times are in hours)
   fullSleepData(checkTime = this.currentTime) {
-    // Before the first sleep time, 
+    // We rely on this.sleepTimes returning a list padded with negative and too-large values here
     const startTimes = this.sleepTimes.filter(t => t < checkTime);
-    const cycleTime = checkTime - (startTimes.length === 0
-      ? this.sleepTimes[this.sleepTimes.length - 1] - 168
-      : startTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b)));
+    const cycleTime = checkTime - startTimes.filter(t => t < checkTime).reduce((a, b) => Math.max(a, b));
     
     return {
       isSleeping: cycleTime <= 4,

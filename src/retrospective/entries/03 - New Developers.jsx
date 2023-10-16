@@ -167,7 +167,7 @@ export const NewDevs = () => {
       leak concerns for a while. Since two people were removed because of content spoilers, the test link was changed.
       <br />
       <br />
-      A couple new testers were individually brought on at thie time, since development was still very early on and
+      A couple new testers were individually brought on at this time, since development was still very early on and
       there wasn&apos;t a cohesive update to test yet. At this point our system for onboarding was largely one of
       approaching people individually, and we had an informal list of people in mind.
       <br />
