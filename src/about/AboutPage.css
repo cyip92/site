@@ -1,0 +1,25 @@
+.c-columns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.c-narrow {
+  width: 15%;
+  padding: 1rem;
+}
+
+.c-wide {
+  width: 80%;
+}
+
+.o-img-fit {
+  width: 100%;
+}
+
+.o-null {
+  display: none;
+}

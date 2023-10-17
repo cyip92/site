@@ -9,6 +9,7 @@ import { Projects, ProjectPage } from './projects/ProjectPage'
 import BlobPage from './blob/BlobPage';
 import DevlogPage from './retrospective/DevlogPage';
 import HomePage from './home/HomePage';
+import AboutPage from './about/AboutPage';
 import ErrorPage from './common/ErrorPage';
 import UnfinishedPage from './common/UnfinishedPage';
 import LogEntries from './retrospective/entries/index.js';
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/projects">
             <Route index element={<ProjectPage />} />
             {

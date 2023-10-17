@@ -85,6 +85,10 @@ button:focus-visible {
   align-items: center;
 }
 
+.c-text {
+  text-align: left;
+}
+
 .c-entries-columns {
   position: relative;
   display: flex;
