@@ -15,11 +15,19 @@
   background-color: var(--color-blob);
 }
 
+.o-last-indicator {
+  position: absolute;
+  top: 0;
+  border: 0.1rem #b00 solid;
+  height: 1.9rem;
+}
+
 .o-max-indicator {
   position: absolute;
   top: 0;
   border: 0.1rem red solid;
   height: 1.9rem;
+  z-index: 1;
 }
 
 .c-power-bar {
@@ -33,6 +41,14 @@
 .o-power-bar {
   height: 100%;
   background-color: white;
+}
+
+.c-stat-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25rem;
 }
 
 @media (prefers-color-scheme: light) {
