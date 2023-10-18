@@ -1,11 +1,3 @@
-.c-centered-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-
 .c-col-img-zeeman {
   position: relative;
   width: 40%;
@@ -21,12 +13,4 @@
 .c-col-text-results {
   position: relative;
   width: 85%;
-}
-
-.o-header-image {
-  width: 80%;
-}
-
-.o-centered-image {
-  width: 60%;
 }

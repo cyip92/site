@@ -14,7 +14,6 @@ export const SleepPage = () => {
   return (
     <>
       <div className="c-page-layout">
-        <br />
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
         <div className="c-text-elements">

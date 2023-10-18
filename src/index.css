@@ -1,7 +1,4 @@
 #root {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -35,9 +32,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
   place-items: center;
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -74,15 +70,21 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
 .c-page-layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  place-self: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+.c-vert-center {
+  transform: translateY(50%);
+  height: calc(100% - var(--navbar-height));
 }
 
 .c-text {
@@ -102,7 +104,7 @@ button:focus-visible {
   position: relative;
   text-align: center;
   border: 0.15rem solid #888;
-  width: 30%;
+  width: calc(30% - 2rem);
   padding: 1rem;
 }
 

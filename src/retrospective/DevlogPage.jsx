@@ -17,7 +17,7 @@ export const DevlogPage = props => {
 
   return (
     <>
-      <div className="c-devlog-full-page">
+      <div className="c-page-layout c-devlog-full-page">
         <div className="c-devlog-sidebar">
           <DevlogSidebar />
         </div>

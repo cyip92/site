@@ -4,12 +4,14 @@ import titleImg from '../../assets/projects/antimatterdimensions/AD_title_image.
 import dimensions from '../../assets/projects/antimatterdimensions/dim_cascade.png';
 import automator from '../../assets/projects/antimatterdimensions/automator.png';
 
+import ".././ProjectPage.css";
 import "./AntimatterDimensionsProjectPage.css";
 
 export const AntimatterDimensionsProjectPage = () => {
   return (
     <>
-      <div className="c-project-layout c-project-description">
+      <div className="c-page-layout c-project-layout">
+        <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>
         <div className="c-centered-image">
           <u><h1>Antimatter Dimensions</h1></u>
           <img src={titleImg} className="o-header-image" />

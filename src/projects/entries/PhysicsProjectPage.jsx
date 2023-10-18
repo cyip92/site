@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import periodicTable from '../../assets/projects/physics/IUPAC_Periodic_Table.jpg';
 import opticalTable from '../../assets/projects/physics/optical_table.png';
 import thesis from '../../assets/projects/physics/Holmium_Thesis.pdf';
@@ -10,7 +12,8 @@ import "./PhysicsProjectPage.css";
 export const PhysicsProjectPage = () => {
   return (
     <>
-      <div className="c-project-layout c-project-description">
+      <div className="c-page-layout c-project-layout">
+        <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>
         <div className="c-centered-image">
           <u><h1>Rare Earth Laser Physics</h1></u>
           <img src={opticalTable} className="o-header-image" />

@@ -68,7 +68,7 @@ export const BlobPage = () => {
 
   return (
     <>
-      <div className="c-page-layout">
+      <div className="c-page-layout c-vert-center">
         <img
           style={blobTransform}
           src={blob}

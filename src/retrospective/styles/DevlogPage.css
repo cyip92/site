@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   margin: 2rem auto;
-  width: 75rem;
   height: 100%;
 }
 
@@ -11,7 +10,6 @@
   position: relative;
   top: 0;
   width: calc(100% - 4rem);
-  padding: 0 4rem;
   text-align: left;
 }
 

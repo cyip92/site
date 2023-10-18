@@ -31,7 +31,7 @@ export const Projects = [
     fields: "HTML, CSS, Javascript, Vue.js",
     description: `An incremental game with multiple layers of unlockable content, very thorough automation
       features, and many paradigm shifts which alter the gameplay loop.`,
-      component: AntimatterDimensionsProjectPage,
+    component: AntimatterDimensionsProjectPage,
   },
   {
     id: "platformer",
@@ -101,8 +101,12 @@ export const ProjectPage = () => {
   return (
     <>
       <div className="c-page-layout c-project-layout">
-        Here is a list of the larger projects which I have worked on. Some have been completed, while others
-        are under ongoing development:
+        <h1>Long-term Projects</h1>
+        <div className="o-project-intro">
+          Here is a list of the larger projects which I have worked on.
+          <br />
+          Some have been completed, while others are under ongoing development:
+        </div>
         <br />
         <div className="c-project-cards">
           { Projects.map(p => <SingleProject project={p} key={p.title} />) }

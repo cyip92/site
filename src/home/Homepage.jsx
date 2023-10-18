@@ -8,7 +8,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <div className="c-page-layout">
+      <div className="c-page-layout c-vert-center">
         <h3>Home Page</h3>
         <br />
         <img src={blobthink} />
