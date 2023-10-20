@@ -104,7 +104,7 @@ button:focus-visible {
   position: relative;
   text-align: center;
   border: 0.15rem solid #888;
-  width: calc(30% - 2rem);
+  width: calc(33% - 2rem);
   padding: 1rem;
 }
 

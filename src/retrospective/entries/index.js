@@ -7,6 +7,7 @@ import MissingEntry from './MissingEntry.jsx';
 import PreTesting from './01 - Preliminary Testing.jsx';
 import WaveZero from './02 - Wave Zero.jsx';
 import NewDevs from './03 - New Developers.jsx';
+import Motivation from './04 - Motivation.jsx';
 
 export const LogEntries = {
   Introduction: {
@@ -39,6 +40,12 @@ export const LogEntries = {
       title: "New Developers!",
       posted: "October 13th, 2023",
       span: "September/October 2018",
+    },
+    4: {
+      content: Motivation,
+      title: "Staying Motivated",
+      posted: "October 20th, 2023",
+      span: "November/December 2018",
     },
   }
 };
