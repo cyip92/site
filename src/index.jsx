@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter, useLocation } from 'react-router-dom';
 import Navbar from "./common/Navbar";
 import SleepPage from './sleep/SleepPage'
 import { Projects, ProjectPage } from './projects/ProjectPage'
@@ -14,11 +14,22 @@ import ErrorPage from './common/ErrorPage';
 import UnfinishedPage from './common/UnfinishedPage';
 import LogEntries from './retrospective/entries/index.js';
 
+import { useEffect } from "react";
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
       <div className="c-site-layout">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
