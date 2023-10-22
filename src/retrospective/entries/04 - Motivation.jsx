@@ -40,8 +40,8 @@ export const Motivation = () => {
               <b>Ra</b> - Razenpok; it&apos;s simply his name but shortened
             </li>
             <li>
-              <b>Lai&apos;tela</b> - Omsi; her name backwards is a reference to the Finnish comedian&nbsp;
-              <a href="https://fi.wikipedia.org/wiki/Ismo_Laitela">Imso Laitela</a>
+              <b>Lai&apos;tela</b> - Omsi; her name backwards is a reference to the Finnish soap opera character&nbsp;
+              <a href="https://fi.wikipedia.org/wiki/Ismo_Laitela">Ismo Laitela</a>
             </li>
             <li>
               <b>Pelle</b> - Hevi; his name, but anagrammed

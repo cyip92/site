@@ -34,14 +34,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/sleep" element={<SleepPage />} />
           <Route path="/blob" element={<BlobPage />} />
           <Route path="/ADdevlog">
-            <Route index element={<DevlogPage specialKey="Introduction" />} />
-            <Route path="/ADdevlog/FAQ" element={<DevlogPage specialKey="FAQ" />} />
+            <Route index element={<DevlogPage entry={LogEntries.Introduction} />} />
             {
-              Object.keys(LogEntries.Entries).map(key =>
-                <Route key={key} path={`/ADdevlog/${key}`} element={<DevlogPage entryKey={Number(key)}/>} />
+              Object.values(LogEntries)
+                .filter(entry => entry.route && entry.route !== "/")
+                .map(entry => 
+                  <Route key={entry.route} path={`/ADdevlog${entry.route}`} element={<DevlogPage entry={entry}/>} />
               )
             }
-            <Route path="*" element={<DevlogPage specialKey="MissingEntry" />} />
+            <Route path="*" element={<DevlogPage entry={LogEntries.MissingEntry} />} />
           </Route>
           <Route path="/unfinished" element={<UnfinishedPage />} />
           <Route path="*" element={<ErrorPage />} />

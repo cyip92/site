@@ -33,3 +33,24 @@
   color: #888;
   margin: -1.5rem 0 1rem;
 }
+
+.c-footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.o-footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.o-footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}

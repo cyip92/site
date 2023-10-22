@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -5,15 +6,45 @@ import LogEntries from './entries/index.js';
 import DevlogSidebar from './DevlogSidebar.jsx';
 import './styles/DevlogPage.css';
 
+const DevlogNav = props => {
+  const prevEntry = LogEntries[props.entry.prev];
+  const nextEntry = LogEntries[props.entry.next];
+
+  return (
+    <div className="c-footer-nav">
+      {
+        prevEntry
+          ? <div className="o-footer-left">
+              🡄 Previous Entry
+              <br />
+              <Link to={`/ADdevlog${prevEntry.route}`}>{ prevEntry.title }</Link>
+            </div>
+          : <div />
+      }
+      {
+        nextEntry
+          ? <div className="o-footer-right">
+              Next Entry 🡆
+              <br />
+              <Link to={`/ADdevlog${nextEntry.route}`}>{ nextEntry.title }</Link>
+            </div>
+          : null
+      }
+    </div>
+  )
+};
+
+DevlogNav.propTypes = {
+  entry: PropTypes.object
+}
+
 export const DevlogPage = props => {
   useEffect(() => {
     document.title = "The Reality Update";
   }, []);
 
   // The content for the text pane of this page is pulled from a file within the entries subfolder
-  const ContentObject = props.specialKey
-    ? LogEntries[props.specialKey]
-    : LogEntries.Entries[props.entryKey];
+  const entry = props.entry;
 
   return (
     <>
@@ -22,15 +53,16 @@ export const DevlogPage = props => {
           <DevlogSidebar />
         </div>
         <div className="c-devlog-main-content">
-          <h1>{ ContentObject.title }</h1>
+          <h1>{ entry.title }</h1>
           <div className="o-devlog-dates">
             <i>
-              { ContentObject.posted ? `Entry Posted: ${ContentObject.posted}` : null }
+              { entry.posted ? `Entry Posted: ${entry.posted}` : null }
               <br />
-              { ContentObject.span ? `Development: ${ContentObject.span}` : null }
+              { entry.span ? `Development: ${entry.span}` : null }
             </i>
           </div>
-          <ContentObject.content />
+          <entry.content />
+          <DevlogNav entry={entry} />
         </div>
       </div>
     </>
@@ -38,8 +70,7 @@ export const DevlogPage = props => {
 }
 
 DevlogPage.propTypes = {
-  specialKey: PropTypes.string,
-  entryKey: PropTypes.number
+  entry: PropTypes.object
 }
 
 export default DevlogPage;

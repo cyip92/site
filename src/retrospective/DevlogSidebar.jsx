@@ -3,10 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import LogEntries from './entries/index.js';
 import './styles/DevlogPage.css';
 
-function singleLink(route, current, text, key) {
+function singleLink(entry, current, text) {
+  const route = `/ADdevlog${entry.route}`;
   const isCurrentRoute = current === route;
   return (
-    <div key={key}>
+    <div key={route}>
       {
         isCurrentRoute
           ? <span className="o-current-sidebar-indicator">▶</span>
@@ -21,15 +22,15 @@ export const DevlogSidebar = () => {
   const currentRoute = useLocation().pathname;
   return (
     <>
-      { singleLink("/ADdevlog", currentRoute, "Introduction", "intro") }
-      { singleLink("/ADdevlog/FAQ", currentRoute, "FAQ Page", "faq") }
+      { singleLink(LogEntries.Introduction, currentRoute, "Introduction") }
+      { singleLink(LogEntries.FAQ, currentRoute, "FAQ Page") }
       <div>
         Entries:
         <br />
         {
-          Object.keys(LogEntries.Entries).map(key =>
-            singleLink(`/ADdevlog/${key}`, currentRoute, `${key} - ${LogEntries.Entries[key].title}`, `entry${key}`)
-          )
+          Object.values(LogEntries)
+            .filter(entry => entry.posted)
+            .map(entry => singleLink(entry, currentRoute, `${entry.index} - ${entry.title}`))
         }
       </div>
     </>
