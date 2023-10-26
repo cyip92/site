@@ -8,6 +8,7 @@ import PreTesting from './01 - Preliminary Testing.jsx';
 import WaveZero from './02 - Wave Zero.jsx';
 import NewDevs from './03 - New Developers.jsx';
 import Motivation from './04 - Motivation.jsx';
+import BiggerTeam from './05 - Team.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -54,6 +55,12 @@ const ListedEntries = {
     title: "Staying Motivated",
     posted: "October 20th, 2023",
     span: "November to Mid-December 2018",
+  },
+  5: {
+    content: BiggerTeam,
+    title: "A Bigger Team",
+    posted: "October 27th, 2023",
+    span: "Mid-December 2018 to Mid-January 2019",
   },
 };
 
