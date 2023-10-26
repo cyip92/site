@@ -19,7 +19,7 @@ const Tabs = [
     text: "Weekly Sleep Pattern"
   },
   {
-    route: "/ADdevlog",
+    route: "/ADdevlog/",
     text: "Antimatter Dimensions Retrospective"
   },
   {

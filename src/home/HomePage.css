@@ -1,0 +1,12 @@
+:root {
+  --color-blob: #fcc21b;
+}
+
+.c-narrow-home {
+  width: 30rem;
+}
+
+.c-blob-disclaimer {
+  font-size: 0.7rem;
+  margin-top: 3rem;
+}

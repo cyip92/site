@@ -96,6 +96,7 @@ SingleProject.propTypes = {
 export const ProjectPage = () => {
   useEffect(() => {
     document.title = "Long-term Projects";
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/stack.png");
   }, []);
 
   return (

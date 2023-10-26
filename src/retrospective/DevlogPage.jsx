@@ -39,12 +39,13 @@ DevlogNav.propTypes = {
 }
 
 export const DevlogPage = props => {
-  useEffect(() => {
-    document.title = "The Reality Update";
-  }, []);
-
   // The content for the text pane of this page is pulled from a file within the entries subfolder
   const entry = props.entry;
+
+  useEffect(() => {
+    document.title = entry.posted ? `AD Devlog | ${entry.title}` : "Reality Update Retrospective";
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/AD.png");
+  }, [entry]);
 
   return (
     <>

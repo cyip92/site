@@ -1,26 +1,32 @@
 import { useEffect } from 'react';
 import blobthink from '../assets/blobthink.png';
 
+import "./HomePage.css";
+
 export const HomePage = () => {
   useEffect(() => {
     document.title = "Website Home";
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/blobwave.png");
   }, []);
 
   return (
     <>
-      <div className="c-page-layout c-vert-center">
-        <h3>Home Page</h3>
-        <br />
+      <div className="c-page-layout c-vert-center c-narrow-home">
         <img src={blobthink} />
+        <br />
         <br />
         Welcome to my professional website!
         <br />
         <br />
-        Almost everything is currently still being worked on, feel free to check back over the next
-        few days to see as content gets filled out!
-        <br />
-        <br />
-        The blobs will probably be mostly disappearing once the site is nearly finished (sorry)
+        This is a portfolio site for all the major projects I have done in the past, as well as a hosting place
+        for some of the more minor ones which don&apos;t make sense to host on a standalone site.
+        <div className="c-blob-disclaimer">
+          There are a few blob-styled emoji around the site, particularly on my side project pages. All of these
+          are sourced from the <a href="https://blobs.gg/">Blob Emoji Discord Servers</a>, which were inspired by
+          the <a href="https://en.wikipedia.org/wiki/Blob_emoji">Google Blob emoji</a> and are licensed 
+          under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> - allowing
+          free use as long as the License is clearly and appropriately attributed.
+        </div>
       </div>
     </>
   )

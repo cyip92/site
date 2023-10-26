@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import titleImg from '../../assets/projects/antimatterdimensions/AD_title_image.png';
@@ -8,6 +9,11 @@ import ".././ProjectPage.css";
 import "./AntimatterDimensionsProjectPage.css";
 
 export const AntimatterDimensionsProjectPage = () => {
+  useEffect(() => {
+    document.title = `Projects | Antmatter Dimensions`;
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/AD.png");
+  });
+
   return (
     <>
       <div className="c-page-layout c-project-layout">

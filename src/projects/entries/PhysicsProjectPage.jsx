@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import periodicTable from '../../assets/projects/physics/IUPAC_Periodic_Table.jpg';
@@ -10,6 +11,11 @@ import ".././ProjectPage.css";
 import "./PhysicsProjectPage.css";
 
 export const PhysicsProjectPage = () => {
+  useEffect(() => {
+    document.title = `Projects | Physics Research`;
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/atom.png");
+  });
+
   return (
     <>
       <div className="c-page-layout c-project-layout">

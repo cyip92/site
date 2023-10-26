@@ -5,6 +5,7 @@ import "./BlobPage.css";
 export const BlobPage = () => {
   useEffect(() => {
     document.title = "Pat the blob!";
+    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/blob.png");
   }, []);
 
   // Set up saving and loading first
