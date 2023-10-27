@@ -13,12 +13,14 @@ import BiggerTeam from './05 - Team.jsx';
 const SpecialEntries = {
   Introduction: {
     content: Introduction,
+    bgClass: "intro",
     route: "/",
     title: "A Retrospective for The Reality Update",
     next: "FAQ",
   },
   FAQ: {
     content: FAQ,
+    bgClass: "faq",
     route: "/FAQ",
     title: "Frequently Asked Questions",
     prev: "Introduction",
@@ -33,6 +35,7 @@ const SpecialEntries = {
 const ListedEntries = {
   1: {
     content: PreTesting,
+    bgClass: "intro",
     title: "Humble Beginnings",
     posted: "September 29th, 2023",
     span: "June/July 2018",
@@ -40,24 +43,28 @@ const ListedEntries = {
   },
   2: {
     content: WaveZero,
+    bgClass: "intro",
     title: "Wave Zero Testers",
     posted: "October 6th, 2023",
     span: "July to September 2018",
   },
   3: {
     content: NewDevs,
+    bgClass: "new-devs",
     title: "New Developers!",
     posted: "October 13th, 2023",
     span: "September/October 2018",
   },
   4: {
     content: Motivation,
+    bgClass: "cel1",
     title: "Staying Motivated",
     posted: "October 20th, 2023",
     span: "November to Mid-December 2018",
   },
   5: {
     content: BiggerTeam,
+    bgClass: "cel2",
     title: "A Bigger Team",
     posted: "October 27th, 2023",
     span: "Mid-December 2018 to Mid-January 2019",

@@ -15,6 +15,7 @@ export const SleepPage = () => {
   return (
     <>
       <div className="c-page-layout c-grayscale-content-bg">
+        <div className="c-image-bg c-sleep-bg" />
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
         <div className="c-text-elements">
@@ -26,6 +27,11 @@ export const SleepPage = () => {
         <div className="c-faq">
           <SleepFAQ />
         </div>
+        <br />
+        <i>
+          Background image was sourced from
+          <a href="https://wallpapers.com/night-sky-moon-pictures"> Wallpapers.com</a>.
+        </i>
       </div>
     </>
   )

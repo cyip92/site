@@ -19,3 +19,7 @@
   width: 100%;
   text-align: left;
 }
+
+.c-sleep-bg {
+  background-image: url("src/assets/bg/sleep.png");
+}

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import LogEntries from './entries/index.js';
 import DevlogSidebar from './DevlogSidebar.jsx';
 import './styles/DevlogPage.css';
+import './styles/Entries.css';
 
 const DevlogNav = props => {
   const prevEntry = LogEntries[props.entry.prev];
@@ -49,10 +50,12 @@ export const DevlogPage = props => {
 
   const containerClass = `c-page-layout c-devlog-full-page
     ${useLocation().pathname !== "/ADdevlog/" ? "c-grayscale-content-bg" : ""}`;
+  const bgClass = `c-image-bg c-devlog-bg-${entry.bgClass}`;
 
   return (
     <>
       <div className={containerClass}>
+        <div className={bgClass} />
         <div className="c-devlog-sidebar">
           <DevlogSidebar />
         </div>

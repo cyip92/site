@@ -14,3 +14,7 @@
   width: 65%;
   padding-left: 1rem;
 }
+
+.c-project-ad-bg {
+  background-image: url("src/assets/bg/Project_AD.png");
+}

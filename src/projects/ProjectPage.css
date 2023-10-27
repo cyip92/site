@@ -61,3 +61,8 @@
 }
 
 /* #endregion Common Project elements */
+
+.c-project-list-bg {
+  background-image: url("src/assets/bg/Project_List.png");
+  filter: blur(0.25rem);
+}

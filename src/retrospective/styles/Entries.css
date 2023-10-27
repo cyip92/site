@@ -38,3 +38,21 @@
 .o-small-center-img {
   width: 70%;
 }
+
+/* #region Entry Backgrounds */
+
+.c-devlog-bg-new-devs {
+  background-image: url("src/assets/bg/devlog_black_hole.png");
+}
+
+.c-devlog-bg-cel1 {
+  background-image: url("src/assets/bg/devlog_cel1.png");
+  filter: blur(0.2rem);
+}
+
+.c-devlog-bg-cel2 {
+  background-image: url("src/assets/bg/devlog_cel2.png");
+  filter: blur(0.2rem);
+}
+
+/* #endregion Entry Backgrounds */

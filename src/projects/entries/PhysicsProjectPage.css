@@ -14,3 +14,7 @@
   position: relative;
   width: 85%;
 }
+
+.c-project-physics-bg {
+  background-image: url("src/assets/bg/Project_Physics.png");
+}
