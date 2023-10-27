@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -47,9 +47,12 @@ export const DevlogPage = props => {
     document.getElementById("favicon").setAttribute('href', "src/assets/favicon/AD.png");
   }, [entry]);
 
+  const containerClass = `c-page-layout c-devlog-full-page
+    ${useLocation().pathname !== "/ADdevlog/" ? "c-grayscale-content-bg" : ""}`;
+
   return (
     <>
-      <div className="c-page-layout c-devlog-full-page">
+      <div className={containerClass}>
         <div className="c-devlog-sidebar">
           <DevlogSidebar />
         </div>

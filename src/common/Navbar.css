@@ -33,24 +33,3 @@
   background-color: #777;
   color: white;
 }
-
-@media (prefers-color-scheme: light) {
-  .c-main-options {
-    border-color: black;
-    background-color: #777;
-  }
-
-  .o-single-option {
-    border-color: #aaa;
-    color: #ccc;
-  }
-
-  .o-current-option {
-    border-color: black;
-  }
-
-  .o-single-option:hover {
-    background-color: #333;
-    color: white;
-  }
-}

@@ -50,17 +50,3 @@
   align-items: center;
   width: 25rem;
 }
-
-@media (prefers-color-scheme: light) {
-  .c-squish-state {
-    border-color: black;
-  }
-
-  .o-power-bar {
-    background-color: black;
-  }
-
-  .c-power-bar {
-    border-color: black;
-  }
-}

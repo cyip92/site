@@ -16,7 +16,7 @@ export const AntimatterDimensionsProjectPage = () => {
 
   return (
     <>
-      <div className="c-page-layout c-project-layout">
+      <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>
         <div className="c-centered-image">
           <u><h1>Antimatter Dimensions</h1></u>

@@ -9,12 +9,6 @@
   background-color: #777;
 }
 
-@media (prefers-color-scheme: light) {
-  .c-full-week {
-    border-color: black;
-  }
-}
-
 .c-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);

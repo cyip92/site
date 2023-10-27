@@ -101,7 +101,7 @@ export const ProjectPage = () => {
 
   return (
     <>
-      <div className="c-page-layout c-project-layout">
+      <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <h1>Long-term Projects</h1>
         <div className="o-project-intro">
           Here is a list of the larger projects which I have worked on.

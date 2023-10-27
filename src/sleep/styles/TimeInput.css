@@ -43,10 +43,3 @@
   height: 5rem;
   padding: 1rem 0;
 }
-
-@media (prefers-color-scheme: light) {
-  .p-btn-color {
-    background-color: #666;
-    color: white;
-  }
-}

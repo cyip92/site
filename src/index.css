@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #555;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,7 +50,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -76,10 +76,14 @@ button:focus-visible {
 
 .c-page-layout {
   place-self: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
   max-width: 75rem;
-  padding: 0 1rem;
+  padding: 0 4rem;
+  padding-bottom: 3rem;
+}
+
+.c-grayscale-content-bg {
+  background: linear-gradient(to right, transparent 0%, #222 3%, #222 97%, transparent 100%);
+  /*background-image: url("src/assets/bg/Project_AD.png");*/
 }
 
 .c-vert-center {
@@ -119,16 +123,3 @@ button:focus-visible {
 }
 
 /* #endregion Common containers */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ddd;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}

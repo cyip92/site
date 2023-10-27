@@ -2,7 +2,6 @@
   top: var(--navbar-height);
   display: flex;
   flex-direction: row;
-  margin: 2rem auto;
   height: 100%;
 }
 
