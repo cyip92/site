@@ -11,8 +11,8 @@ export const NewDevs = () => {
     <>
       <div>
       <h3>&quot;Physically Realistic&quot;</h3>
-      On September 7th 2018, Hevi pitched the idea that it would be cool to have an “realistic” black hole. Of course,
-      with him being a huge movie fan, he brought up Interstellar as the inspiration - it&apos;s a fairly major plot
+      On September 7th 2018, Hevi pitched the idea that it would be cool to have a &quot;realistic&quot; black hole.
+      Of course, being a huge movie fan, he brought up <i>Interstellar</i> as inspiration - it&apos;s a major plot
       point that time passes slower when you are close to a black hole. He asked if I could make an animation where
       a planet was orbiting a black hole, with that slowdown factor determining the black hole&apos;s time factor.
       <br />
@@ -67,7 +67,7 @@ export const NewDevs = () => {
               Autobuy Time Theorems was 4 separate perks and capped at 1 &quot;buy max&quot;/sec
             </li>
             <li>
-              Some glyph perks: +1 level (twice), +1 choice (4 total), and +5% rarity
+              Some Glyph perks: +1 level (twice), +1 choice (4 total), and +5% rarity
             </li>
             <li>
               There was a weaker SAM which started you with 100 antimatter
@@ -158,13 +158,13 @@ export const NewDevs = () => {
       <h3>Community Dynamics</h3>
       One of the much older testers on the team wasn&apos;t taking anything seriously and was basically getting on
       everyone&apos;s bad sides partially out of annoyance and partially because he was the source of maybe 80% of
-      the content leaks to the public (largely due to negligence). At some point his discord got deleted, and even
-      though he returned on a new account, he wasn&apos;t made a tester again.
+      the content leaks to the public (largely due to negligence). At some point his Discord account got deleted,
+      and even though he returned on a new account, he wasn&apos;t made a tester again.
       <br />
       <br />
       For a similar reason, slabdrill was also removed from the team, although his leaks were often a lot more
       deliberate. It came to light that he had a spoiler channel on his own server, and that was a general source of
-      leak concerns for a while. Since two people were removed because of content spoilers, the test link was changed.
+      leak concerns for a while. Since two people were removed due to content spoilers, the test link was changed.
       <br />
       <br />
       A couple new testers were individually brought on at this time, since development was still very early on and
@@ -172,7 +172,7 @@ export const NewDevs = () => {
       approaching people individually, and we had an informal list of people in mind.
       <br />
       <br />
-      Hevi made a dev post showing off the glyph tab with heavy black-box redaction, which strongly implied
+      Hevi made a dev post showing off the Glyph tab with heavy black-box redaction, which strongly implied
       (but didn&apos;t actually state) that the update would contain a prestige layer. He mostly did so in
       order to showcase that stuff has been happening.
 

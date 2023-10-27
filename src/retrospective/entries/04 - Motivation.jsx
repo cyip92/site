@@ -84,8 +84,8 @@ export const Motivation = () => {
         <a href="https://sneekxy.nmtechgroup.com/monies2/"> MONIES²</a>.
         <br />
         <br />
-        We expected every Celestial to have their own reality, but wanted all 7 of them to play out uniquely. The
-        concept for the 1st Celestial&apos;s reality was for it to be structurally like a typical reality, except
+        We expected every Celestial to have their own Reality, but wanted all 7 of them to play out uniquely. The
+        concept for the 1st Celestial&apos;s Reality was for it to be structurally like a typical Reality, except
         a bunch of mechanics are heavily nerfed. Purchasing the reality study at the bottom of the tree was the
         requirement to complete it, and the strength of its completion reward would scale up endlessly based on how
         much antimatter you could reach under its restrictions, as opposed to it being a one-and-done challenge.
@@ -102,13 +102,13 @@ export const Motivation = () => {
             />
           </div>
           <div className="c-col-wide">
-            The reality reward was never changed; it was always a massive glyph sacrifice boost after the first
+            The Reality reward was never changed; it was always a massive Glyph sacrifice boost after the first
             completion which altered how sacrifice affected the game overall. However, three effects
             ended up being changed later on; at this point, they were different:
             <ul>
               <li>
                 <b>Power</b> delayed remote galaxy scaling* (the 2nd, much harsher scaling) instead of distant
-                scaling, but its effect scaled in such a way that completing the reality for the first time
+                scaling, but its effect scaled in such a way that completing the Reality for the first time
                 effectively removed it entirely
               </li>
               <li>
@@ -117,13 +117,13 @@ export const Motivation = () => {
               </li>
               <li>
                 <b>Replication</b> added a flat additional +X% replication chance, which turned into a
-                ridiculous-looking tens of millions after completing the reality and yet was still super weak in
+                ridiculous-looking tens of millions after completing the Reality and yet was still super weak in
                 the grand scheme of things
               </li>
             </ul>
             <i>
               * Cosmic Conglomerate&apos;s old effect was actually the second half of Scour to Empower, which
-              initially only let you sacrifice Power and Time glyphs.
+              initially only let you sacrifice Power and Time Glyphs.
             </i>
           </div>
         </div>
@@ -214,7 +214,7 @@ export const Motivation = () => {
             passed between that game and the Reality update.
           </li>
           <li>
-            <b>Garnet</b> - He was actually a mobile-oriented player initially and is the reason why the glyph tab
+            <b>Garnet</b> - He was actually a mobile-oriented player initially and is the reason why the Glyph tab
             has some leftover jQuery code in it which allows for minimal touchscreen device support. He started
             writing code for the game in December and eventually ended up being our primary Automator dev, rewriting
             the Automator code in its entirety and replacing what snippets I&apos;ve shown here so far with much of
@@ -241,18 +241,18 @@ export const Motivation = () => {
         finishing the update was going to be a marathon, not a sprint.
 
         <h3>Nerfs Abound</h3>
-        Replication glyphs were insanely powerful at this point; the replication multiplier power effect was
-        reaching the thousands, and the glyph level factor effect didn&apos;t have a softcap. This resulted
+        Replication Glyphs were insanely powerful at this point; the replication multiplier power effect was
+        reaching the thousands, and the Glyph level factor effect didn&apos;t have a softcap. This resulted
         in the game breaking if you equipped 5 of them as early as the beginning of Celestial 1. This is something
         which Garnet first found out, and he proceeded to largely rebalance much of that part of the game himself.
-        He ended up making replicanti glyphs stack more weakly, and added the glyph level instability scaling in
-        order to bring glyphs levels back down from 70k.
+        He ended up making replicanti Glyphs stack more weakly, and added the Glyph level instability scaling in
+        order to bring Glyph levels back down from 70k.
         <br />
         <br />
-        I added the increased scaling for free tickspeed upgrades above 300k and ID hardcap which eventually turned
-        into Tesseracts, but my reasoning to do so wasn&apos;t explicitly mentioned until this point. It seemed like
-        some people on the team at the time really disliked when the game would suddenly run away uncontrollably,
-        so my caps were more or less a direct response to that:
+        I added the increased scaling for free tickspeed upgrades above 300k and Infinity Dimension hardcap which
+        eventually turned into Tesseracts, but my reasoning to do so wasn&apos;t explicitly mentioned until this
+        point. It seemed like some people on the team at the time really disliked when the game would suddenly
+        run away uncontrollably, so my caps were more or less a direct response to that:
         <div className="o-quote-box">
           The circumstances around it were that we recently had a runaway effect that killed like 3 tester saves,
           and that nobody wanted to test at all because of that. So my thought was that bringing down the nerf

@@ -9,26 +9,26 @@ export const PreTesting = () => {
         On June 26th 2018, Hevipelle sent me a message on Discord about testing what was, at the time, a version
         of the game which barely differed at all from the public version of the Time Dilation update. This point
         effectively marked the very beginning of development for the Reality Update. For the following month, I
-        was the only playtester. Testing was pretty much entirely confined to my DMs with Hevi and a short-lived
-        group DM with the two of us and Omsi.
+        was the only playtester. Testing was pretty much entirely confined to my messages with Hevi and a short-lived
+        group chat with the two of us and Omsi.
         <br />
         <br />
-        The initial version of the Reality update I was given access to had nearly nothing new at all, which
+        The initial version of the Reality Update I was given access to had nearly nothing new at all, which
         shouldn&apos;t really be a surprise - everything has to start somewhere and it was barely a week since
         Time Dilation was released. Quite a bit was added to the game over this first month, but I could definitely
         see how having the entire team wouldn&apos;t have been helpful at this point.
         <br />
         <br />
-        When I was initially given the link, all you got from your first Reality reset was a preset power glyph with
-        AD^1.018 (not the ^1.033 you normally get now, and the companion glyph didn&apos;t exist yet). The Reality
+        When I was initially given the link, all you got from your first Reality reset was a preset power Glyph with
+        AD^1.018 (not the ^1.033 you normally get now, and the Companion Glyph didn&apos;t exist yet). The Reality
         unlock used to require 5e9 TT, and this was considered the largest timewall in early testing for a very long
-        time. Half of all glyphs had 0% rarity due to the fact that the distribution by default was negative half of
+        time. Half of all Glyphs had 0% rarity due to the fact that the distribution by default was negative half of
         the time.
         <br />
         <br />
         Achievements were reset and your only choice was to wait 2 days until you got them all at once. It soon became
-        “you get them back row by row and this speeds up with more realities,” but then stayed that way for a while.
-        The only way to get them was to wait, repeating them did nothing. This actually turned out to <i>slow
+        &quot;you get them back row by row and this speeds up with more realities,&quot; but then stayed that way for
+        a while. The only way to get them was to wait, repeating them did nothing. This actually turned out to <i>slow
         down</i> your progression compared to a new game because the Achievement multiplier and early rewards are
         very strong at that point. 
         <br />
@@ -59,11 +59,11 @@ export const PreTesting = () => {
             <br />
             <li>
               A ton of minor bugs were fixed, like <i>so many</i> bugs. There were numerous times where I needed to fix my
-              save using console commands. While I had general programming knowledge, I didn&apos;t know any javascript yet
+              save using console commands. While I had general programming knowledge, I didn&apos;t know any Javascript yet
               at this point.
             </li>
             <li>
-              The first two rows of Reality upgrades were added, except all of the first row was single-purchase instead of
+              The first two rows of Reality Upgrades were added, except all of the first row was single-purchase instead of
               repeatable and the costs were also slightly more expensive.
             </li>
             <li>

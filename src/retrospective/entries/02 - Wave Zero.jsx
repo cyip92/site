@@ -15,12 +15,12 @@ export const WaveZero = () => {
         <h3>Gameplay and Testing</h3>
         On July 27th 2018, Hevi shared the test link with the rest of the testing team in the patch testing channel.
         Many long-term members of the Antimatter Dimensions Discord server are aware of the fact that we periodically
-        brought in “waves” of new testers throughout development. Officially speaking there were three waves of
-        testers, which occurred in August 2019, April 2020, and August 2021.
+        brought in &quot;waves&quot; of new testers throughout development. Officially speaking there were three waves
+        of testers, which occurred in August 2019, April 2020, and August 2021.
         <br />
         <br />
-        I hadn&apos;t realized it until I went through the old messages, but a lot of the events at the time
-        paralleled the start of the “official” tester waves. There was initially mass chaos as everyone in the testing
+        I hadn&apos;t realized it until I went through the old messages, but a lot of the events at the time paralleled
+        the start of the &quot;official&quot; tester waves. There was initially mass chaos as everyone in the testing
         channel was trying to figure out why they suddenly had unexpected unread notifications, followed
         by gradually settling down and realizing that &quot;it&apos;s actually happening.&quot;
         <br />
@@ -51,8 +51,8 @@ export const WaveZero = () => {
             pre-seeded glyph would be and refreshing wouldn&apos;t change it
           </li>
           <li>
-            The first glyph&apos;s effect was the only thing which wasn&apos;t random, and everything else in
-            glyph generation (including the <i>rarity</i> of the first glyph) was completely random without any
+            The first Glyph&apos;s effect was the only thing which wasn&apos;t random, and everything else in
+            Glyph generation (including the <i>rarity</i> of the first Glyph) was completely random without any
             worst-case mitigation logic
           </li>
         </ul>
@@ -75,10 +75,10 @@ export const WaveZero = () => {
         <br />
         Anyone who returned to the game after a very long break will be all too familiar with feeling clueless about
         the game mechanics. Most of the testers felt this way as well, although there were concerns about the
-        implications of testers asking basic questions (eg. how to do IC4/IC5) publicly. This is because the fact that
-        Reality was a new reset layer, and many people in the community at the time didn&apos;t expect the next update
-        to be another reset. This fact would still remain unknown until the end of the year (which is to say, nearly
-        half a year later).
+        implications of testers asking basic questions (eg. how to do Infinity Challenges 4 and 5) publicly. This is
+        because the fact that Reality was a new reset layer, and many people in the community at the time didn&apos;t
+        expect the next update to be another reset. This fact would still remain unknown until the end of the year
+        (which is to say, nearly half a year later).
         <br />
         <br />
         Despite these spoiler concerns, some of the much older testers weren&apos;t mindful of this. This would cause
@@ -91,7 +91,7 @@ export const WaveZero = () => {
         fixed. Besides those fixes, there were also a few new features added:
         <ul>
           <li>
-            <b>[Mid Aug 2018]</b> The third row of reality upgrades (Telemechanical Process was three separate
+            <b>[Mid Aug 2018]</b> The third row of Reality Upgrades (Telemechanical Process was three separate
             upgrades on the first draft, replacing Eternal Flow and Paradoxical Forever)
           </li>
           <li>
@@ -109,13 +109,13 @@ export const WaveZero = () => {
             of the game. Here&apos;s the first two notable ones, and there will certainly be many more in the future:
             <ul>
               <li>
-                Testers figured out that you could &quot;peek&quot; at your next glyph result and then refresh the page
+                Testers figured out that you could &quot;peek&quot; at your next Glyph result and then refresh the page
                 if you wanted to push more to make it stronger first. This led to the tester (and later on code
-                contributor) Iker writing a quick script which displayed the next 15 or so glyphs
+                contributor) Iker writing a quick script which displayed the next 15 or so Glyphs
               </li>
               <li>
-                A new glyph type: Glyph of duplicity (suggested as an idea; a similar concept was implemented briefly
-                as a reality glyph effect far in the future, but then all traces were removed)
+                A new Glyph type: Glyph of duplicity (suggested as an idea; a similar concept was implemented briefly
+                as a reality Glyph effect far in the future, but then all traces were removed)
               </li>
             </ul>
           </div>
@@ -126,8 +126,8 @@ export const WaveZero = () => {
             />
           </div>
         </div>
-        As people reached the end of the existing content (3rd row of Reality upgrades), it became clear that glyph
-        effect values needed some very serious rebalancing. The actual values in the glyph effect formulas started off
+        As people reached the end of the existing content (3rd row of Reality Upgrades), it became clear that glyph
+        effect values needed some very serious rebalancing. The actual values in the Glyph effect formulas started off
         as throwing numbers at the wall and seeing what stuck, and this resulted in wildly inconsistent relative
         strength. Here are a few of the more amusing examples from the testing channels that people posted:
         <div className="c-figure-group">
@@ -169,7 +169,7 @@ export const WaveZero = () => {
         <br />
         This caused testing at the forefront to pause for a week or so while everyone tried to work through what was
         causing the numbers to be uncontrollable and how to fix that. It turned out this would be the first of a few
-        times throughout development we would have to rebalance glyph effects.
+        times throughout development we would have to rebalance Glyph effects.
         <br />
         <br />
         Bug reports and fixes continued to come in and new content was gradually being added to the game, and then
