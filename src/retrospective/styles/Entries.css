@@ -42,16 +42,16 @@
 /* #region Entry Backgrounds */
 
 .c-devlog-bg-new-devs {
-  background-image: url("src/assets/bg/devlog_black_hole.png");
+  background-image: url("../../assets/bg/devlog_black_hole.png");
 }
 
 .c-devlog-bg-cel1 {
-  background-image: url("src/assets/bg/devlog_cel1.png");
+  background-image: url("../../assets/bg/devlog_cel1.png");
   filter: blur(0.2rem);
 }
 
 .c-devlog-bg-cel2 {
-  background-image: url("src/assets/bg/devlog_cel2.png");
+  background-image: url("../../assets/bg/devlog_cel2.png");
   filter: blur(0.2rem);
 }
 

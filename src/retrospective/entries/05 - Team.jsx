@@ -154,8 +154,9 @@ export const BiggerTeam = () => {
         <br />
         <br />
         Dan caught a potentially game-breaking bug with EC8 on one of Razen&apos;s refactors, which pointed out that
-        <a href="https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/master/src/core/tickspeed.js"> galaxy
-        strength stacks very weirdly</a> and can&apos;t be changed due to pre-reality balance. This is the main
+        <a href="https://github.com/IvarK/AntimatterDimensionsSourceCode/blob/master/src/core/tickspeed.js#L5-L16">
+        &nbsp;galaxy strength stacks very weirdly</a> and can&apos;t be changed due to pre-reality balance.
+        This is the main
         reason that there&apos;s no multiplier tab for galaxy strength - we went through and standardized everything
         to be in the order of flat, multiplier, power, but couldn&apos;t do that here. To my knowledge this is the
         only place where that order doesn&apos;t apply, and so we&apos;ve somewhat shamefully hidden that from view.

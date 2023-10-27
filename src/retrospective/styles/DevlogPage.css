@@ -55,11 +55,11 @@
 }
 
 .c-devlog-bg-intro {
-  background-image: url("src/assets/bg/devlog_intro.png");
+  background-image: url("../../assets/bg/devlog_intro.png");
   filter: brightness(15%);
 }
 
 .c-devlog-bg-faq {
-  background-image: url("src/assets/bg/devlog_faq.png");
+  background-image: url("../../assets/bg/devlog_faq.png");
   filter: blur(0.3rem);
 }
