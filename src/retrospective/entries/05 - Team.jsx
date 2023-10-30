@@ -2,7 +2,7 @@ import effects from "../../assets/retrospective/5/effect_order.png";
 import protGlyphs from "../../assets/retrospective/5/protected_glyphs.png";
 import disper from "../../assets/retrospective/5/disper_lore.png";
 import "../styles/Entries.css";
-import CaptionedFigure from "./CommonElements";
+import { CaptionedFigure } from "./CommonElements";
 
 export const BiggerTeam = () => {
   return (

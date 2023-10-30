@@ -43,6 +43,10 @@ h1 {
   line-height: 1.1;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -134,3 +138,9 @@ button:focus-visible {
 }
 
 /* #endregion Common containers */
+
+.o-code-text {
+  font-family: Consolas, Menlo, "courier new", monospace;
+  background-color: #111;
+  padding: 0 0.2rem;
+}

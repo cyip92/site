@@ -4,7 +4,7 @@ import runaway from '../../assets/retrospective/3/runaway_AM.png';
 import automator from '../../assets/retrospective/3/old_automator.png';
 import tophat from '../../assets/retrospective/3/automator_hat.jpg';
 import "../styles/Entries.css";
-import CaptionedFigure from "./CommonElements";
+import { CaptionedFigure } from "./CommonElements";
 
 export const NewDevs = () => {
   return (

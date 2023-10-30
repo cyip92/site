@@ -6,7 +6,7 @@ import zeroMult from '../../assets/retrospective/2/mult0.png';
 import useless from '../../assets/retrospective/2/repdtmult.png';
 import duplicity from '../../assets/retrospective/2/duplicity.png';
 import "../styles/Entries.css";
-import CaptionedFigure from "./CommonElements";
+import { CaptionedFigure } from "./CommonElements";
 
 export const WaveZero = () => {
   return (

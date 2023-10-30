@@ -19,4 +19,18 @@ CaptionedFigure.propTypes = {
   caption: PropTypes.string.isRequired,
 }
 
-export default CaptionedFigure;
+export const ConversationLine = props => {
+  return (
+    <>
+      <div className="c-single-message">
+        <span className="c-name">{ props.name }:</span>
+        <span className="c-text">{ props.text }</span>
+      </div>
+    </>
+  )
+}
+
+ConversationLine.propTypes = {
+  name: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}

@@ -7,7 +7,7 @@ export const FAQ = () => {
         <h2>How are you planning to format this retrospective?</h2>
         It will mainly be a series of somewhat short blog-like entries on this site, of likely a similar reading length
         to this page, which I will post regularly. <b>I have come back to update this page with the fact that these
-        entries have actually been turning out to be significantly longer, perhaps on averate about four times as long
+        entries have actually been turning out to be significantly longer, perhaps on average about four times as long
         as this page in terms of reading length.</b>
         <br />
         <h2>How often do you plan to write these?</h2>

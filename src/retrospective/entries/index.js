@@ -9,6 +9,7 @@ import WaveZero from './02 - Wave Zero.jsx';
 import NewDevs from './03 - New Developers.jsx';
 import Motivation from './04 - Motivation.jsx';
 import BiggerTeam from './05 - Team.jsx';
+import Rebalancing from './06 - Instability.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -35,7 +36,7 @@ const SpecialEntries = {
 const ListedEntries = {
   1: {
     content: PreTesting,
-    bgClass: "intro",
+    bgClass: "start",
     title: "Humble Beginnings",
     posted: "September 29th, 2023",
     span: "June/July 2018",
@@ -43,7 +44,7 @@ const ListedEntries = {
   },
   2: {
     content: WaveZero,
-    bgClass: "intro",
+    bgClass: "rupg",
     title: "Wave Zero Testers",
     posted: "October 6th, 2023",
     span: "July to September 2018",
@@ -68,6 +69,13 @@ const ListedEntries = {
     title: "A Bigger Team",
     posted: "October 27th, 2023",
     span: "Mid-December 2018 to Mid-January 2019",
+  },
+  6: {
+    content: Rebalancing,
+    bgClass: "large-bh",
+    title: "Massive Instability",
+    posted: "November 3rd, 2023",
+    span: "Mid-January to End of January 2019",
   },
 };
 
