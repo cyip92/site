@@ -23,6 +23,7 @@
 .o-quote-box {
   font-size: 0.9rem;
   font-weight: bold;
+  margin: 0.2rem;
   border: 0.1rem solid #888;
   padding: 0.2rem;
 }
@@ -49,48 +50,15 @@
   padding: 0.2rem;
 }
 
-.c-name {
+.c-dialogue-name {
   width: 3.5rem;
   font-weight: bold;
 }
 
-.c-text {
+.c-dialogue-text {
   width: 100%;
   font-weight: normal;
   font-style: italic;
 }
 
 /* #endregion Common Components */
-
-/* #region Entry Backgrounds */
-
-.c-devlog-bg-start {
-  background-image: url("../../assets/bg/devlog_start.png");
-  filter: blur(0.1rem);
-}
-
-.c-devlog-bg-rupg {
-  background-image: url("../../assets/bg/devlog_rupg.png");
-  filter: blur(0.1rem);
-}
-
-.c-devlog-bg-new-devs {
-  background-image: url("../../assets/bg/devlog_black_hole.png");
-}
-
-.c-devlog-bg-cel1 {
-  background-image: url("../../assets/bg/devlog_cel1.png");
-  filter: blur(0.2rem);
-}
-
-.c-devlog-bg-cel2 {
-  background-image: url("../../assets/bg/devlog_cel2.png");
-  filter: blur(0.2rem);
-}
-
-.c-devlog-bg-large-bh {
-  background-image: url("../../assets/bg/devlog_large_bh.png");
-  filter: blur(0.5rem);
-}
-
-/* #endregion Entry Backgrounds */

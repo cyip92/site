@@ -236,7 +236,7 @@ export const Rebalancing = () => {
         This was another case of inconsistent variable states not being properly updated, which we hoped to clean
         up. Needless to say, some bugs we found were quite obtuse.
 
-        <h3>Honorable Leave</h3>
+        <h3>Temporary Leave</h3>
         After an incredibly packed and hectic Christmas time, everyone still in education no longer had as much
         free time and needed to get back to studies again. This unfortunately included Dan, who was working on an
         advanced Mathematics degree. He requested to be temporarily removed from the team so he wouldn&apos;t be
@@ -251,7 +251,7 @@ export const Rebalancing = () => {
         Looking back on things, especially with this entry and last week&apos;s entry, I feel justified in saying
         that Dan carried a lot of momentum in testing. In particular, he wasn&apos;t afraid to discuss the
         &quot;hard problems&quot; with design and balancing in great detail in order to come up with a working
-        solution. He would return after his break, but we would definitely be lacking in the meantime.
+        solution. He would return, but we would definitely be lacking in the meantime.
         
         <h3>Onward...?</h3>
         Before the end of 2018, Hevi said it would be funny if we released the Reality Update on April Fools&apos;

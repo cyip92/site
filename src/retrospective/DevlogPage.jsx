@@ -50,12 +50,18 @@ export const DevlogPage = props => {
 
   const containerClass = `c-page-layout c-devlog-full-page
     ${useLocation().pathname !== "/ADdevlog/" ? "c-grayscale-content-bg" : ""}`;
-  const bgClass = `c-image-bg c-devlog-bg-${entry.bgClass}`;
+  const bgStyle = {
+    backgroundImage: `url("/bg/${entry.bgImage}")`,
+    filter: entry.bgFilter,
+  };
 
   return (
     <>
       <div className={containerClass}>
-        <div className={bgClass} />
+        <div
+          className="c-image-bg"
+          style={bgStyle}
+        />
         <div className="c-devlog-sidebar">
           <DevlogSidebar />
         </div>

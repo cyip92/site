@@ -136,7 +136,7 @@ export const NewDevs = () => {
         </div>
         <div className="c-col-wide">
           On September 15th, Razenpok joined the dev team! Initially his main role was migrating all of AD into
-          using Vue.js, something he&apos;d be doing gradually for the next few months as we continued developing
+          Vue.js, something he&apos;d be doing gradually for the next few months as we continued developing
           content. Changing the game&apos;s code to use the Vue.js framework was something which Hevi really wanted
           to do, and now the circumstances were just right for that to actually happen.
           <br />
