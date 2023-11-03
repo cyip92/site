@@ -9,7 +9,7 @@ import "./styles/SleepPage.css";
 export const SleepPage = () => {
   useEffect(() => {
     document.title = "Sleep Pattern";
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/blobsleep.png");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blobsleep.png`);
   }, []);
   
   return (

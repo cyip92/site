@@ -45,13 +45,13 @@ export const DevlogPage = props => {
 
   useEffect(() => {
     document.title = entry.posted ? `AD Devlog | ${entry.title}` : "Reality Update Retrospective";
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/AD.png");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/AD.png`);
   }, [entry]);
 
   const containerClass = `c-page-layout c-devlog-full-page
     ${useLocation().pathname !== "/ADdevlog/" ? "c-grayscale-content-bg" : ""}`;
   const bgStyle = {
-    backgroundImage: `url("/bg/${entry.bgImage}")`,
+    backgroundImage: `url("${window.rootURL}/bg/${entry.bgImage}")`,
     filter: entry.bgFilter,
   };
 

@@ -5,7 +5,7 @@ import "./AboutPage.css";
 export const AboutPage = () => {
   useEffect(() => {
     document.title = "About Me";
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/info.jpg");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/info.jpg`);
   }, []);
 
   return (

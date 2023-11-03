@@ -6,7 +6,7 @@ import "./HomePage.css";
 export const HomePage = () => {
   useEffect(() => {
     document.title = "Website Home";
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/blobwave.png");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blobwave.png`);
   }, []);
 
   return (

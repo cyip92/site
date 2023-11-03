@@ -11,7 +11,7 @@ import "./AntimatterDimensionsProjectPage.css";
 export const AntimatterDimensionsProjectPage = () => {
   useEffect(() => {
     document.title = `Projects | Antimatter Dimensions`;
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/AD.png");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/AD.png`);
   });
 
   return (

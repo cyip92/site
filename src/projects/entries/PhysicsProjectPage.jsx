@@ -13,7 +13,7 @@ import "./PhysicsProjectPage.css";
 export const PhysicsProjectPage = () => {
   useEffect(() => {
     document.title = `Projects | Physics Research`;
-    document.getElementById("favicon").setAttribute('href', "src/assets/favicon/atom.png");
+    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/atom.png`);
   });
 
   return (
