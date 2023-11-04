@@ -2,51 +2,25 @@
   --color-blob: #fcc21b;
 }
 
-.c-squish-state {
-  position: relative;
-  border: 0.2rem solid;
-  border-color: white;
-  width: 25rem;
-  height: 2rem;
+.c-blob-tabs {
+  position: fixed;
+  top: var(--navbar-height);
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.o-squish-bar {
-  height: 100%;
+.o-blob-button {
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  margin: 0.6em;
+  width: 10rem;
+  padding: 0.6em;
+  font-size: 1em;
+  color: black;
   background-color: var(--color-blob);
+  cursor: pointer;
 }
 
-.o-last-indicator {
-  position: absolute;
-  top: 0;
-  border: 0.1rem #b00 solid;
-  height: 1.9rem;
-}
-
-.o-max-indicator {
-  position: absolute;
-  top: 0;
-  border: 0.1rem red solid;
-  height: 1.9rem;
-  z-index: 1;
-}
-
-.c-power-bar {
-  position: relative;
-  border: 0.1rem solid;
-  border-color: white;
-  width: 25rem;
-  height: 1rem;
-}
-
-.o-power-bar {
-  height: 100%;
-  background-color: white;
-}
-
-.c-stat-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 25rem;
+.o-blob-button:hover {
+  filter: brightness(80%);
 }

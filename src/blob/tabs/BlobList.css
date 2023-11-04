@@ -1,0 +1,21 @@
+
+.c-blob-stat-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.c-blob-stat-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.o-blob-stat-icon {
+  margin-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
