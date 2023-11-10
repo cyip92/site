@@ -10,6 +10,7 @@ import NewDevs from './03 - New Developers.jsx';
 import Motivation from './04 - Motivation.jsx';
 import BiggerTeam from './05 - Team.jsx';
 import Rebalancing from './06 - Instability.jsx';
+import FirstCel3 from './07 - Untested Cel3.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -83,6 +84,14 @@ const ListedEntries = {
     title: "Massive Instability",
     posted: "November 3rd, 2023",
     span: "Mid-January to End of January 2019",
+  },
+  7: {
+    content: FirstCel3,
+    bgImage: "devlog_cel3.png",
+    bgFilter: "blur(0.15rem)",
+    title: "Definitely Complete",
+    posted: "November 10th, 2023",
+    span: "First half of February 2019",
   },
 };
 

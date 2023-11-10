@@ -133,6 +133,20 @@ button:focus-visible {
   width: 65%;
 }
 
+.c-col-equal {
+  position: relative;
+  width: calc(50% - 2rem);
+  padding: 1rem;
+}
+
+.c-col-equal--bordered {
+  position: relative;
+  text-align: center;
+  border: 0.15rem solid #888;
+  width: calc(50% - 2rem);
+  padding: 1rem;
+}
+
 .c-inset-img {
   position: relative;
   width: 100%;
