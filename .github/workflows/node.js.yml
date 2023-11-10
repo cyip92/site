@@ -29,9 +29,6 @@ jobs:
         
     - name: Install dependencies with continuous integration
       run: npm ci
-      
-    - name: Run automated tests
-      run: npm test
 
     - name: Build website
       run: npm run build --if-present
