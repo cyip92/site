@@ -21,7 +21,7 @@ export const TimeManager = {
   // Returns the number of hours from "time 0" from which the first sleep interval starts. Can be negative.
   get localSleepOffset() {
     // The numbers here are due to the sleep pattern "starting" at 8 AM on Sunday in UTC-5
-    return (this.localTimeZone + 5) + 8;
+    return (this.localTimeZone + 6) + 8;
   },
   
   // Returns the current time of the week, in the local time zone
