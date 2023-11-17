@@ -128,6 +128,12 @@ button:focus-visible {
   padding: 1rem;
 }
 
+.c-col-narrow--borderless {
+  position: relative;
+  text-align: center;
+  width: 33%;
+}
+
 .c-col-wide {
   position: relative;
   width: 65%;

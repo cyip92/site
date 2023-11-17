@@ -11,6 +11,7 @@ import Motivation from './04 - Motivation.jsx';
 import BiggerTeam from './05 - Team.jsx';
 import Rebalancing from './06 - Instability.jsx';
 import FirstCel3 from './07 - Untested Cel3.jsx';
+import RushCel4and5 from './08 - Celestial Rush.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -92,6 +93,14 @@ const ListedEntries = {
     title: "Definitely Complete",
     posted: "November 10th, 2023",
     span: "First half of February 2019",
+  },
+  8: {
+    content: RushCel4and5,
+    bgImage: "devlog_cel4.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Rushing It",
+    posted: "November 17th, 2023",
+    span: "Second half of February 2019",
   },
 };
 

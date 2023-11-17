@@ -187,7 +187,6 @@ export const FirstCel3 = () => {
           </div>
         </div>
         <br />
-        <br />
         We&apos;d end up adding a handful more notations over time, and much later in the year we separated out the
         notation code into its own&nbsp;
         <a href="https://github.com/antimatter-dimensions/notations">independent Github repository</a>.
@@ -209,11 +208,22 @@ export const FirstCel3 = () => {
         people giving feedback via DMs.
         <br />
         <br />
-        The majority of the code was structured as similar as possible to the web version of the Reality Update, which
-        allowed him to not have to rewrite or refactor everything when working on Reality content. Because he was
-        rewriting the game from scratch, he would frequently ask why we did things a certain way and whether or not
-        they could be changed. Over time this would result in a lot of usability improvements, suggestions, and
-        Quality-of-Life features bouncing between the Android version and the web version, to the benefit of both.
+        <s>
+          The majority of the code was structured as similar as possible to the web version of the Reality Update,
+          which allowed him to not have to rewrite or refactor everything when working on Reality content. Because he
+          was rewriting the game from scratch, he would frequently ask why we did things a certain way and whether or
+          not they could be changed.
+        </s>
+        &nbsp;Over time this would result in a lot of usability improvements, suggestions, and Quality-of-Life features
+        bouncing between the Android version and the web version, to the benefit of both.
+        <br />
+        <br />
+        <i>
+          Edit: Kajfik sent me a message shortly after I posted this entry, correcting me about something I
+          misremembered - he did not, in fact, have access to the Reality Update code for a fair bit of time and
+          therefore couldn&apos;t follow the more organized codebase from scratch. As such, much of the preceding
+          paragraph is somewhat inaccurate.
+        </i>
 
         <h3>No Time To Stop</h3>
         Dan returned in the beginning of February, much earlier than the 4 months he originally stated. He had been
@@ -247,7 +257,7 @@ export const FirstCel3 = () => {
         <br />
         <br />
         The next entry will have the development of the next Celestial in it - and yes, this happened before we
-        actually confirmed that the 3rd Celestials&apos;s content was actually well-designed and balanced.
+        actually confirmed that the 3rd Celestial&apos;s content was actually well-designed and balanced.
       </div>
     </>
   )
