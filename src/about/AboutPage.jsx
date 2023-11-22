@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import face from '../assets/headshot.jpg';
+import gmail from '../assets/icons/gmail.ico';
+import github from '../assets/icons/github.ico';
+import linkedin from '../assets/icons/linkedin.ico';
 import "./AboutPage.css";
 
 export const AboutPage = () => {
@@ -10,7 +13,7 @@ export const AboutPage = () => {
 
   return (
     <>
-      <div className="c-page-layout c-text">
+      <div className="c-page-layout c-text c-grayscale-content-bg">
         <h1>About Me</h1>
         <div className="c-columns">
           <div className="c-narrow">
@@ -49,14 +52,22 @@ export const AboutPage = () => {
         2024.
 
         <h3>Personal Info</h3>
-        { /* This is to make it harder for email-scrapers; none of these show up on the page */ }
-        Email: chri<span className="o-null">null</span>stop<span className="o-null">null
-          </span>hery<span className="o-null">null</span>ip19<span className="o-null">null
-          </span>92@g<span className="o-null">null</span>mail<span className="o-null">null</span>.com
-        <br />
-        Github: <a href="https://github.com/cyip92">cyip92</a>
-        <br />
-        LinkedIn: <a href="https://www.linkedin.com/in/christopher-yip-75ab51234/">Christopher Yip</a>
+        <div className="c-contact-info">
+          <img src={gmail} className="o-img-icon" />
+          { /* This is to make it harder for email-scrapers; none of these show up on the page */ }
+          Email: chri<span className="o-null">null</span>stop<span className="o-null">null
+            </span>hery<span className="o-null">null</span>ip19<span className="o-null">null
+            </span>92@g<span className="o-null">null</span>mail<span className="o-null">null</span>.com
+          <br />
+          <a href="https://github.com/cyip92"><img src={github} className="o-img-icon" /></a>
+          Github: <a href="https://github.com/cyip92">cyip92</a>
+          <br />
+          <a href="https://www.linkedin.com/in/christopher-yip-75ab51234/">
+            <img src={linkedin} className="o-img-icon" />
+          </a>
+          LinkedIn: <a href="https://www.linkedin.com/in/christopher-yip-75ab51234/">Christopher Yip</a>
+        </div>
+        
       </div>
     </>
   )

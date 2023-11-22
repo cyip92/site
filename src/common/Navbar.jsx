@@ -30,6 +30,9 @@ const Tabs = [
 
 export const Navbar = () => {
   const currentRoute = useLocation().pathname;
+  const matchedRoute = route => (route === "/"
+    ? currentRoute === "/"
+    : currentRoute.startsWith(route));
 
   return (
     <>
@@ -37,7 +40,7 @@ export const Navbar = () => {
         {
           Tabs.map(tab =>
             <Link
-              className={`o-single-option ${tab.route === currentRoute ? "o-current-option" : ""}`}
+              className={`o-single-option ${matchedRoute(tab.route) ? "o-current-option" : ""}`}
               to={tab.route}
               key={tab.text}
             >

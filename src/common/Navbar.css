@@ -4,12 +4,13 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border-bottom-style: solid;
+  margin-bottom: -0.5rem;
   border-width: 0.2rem;
   border-color: white;
   width: 100%;
   height: var(--navbar-height);
-  background-color: #aaa;
+  background: linear-gradient(to bottom, #aaa 0%, #aaa 90%, transparent 100%);
+  z-index: 1;
 }
 
 .o-single-option {
@@ -22,14 +23,15 @@
   color: black;
 }
 
-.o-current-option {
-  border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
-  border-color: white;
-  margin-bottom: 0.2rem;
+.o-single-option:hover {
+  background: linear-gradient(to bottom, #777 0%, #777 90%, transparent 100%);
+  color: black;
 }
 
-.o-single-option:hover {
-  background-color: #777;
-  color: white;
+.o-current-option {
+  background: linear-gradient(to bottom, transparent 0%, transparent 90%, white 100%);
+}
+
+.o-current-option:hover {
+  background: linear-gradient(to bottom, #777 0%, #777 90%, white 100%);
 }

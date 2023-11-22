@@ -51,7 +51,7 @@ export const Projects = [
     date: "Ongoing, design drafting started February 2023",
     fields: "HTML, CSS, Javascript, Vue.js",
     description: `An incremental game centered around a resource system which appears to be novel and
-      not seen in other incrementals, together the Lead Design Consultant for Antimatter Dimensions.`
+      not seen in other incrementals, together with the Lead Design Consultant for Antimatter Dimensions.`
   },
 ];
 
