@@ -12,6 +12,7 @@ import BiggerTeam from './05 - Team.jsx';
 import Rebalancing from './06 - Instability.jsx';
 import FirstCel3 from './07 - Untested Cel3.jsx';
 import RushCel4and5 from './08 - Celestial Rush.jsx';
+import NamelessVer2 from './09 - Nameless v2.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -101,6 +102,14 @@ const ListedEntries = {
     title: "Rushing It",
     posted: "November 17th, 2023",
     span: "Second half of February 2019",
+  },
+  9: {
+    content: NamelessVer2,
+    bgImage: "devlog_big_glyphs.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Overhaul Time",
+    posted: "November 24th, 2023",
+    span: "March 2019",
   },
 };
 
