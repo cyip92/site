@@ -13,6 +13,7 @@ import Rebalancing from './06 - Instability.jsx';
 import FirstCel3 from './07 - Untested Cel3.jsx';
 import RushCel4and5 from './08 - Celestial Rush.jsx';
 import NamelessVer2 from './09 - Nameless v2.jsx';
+import BeginFatigue from './10 - First Fatigue.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -110,6 +111,14 @@ const ListedEntries = {
     title: "Overhaul Time",
     posted: "November 24th, 2023",
     span: "March 2019",
+  },
+  10: {
+    content: BeginFatigue,
+    bgImage: "devlog_newUI.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Slowing Down",
+    posted: "December 1st, 2023",
+    span: "April/May 2019",
   },
 };
 
