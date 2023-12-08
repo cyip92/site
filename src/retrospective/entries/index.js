@@ -14,6 +14,7 @@ import FirstCel3 from './07 - Untested Cel3.jsx';
 import RushCel4and5 from './08 - Celestial Rush.jsx';
 import NamelessVer2 from './09 - Nameless v2.jsx';
 import BeginFatigue from './10 - First Fatigue.jsx';
+import Rawork from './11 - Rawork.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -119,6 +120,14 @@ const ListedEntries = {
     title: "Slowing Down",
     posted: "December 1st, 2023",
     span: "April/May 2019",
+  },
+  11: {
+    content: Rawork,
+    bgImage: "devlog_alchemy.png",
+    bgFilter: "brightness(25%)",
+    title: "1½ Reworks",
+    posted: "December 8th, 2023",
+    span: "June 2019",
   },
 };
 

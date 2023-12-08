@@ -16,7 +16,7 @@ const DevlogNav = props => {
       {
         prevEntry
           ? <div className="o-footer-left">
-              🡄 Previous Entry
+              ← Previous Entry
               <br />
               <Link to={`/ADdevlog${prevEntry.route}`}>{ prevEntry.title }</Link>
             </div>
@@ -25,7 +25,7 @@ const DevlogNav = props => {
       {
         nextEntry
           ? <div className="o-footer-right">
-              Next Entry 🡆
+              Next Entry →
               <br />
               <Link to={`/ADdevlog${nextEntry.route}`}>{ nextEntry.title }</Link>
             </div>
