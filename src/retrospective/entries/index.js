@@ -15,6 +15,7 @@ import RushCel4and5 from './08 - Celestial Rush.jsx';
 import NamelessVer2 from './09 - Nameless v2.jsx';
 import BeginFatigue from './10 - First Fatigue.jsx';
 import Rawork from './11 - Rawork.jsx';
+import TimeCompression from './12 - Compression.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -128,6 +129,14 @@ const ListedEntries = {
     title: "1½ Reworks",
     posted: "December 8th, 2023",
     span: "June 2019",
+  },
+  12: {
+    content: TimeCompression,
+    bgImage: "devlog_compression.png",
+    bgFilter: "brightness(40%)",
+    title: "Overzealousness",
+    posted: "December 15th, 2023",
+    span: "July/August 2019",
   },
 };
 
