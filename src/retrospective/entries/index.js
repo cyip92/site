@@ -16,6 +16,7 @@ import NamelessVer2 from './09 - Nameless v2.jsx';
 import BeginFatigue from './10 - First Fatigue.jsx';
 import Rawork from './11 - Rawork.jsx';
 import TimeCompression from './12 - Compression.jsx';
+import WaveOne from './13 - First Wave.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -137,6 +138,14 @@ const ListedEntries = {
     title: "Overzealousness",
     posted: "December 15th, 2023",
     span: "July/August 2019",
+  },
+  13: {
+    content: WaveOne,
+    bgImage: "devlog_w1.png",
+    bgFilter: "brightness(40%) blur(0.2rem)",
+    title: "The First Wave",
+    posted: "December 22th, 2023",
+    span: "September 2019 (Playtesting Channel)",
   },
 };
 
