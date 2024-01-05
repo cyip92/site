@@ -18,6 +18,7 @@ import Rawork from './11 - Rawork.jsx';
 import TimeCompression from './12 - Compression.jsx';
 import WaveOne from './13 - First Wave.jsx';
 import Unfinished from './14 - Unfinished Work.jsx';
+import VRework from './15 - More Reworks.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -155,6 +156,14 @@ const ListedEntries = {
     title: "Unfinished Work",
     posted: "December 29th, 2023",
     span: "September 2019 (Development Channel)",
+  },
+  15: {
+    content: VRework,
+    bgImage: "devlog_V_reworks.png",
+    bgFilter: "brightness(60%) blur(0.1rem)",
+    title: "Trying Again",
+    posted: "January 5th, 2024",
+    span: "October 2019",
   },
 };
 
