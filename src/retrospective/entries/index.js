@@ -19,6 +19,7 @@ import TimeCompression from './12 - Compression.jsx';
 import WaveOne from './13 - First Wave.jsx';
 import Unfinished from './14 - Unfinished Work.jsx';
 import VRework from './15 - More Reworks.jsx';
+import FeelEternity from './16 - Feel Eternity.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -164,6 +165,14 @@ const ListedEntries = {
     title: "Trying Again",
     posted: "January 5th, 2024",
     span: "October 2019",
+  },
+  16: {
+    content: FeelEternity,
+    bgImage: "devlog_cel3_nav.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Nothing is Sacred",
+    posted: "January 12th, 2024",
+    span: "November 2019",
   },
 };
 
