@@ -20,6 +20,7 @@ import WaveOne from './13 - First Wave.jsx';
 import Unfinished from './14 - Unfinished Work.jsx';
 import VRework from './15 - More Reworks.jsx';
 import FeelEternity from './16 - Feel Eternity.jsx';
+import Slower from './17 - A Break.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -173,6 +174,14 @@ const ListedEntries = {
     title: "Nothing is Sacred",
     posted: "January 12th, 2024",
     span: "November 2019",
+  },
+  17: {
+    content: Slower,
+    bgImage: "devlog_celnav_to_cel3.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Taking It Slow",
+    posted: "January 19th, 2024",
+    span: "December 2019 to February 2020",
   },
 };
 
