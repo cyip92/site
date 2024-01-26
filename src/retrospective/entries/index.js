@@ -21,6 +21,7 @@ import Unfinished from './14 - Unfinished Work.jsx';
 import VRework from './15 - More Reworks.jsx';
 import FeelEternity from './16 - Feel Eternity.jsx';
 import Slower from './17 - A Break.jsx';
+import ThirdRa from './18 - Third Try.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -182,6 +183,14 @@ const ListedEntries = {
     title: "Taking It Slow",
     posted: "January 19th, 2024",
     span: "December 2019 to February 2020",
+  },
+  18: {
+    content: ThirdRa,
+    bgImage: "devlog_old_ra.png",
+    bgFilter: "brightness(60%) blur(0.1rem)",
+    title: "A 3rd Time??",
+    posted: "January 26th, 2024",
+    span: "March 2020",
   },
 };
 
