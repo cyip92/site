@@ -23,7 +23,7 @@ export const ConversationLine = props => {
   return (
     <>
       <div className="c-single-message">
-        <span className="c-dialogue-name">{ props.name }:</span>
+        <span className="c-dialogue-name">{ props.name }{props.name === "" ? "" : ":"}</span>
         <span className="c-dialogue-text">{ props.text }</span>
       </div>
     </>

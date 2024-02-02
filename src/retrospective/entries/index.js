@@ -22,6 +22,7 @@ import VRework from './15 - More Reworks.jsx';
 import FeelEternity from './16 - Feel Eternity.jsx';
 import Slower from './17 - A Break.jsx';
 import ThirdRa from './18 - Third Try.jsx';
+import Wave2Prep from './19 - Preparation.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -191,6 +192,14 @@ const ListedEntries = {
     title: "A 3rd Time??",
     posted: "January 26th, 2024",
     span: "March 2020",
+  },
+  19: {
+    content: Wave2Prep,
+    bgImage: "devlog_cel6_UI.png",
+    bgFilter: "brightness(70%) blur(0.1rem)",
+    title: "Preparation Time",
+    posted: "February 2nd, 2024",
+    span: "First half of April 2020",
   },
 };
 

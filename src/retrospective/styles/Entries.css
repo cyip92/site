@@ -61,4 +61,8 @@
   font-style: italic;
 }
 
+.c-dialogue-indented {
+  margin-left: 4rem;
+}
+
 /* #endregion Common Components */
