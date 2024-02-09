@@ -23,6 +23,7 @@ import FeelEternity from './16 - Feel Eternity.jsx';
 import Slower from './17 - A Break.jsx';
 import ThirdRa from './18 - Third Try.jsx';
 import Wave2Prep from './19 - Preparation.jsx';
+import Wave2Start from './20 - Second Wave.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -200,6 +201,14 @@ const ListedEntries = {
     title: "Preparation Time",
     posted: "February 2nd, 2024",
     span: "First half of April 2020",
+  },
+  20: {
+    content: Wave2Start,
+    bgImage: "devlog_pandemic_effect.png",
+    bgFilter: "brightness(70%) blur(0.2rem)",
+    title: "The Second Wave",
+    posted: "February 9th, 2024",
+    span: "Second half of April 2020",
   },
 };
 
