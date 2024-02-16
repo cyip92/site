@@ -24,6 +24,7 @@ import Slower from './17 - A Break.jsx';
 import ThirdRa from './18 - Third Try.jsx';
 import Wave2Prep from './19 - Preparation.jsx';
 import Wave2Start from './20 - Second Wave.jsx';
+import Wave2Tension from './21 - Tensions.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -208,7 +209,15 @@ const ListedEntries = {
     bgFilter: "brightness(70%) blur(0.2rem)",
     title: "The Second Wave",
     posted: "February 9th, 2024",
-    span: "Second half of April 2020",
+    span: "Second half of April 2020 (New Tester Channels)",
+  },
+  21: {
+    content: Wave2Tension,
+    bgImage: "devlog_race.png",
+    bgFilter: "blur(0.05rem)",
+    title: "Tensions",
+    posted: "February 16th, 2024",
+    span: "Second half of April 2020 (Older Tester Channels)",
   },
 };
 
