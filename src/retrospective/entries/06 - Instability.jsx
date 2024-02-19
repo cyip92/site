@@ -1,5 +1,4 @@
 import perks from "../../assets/retrospective/6/tree_restructure.png";
-import "../styles/Entries.css";
 import { CaptionedFigure, ConversationLine } from "./CommonElements";
 
 export const Rebalancing = () => {

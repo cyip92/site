@@ -4,7 +4,6 @@ import effect from "../../assets/retrospective/17/specified_effect.png";
 import reduction from "../../assets/retrospective/17/max_reduction.png";
 import oldReality from "../../assets/retrospective/17/old_reality.gif";
 import navV from "../../assets/retrospective/17/nav_V_unlock.png";
-import "../styles/Entries.css";
 import { CaptionedFigure } from "./CommonElements";
 
 export const Slower = () => {

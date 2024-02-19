@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import infSac from "../../assets/retrospective/19/no_ID8.png";
 import e6kNerf from "../../assets/retrospective/19/first_reality_nerf.png";
 import companion from "../../assets/retrospective/19/old_companion.png";
-import "../styles/Entries.css";
 import { CaptionedFigure, ConversationLine } from "./CommonElements";
 
 export const Wave2Prep = () => {

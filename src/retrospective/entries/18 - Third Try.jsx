@@ -1,6 +1,5 @@
 import oldCel6 from "../../assets/retrospective/18/cel6_layer_down.png";
 import multTab from "../../assets/retrospective/18/mult_tab_sketch.jpg";
-import "../styles/Entries.css";
 import { CaptionedFigure, ConversationLine } from "./CommonElements";
 
 export const ThirdRa = () => {

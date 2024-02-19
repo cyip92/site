@@ -1,7 +1,6 @@
 import glyphSac from "../../assets/retrospective/4/old_sacrifice.png";
 import newUI from "../../assets/retrospective/4/new_UI.png";
 import multipliers from "../../assets/retrospective/4/console_mults.png";
-import "../styles/Entries.css";
 import { CaptionedFigure } from "./CommonElements";
 
 export const Motivation = () => {

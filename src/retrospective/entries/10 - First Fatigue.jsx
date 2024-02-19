@@ -3,7 +3,6 @@ import cel7 from "../../assets/retrospective/10/prototype_Pelle.png";
 import shop from "../../assets/retrospective/10/shop_tab.png";
 import vGoals from "../../assets/retrospective/10/V_difficulty.png";
 import reactivity from "../../assets/retrospective/10/reactive.png";
-import "../styles/Entries.css";
 import { CaptionedFigure } from "./CommonElements";
 
 export const BeginFatigue = () => {

@@ -1,5 +1,3 @@
-import "../styles/Entries.css";
-
 export const Wave2Tension = () => {
   return (
     <>

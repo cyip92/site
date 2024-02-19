@@ -1,6 +1,5 @@
 import cel3Tab from "../../assets/retrospective/7/prototype_enslaved.png";
 import ree from "../../assets/retrospective/7/notation_ree.gif";
-import "../styles/Entries.css";
 import { CaptionedFigure, ConversationLine } from "./CommonElements";
 
 export const FirstCel3 = () => {
@@ -175,7 +174,7 @@ export const FirstCel3 = () => {
               </li>
               <li>
                 <b>Words</b> - This was another one Razen made as a joke, which was simply Scientific notation except
-                every number was spelled out (ie. "3.21e52" turned into "three.twooneefivetwo").
+                every number was spelled out (ie. &quot;3.21e52&quot; turned into &quot;three.twooneefivetwo&quot;).
               </li>
             </ul>
           </div>

@@ -1,7 +1,6 @@
 import cel4 from "../../assets/retrospective/8/prototype_V.png";
 import cel5 from "../../assets/retrospective/8/prototype_Ra.png";
 import automator from "../../assets/retrospective/8/automator.png";
-import "../styles/Entries.css";
 import { CaptionedFigure } from "./CommonElements";
 
 export const RushCel4and5 = () => {
