@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: -0.5rem;
   border-width: 0.2rem;
   border-color: white;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: var(--navbar-btn-size);
   height: var(--navbar-height);
   line-height: 1.1;
   color: black;
@@ -34,4 +34,42 @@
 
 .o-current-option:hover {
   background: linear-gradient(to bottom, #777 0%, #777 90%, white 100%);
+}
+
+.c-tab-group {
+  top: 0;
+}
+
+.o-tab-group {
+  font-weight: bold;
+}
+
+.o-current-subtab {
+  background: linear-gradient(to left, transparent 0%, transparent 95%, white 100%);
+}
+
+.o-current-subtab:last-child {
+  background: linear-gradient(to left, transparent 0%, transparent 95%, white 100%);
+  border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.c-subtab-group {
+  background-color: #666;
+  border-radius: 0 0 0.6rem 0.6rem;
+  box-shadow: inset 0 0 0.3rem 0.3rem #aaa;
+}
+
+.o-subtab-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--navbar-btn-size);
+  height: var(--navbar-height);
+  line-height: 1.1;
+  color: black;
+}
+
+.o-subtab-option:hover {
+  background: linear-gradient(to left, #777 0%, #777 90%, transparent 100%);
+  color: black;
 }
