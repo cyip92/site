@@ -16,6 +16,9 @@ export const SleepPage = () => {
     <>
       <div className="c-page-layout c-grayscale-content-bg">
         <div className="c-image-bg c-sleep-bg" />
+        <div className="c-inactive-disclaimer">
+          Note: I am no longer following this sleep pattern; this page is simply being kept here for posterity.
+        </div>
         <h1>Weekly Sleep Pattern</h1>
         <WeekTable />
         <div className="c-text-elements">

@@ -5,15 +5,14 @@ export const FAQ = () => {
     <>
       <div>
         <h2>How are you planning to format this retrospective?</h2>
-        It will mainly be a series of somewhat short blog-like entries on this site, of likely a similar reading length
-        to this page, which I will post regularly. <b>I have come back to update this page with the fact that these
-        entries have actually been turning out to be significantly longer, perhaps on average about four times as long
-        as this page in terms of reading length.</b>
+        It will mainly be a series of somewhat short blog-like entries on this site, which I initially thought would
+        be of a similar reading length to this page. After the first few weeks, I realized that on average they
+        ended up being significantly longer - on average about four times as long as this page in terms of length.
         <br />
         <h2>How often do you plan to write these?</h2>
-        I&apos;m going to tentatively aim for about once a week, and will post them every Friday in the evening for
-        US time zones. I don&apos;t think I can feasibly do more often than that simply because I expect each of these
-        to take a somewhat significant amount of time to write.
+        I&apos;ve been posting one entry a week and will update this part of my site every Friday at some point of the
+        day, probably in the early afternoon in European time zones. I don&apos;t think I can feasibly do more often
+        than that simply because I expect each of these to take a somewhat significant amount of time to write.
         <br />
         <h2>Why do you think these will take so long?</h2>
         The history of development is spread across some Discord group chats (in the very beginning), a bunch of

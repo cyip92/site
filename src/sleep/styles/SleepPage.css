@@ -23,3 +23,11 @@
 .c-sleep-bg {
   background-image: url("/bg/sleep.png");
 }
+
+.c-inactive-disclaimer {
+  width: 100%;
+  text-align: left;
+  margin: 1rem 0 -1.5rem;
+  color: red;
+  font-weight: bold;
+}

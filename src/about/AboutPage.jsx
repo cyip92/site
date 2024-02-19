@@ -27,9 +27,10 @@ export const AboutPage = () => {
             fulfilling. As a result, I decided to make a pivot back into software, after completing my Physics degree.
             <br />
             <br />
-            Up to this point, my whole life has been in the United States of America; in California until my early
-            twenties, followed by moving to the midwest USA for my Physics PhD. I will be moving to the United Kingdom
-            in the beginning of 2024 and intend to stay there for the long term.
+            I was born and raised in the United States of America, but am now currently living in England. I spent my
+            life until my early twenties on the west coast of the USA (California), before moving to the midwest
+            USA (Wisconsin) for my Physics PhD. I recently moved to the United Kingdom, having arrived in January 2024,
+            and intend to stay here for the foreseeable future.
           </div>
         </div>
 
@@ -37,7 +38,8 @@ export const AboutPage = () => {
         lessened that motivation. I am currently working through getting certificates for Full-Stack Development with
         ReactJS (through the University of Helsinki) and Cloud Architecture (through Google Cloud). In addition to
         picking up as many skills related to web development as possible, I am also working to self-teach myself
-        how to make more elaborate games in my free time, using <a href="https://godotengine.org/">Godot</a>.
+        how to make more elaborate games in my free time, using <a href="https://godotengine.org/">Godot</a> and&nbsp;
+        <a href="https://www.unrealengine.com/">Unreal Engine</a>.
         <br />
         <br />
         Currently I am a software consultant for <a href="https://vertics.co/">Vertics Oy</a>, a Finnish software
@@ -47,9 +49,8 @@ export const AboutPage = () => {
         in the certificate courses I am taking.
         <br />
         <br />
-        I am willing to take on new projects on a contractual basis, but I am also seeking a more stable full-time
-        employment arrangement which allows for remote work while living in the United Kingdom starting in February
-        2024.
+        I am willing to take on new software projects on a contractual basis, but I am also seeking a more stable
+        full-time employment arrangement which allows for remote work while living in the United Kingdom.
 
         <h3>Personal Info</h3>
         <div className="c-contact-info">
