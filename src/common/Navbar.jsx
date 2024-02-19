@@ -63,7 +63,7 @@ export const Navbar = () => {
         <div className="c-tab-group">
           {
             TabGroups.map(group =>
-              <>
+              <div key={group.name}>
                 <div
                   className="o-single-option o-tab-group"
                   onMouseEnter={e => { setIsHovering(true) }}
@@ -89,7 +89,7 @@ export const Navbar = () => {
                     )
                   }
                 </div>
-              </>
+              </div>
             )
           }
         </div>
