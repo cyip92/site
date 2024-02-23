@@ -20,11 +20,13 @@ CaptionedFigure.propTypes = {
 }
 
 export const ConversationLine = props => {
+  const textClass = `c-dialogue-text ${props.strike ? "c-dialogue-strike" : ""}`;
+
   return (
     <>
       <div className="c-single-message">
         <span className="c-dialogue-name">{ props.name }{props.name === "" ? "" : ":"}</span>
-        <span className="c-dialogue-text">{ props.text }</span>
+        <span className={textClass}>{ props.text }</span>
       </div>
     </>
   )
@@ -33,4 +35,5 @@ export const ConversationLine = props => {
 ConversationLine.propTypes = {
   name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  strike: PropTypes.bool,
 }

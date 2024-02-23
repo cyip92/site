@@ -25,6 +25,7 @@ import ThirdRa from './18 - Third Try.jsx';
 import Wave2Prep from './19 - Preparation.jsx';
 import Wave2Start from './20 - Second Wave.jsx';
 import Wave2Tension from './21 - Tensions.jsx';
+import Cel7Drafts from './22 - Cel7.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -218,6 +219,14 @@ const ListedEntries = {
     title: "Tensions",
     posted: "February 16th, 2024",
     span: "Second half of April 2020 (Older Tester Channels)",
+  },
+  22: {
+    content: Cel7Drafts,
+    bgImage: "devlog_MAD_Pelle.png",
+    bgFilter: "blur(0.05rem)",
+    title: "Revisiting Late-game",
+    posted: "February 23rd, 2024",
+    span: "First half of May 2020",
   },
 };
 

@@ -35,7 +35,7 @@ const TabGroups = [
       }
     ]
   }
-]
+];
 
 export const Navbar = () => {
   const currentRoute = useLocation().pathname;

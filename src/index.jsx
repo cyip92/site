@@ -34,7 +34,6 @@ export default function ScrollToTop() {
 window.rootURL = process.env.NODE_ENV === "development"
   ? ""
   : "https://cyip92.github.io/site/";
-console.log(process.env.NODE_ENV)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
