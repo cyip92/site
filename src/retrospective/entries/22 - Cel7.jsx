@@ -95,8 +95,8 @@ export const Cel7Drafts = () => {
         of <a href="https://en.wikipedia.org/wiki/Mutual_assured_destruction">Mutually Assured Destruction</a> from
         the Cold War era - Jazz summed the concept up as &quot;<b>because quite frankly, Pelle&apos;s a dick. If he
         can&apos;t win, no one can / MAD is his way of ensuring that</b>&quot; and used that as inspiration for
-        the in-game lore as well. There were some similarities with what the final version of Pelle, but also lots
-        of differences when getting into the specific details:
+        the in-game lore as well. There were some similarities with what the final version of Pelle ended up being,
+        but also lots of differences when getting into the specific details:
         <ul>
           <li>
             Pelle&apos;s reality is easy, but its reward is unknown and in some senses a trap. When completed,
