@@ -27,6 +27,7 @@ import Wave2Start from './20 - Second Wave.jsx';
 import Wave2Tension from './21 - Tensions.jsx';
 import Cel7Drafts from './22 - Cel7.jsx';
 import Wave2Complete from './23 - Wave 2 Finished.jsx';
+import TimeSkip from './24 - Time Skip.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -236,6 +237,14 @@ const ListedEntries = {
     title: "Waving Goodbye",
     posted: "March 1st, 2024",
     span: "Second half of May 2020",
+  },
+  24: {
+    content: TimeSkip,
+    bgImage: "devlog_MADcel7.png",
+    bgFilter: "blur(0.05rem)",
+    title: "Time Skip",
+    posted: "March 8th, 2024",
+    span: "June 2020 to February 2021",
   },
 };
 
