@@ -28,6 +28,7 @@ import Wave2Tension from './21 - Tensions.jsx';
 import Cel7Drafts from './22 - Cel7.jsx';
 import Wave2Complete from './23 - Wave 2 Finished.jsx';
 import TimeSkip from './24 - Time Skip.jsx';
+import ImaginaryMachines from './25 - Imaginary Machines.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -245,6 +246,14 @@ const ListedEntries = {
     title: "Time Skip",
     posted: "March 8th, 2024",
     span: "June 2020 to February 2021",
+  },
+  25: {
+    content: ImaginaryMachines,
+    bgImage: "devlog_e1000_cap.png",
+    bgFilter: "brightness(60%) blur(0.05rem)",
+    title: "Intentional Capping",
+    posted: "March 15th, 2024",
+    span: "March 2021 to July 2021",
   },
 };
 
