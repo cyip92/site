@@ -162,6 +162,12 @@ button:disabled{
   width: 100%;
 }
 
+.c-inline-icon {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
+
 /* #endregion Common containers */
 
 .o-code-text {

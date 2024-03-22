@@ -29,6 +29,7 @@ import Cel7Drafts from './22 - Cel7.jsx';
 import Wave2Complete from './23 - Wave 2 Finished.jsx';
 import TimeSkip from './24 - Time Skip.jsx';
 import ImaginaryMachines from './25 - Imaginary Machines.jsx';
+import Wave3Selection from './26 - Wave 3 Selection.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -254,6 +255,14 @@ const ListedEntries = {
     title: "Intentional Capping",
     posted: "March 15th, 2024",
     span: "March 2021 to July 2021",
+  },
+  26: {
+    content: Wave3Selection,
+    bgImage: "devlog_error_log.png",
+    bgFilter: "brightness(80%) blur(0.1rem)",
+    title: "Final Selection",
+    posted: "March 22th, 2024",
+    span: "First half of August 2021",
   },
 };
 
