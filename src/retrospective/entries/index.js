@@ -30,6 +30,7 @@ import Wave2Complete from './23 - Wave 2 Finished.jsx';
 import TimeSkip from './24 - Time Skip.jsx';
 import ImaginaryMachines from './25 - Imaginary Machines.jsx';
 import Wave3Selection from './26 - Wave 3 Selection.jsx';
+import Wave3Test from './27 - Third Wave.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -264,6 +265,14 @@ const ListedEntries = {
     posted: "March 22th, 2024",
     span: "First half of August 2021",
   },
+  27: {
+    content: Wave3Test,
+    bgImage: "devlog_AP_perks.png",
+    bgFilter: "blur(0.1rem)",
+    title: "The Third Wave",
+    posted: "March 29th, 2024",
+    span: "Second half of August 2021 to October 2021 (Playtesting Channels)",
+  },
 };
 
 // Dynamically add all the unspecified routes and prev/next references to the listed entries
@@ -281,3 +290,4 @@ for (const key of Object.keys(ListedEntries)) {
 }
 
 export default LogEntries;
+7
