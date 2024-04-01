@@ -31,6 +31,7 @@ import TimeSkip from './24 - Time Skip.jsx';
 import ImaginaryMachines from './25 - Imaginary Machines.jsx';
 import Wave3Selection from './26 - Wave 3 Selection.jsx';
 import Wave3Test from './27 - Third Wave.jsx';
+import Disagreement from './28 - Internal Disagreement.jsx';
 
 const SpecialEntries = {
   Introduction: {
@@ -272,6 +273,14 @@ const ListedEntries = {
     title: "The Third Wave",
     posted: "March 29th, 2024",
     span: "Second half of August 2021 to October 2021 (Playtesting Channels)",
+  },
+  27: {
+    content: Disagreement,
+    bgImage: "devlog_intro.png",
+    bgFilter: "brightness(15%)",
+    title: "Internal Disagreement",
+    posted: "April 5th, 2024",
+    span: "Second half of August 2021 to October 2021 (Development Channels)",
   },
 };
 
