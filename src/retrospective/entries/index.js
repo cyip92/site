@@ -274,7 +274,7 @@ const ListedEntries = {
     posted: "March 29th, 2024",
     span: "Second half of August 2021 to October 2021 (Playtesting Channels)",
   },
-  27: {
+  28: {
     content: Disagreement,
     bgImage: "devlog_intro.png",
     bgFilter: "brightness(15%)",
