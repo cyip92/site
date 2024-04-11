@@ -32,6 +32,7 @@ import ImaginaryMachines from './25 - Imaginary Machines.jsx';
 import Wave3Selection from './26 - Wave 3 Selection.jsx';
 import Wave3Test from './27 - Third Wave.jsx';
 import Disagreement from './28 - Internal Disagreement.jsx';
+import Elephant from "./29 - The Elephant.jsx";
 
 const SpecialEntries = {
   Introduction: {
@@ -281,6 +282,14 @@ const ListedEntries = {
     title: "Internal Disagreement",
     posted: "April 5th, 2024",
     span: "Second half of August 2021 to October 2021 (Development Channels)",
+  },
+  29: {
+    content: Elephant,
+    bgImage: "devlog_celnav_cel6.png",
+    bgFilter: "blur(0.1rem)",
+    title: "The Elephant",
+    posted: "April 12th, 2024",
+    span: "November 2021 to January 2022",
   },
 };
 
