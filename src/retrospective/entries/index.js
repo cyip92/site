@@ -33,6 +33,7 @@ import Wave3Selection from './26 - Wave 3 Selection.jsx';
 import Wave3Test from './27 - Third Wave.jsx';
 import Disagreement from './28 - Internal Disagreement.jsx';
 import Elephant from "./29 - The Elephant.jsx";
+import Leaving from "./30 - Moving Onward.jsx";
 
 const SpecialEntries = {
   Introduction: {
@@ -290,6 +291,14 @@ const ListedEntries = {
     title: "The Elephant",
     posted: "April 12th, 2024",
     span: "November 2021 to January 2022",
+  },
+  30: {
+    content: Leaving,
+    bgImage: "devlog_intro.png",
+    bgFilter: "blur(0.1rem)",
+    title: "Moving Onward",
+    posted: "April 19th, 2024",
+    span: "February 2022 to May 2022",
   },
 };
 
