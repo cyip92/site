@@ -73,11 +73,17 @@ export const Leaving = () => {
         </div>
         <br />
         Quite a few people lost interest in testing after seeing what happened behind the scenes, so there
-        were very few people left who were in a good position to contribute to Pelle. Nevertheless, the vast
-        majority of the final version was done by Hevi and Lars - one of the new testers who did most of the
-        work on design, playtesting, UI, and coding for Pelle.  We actually had a couple more iterations of
-        UI touch-up once the content was complete; two more Pull Requests were opened up afterwards, one by
-        me and another by Scar - yet another new 3rd wave person.
+        were very few left who were in a good position to contribute to Pelle. Nevertheless, it was a very
+        collaborative group effort amongst anyone who <i>was</i> still around. There were two separate threads
+        within the testing channels created for Pelle - one for discussing the design ideas and one for playtesting
+        once it was put into the game.
+        <br />
+        <br />
+        The initial design was a large conglomeration of ideas, but it was then shaped into its final version
+        in large part by Jazz and Hevi. Nearer the end of the design phase and for the majority of the playtesting,
+        Lars (one of the 3rd wave testers) did a lot of work with them as well in order to refine the overall experience.
+        We had a few iterations of UI touch-up once Pelle was complete; in addition to a branch made by Lars, two more
+        Pull Requests were opened up afterwards, one by me and another by Scar.
 
         <h3>Blobs!</h3>
         Amongst the various 3rd wave testers who contributed to the game&apos;s code, Hira started some work
