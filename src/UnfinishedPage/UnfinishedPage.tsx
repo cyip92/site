@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import bloberm from '../assets/bloberm.png';
+import React from 'react';
 
 export const UnfinishedPage = () => {
   useEffect(() => {

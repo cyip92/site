@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import React from 'react';
 import blobdead from '../assets/blobdead.png';
 
 export const ErrorPage = () => {
@@ -17,6 +18,6 @@ export const ErrorPage = () => {
       </div>
     </>
   )
-}
+};
 
 export default ErrorPage;

@@ -2,16 +2,16 @@ import React from "react";
 import "./index.css";
 
 import { Routes, Route, HashRouter, useLocation } from "react-router-dom";
-import Navbar from "./common/Navbar";
-import SleepPage from "./sleep/SleepPage"
-import { Projects, ProjectPage } from "./projects/ProjectPage"
-import BlobPage from "./blob/BlobPage";
-import DevlogPage from "./retrospective/DevlogPage";
-import HomePage from "./home/HomePage";
-import AboutPage from "./about/AboutPage.jsx";
-import ErrorPage from "./common/ErrorPage";
-import UnfinishedPage from "./common/UnfinishedPage";
-import LogEntries from "./retrospective/entries/index.js";
+import Navbar from "./Navbar/Navbar";
+import SleepPage from "./SleepPage/SleepPage"
+import { Projects, ProjectPage } from "./ProjectPage/ProjectPage"
+import BlobPage from "./BlobPage/BlobPage";
+import DevlogPage from "./RetrospectivePage/DevlogPage";
+import HomePage from "./HomePage/HomePage.jsx";
+import AboutPage from "./AboutPage/AboutPage.jsx";
+import ErrorPage from "./ErrorPage/ErrorPage.js";
+import UnfinishedPage from "./UnfinishedPage/UnfinishedPage.tsx";
+import LogEntries from "./RetrospectivePage/entries/index.js";
 
 // Fairly self-explanatory; this forces the browser to scroll to the top when changing pages
 import { useEffect } from "react";
