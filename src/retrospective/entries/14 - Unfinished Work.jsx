@@ -3,7 +3,7 @@ import cel6Upg from "../../assets/retrospective/14/DE_upg.png";
 import alteredTime from "../../assets/retrospective/14/altered_time.png";
 import navIdea from "../../assets/retrospective/14/nav_prototype.png";
 import navSketch from "../../assets/retrospective/14/nav_sketch.jpg";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Unfinished = () => {
   return (

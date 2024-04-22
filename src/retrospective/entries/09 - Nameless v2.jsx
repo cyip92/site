@@ -2,7 +2,8 @@ import redaction from "../../assets/retrospective/9/redaction.png";
 import cel3 from "../../assets/retrospective/9/cel3_restrictions.png";
 import inf from "../../assets/retrospective/9/break_inf_bug.png";
 import codefactor from "../../assets/retrospective/9/codefactor.png";
-import { CaptionedFigure, ConversationLine } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
+import ConversationLine from "../common/ConversationLine";
 
 export const NamelessVer2 = () => {
   return (

@@ -3,7 +3,7 @@ import pelle from "../../assets/retrospective/26/pelle_res.png";
 import event from "../../assets/retrospective/26/automator_event_log.gif";
 import blobCode from "../../assets/retrospective/26/automator_blob.png";
 import blob from '../../assets/blob.png';
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Wave3Selection = () => {
   return (
@@ -62,7 +62,7 @@ export const Wave3Selection = () => {
         afford to be picky:
         <div className="o-quote-box">
           unknown factors are potentially scary when we have 11 people who we all seem to agree are safe picks,
-          because that's enough that we don&apos;t really <i>need</i> to take the risk if the unknown factors are
+          because that&apos;s enough that we don&apos;t really <i>need</i> to take the risk if the unknown factors are
           potentially a net negative
         </div>
         <br />

@@ -1,6 +1,6 @@
 import darknessGlyph from "../../assets/retrospective/16/glyph_of_darkness.png";
 import firstNav from "../../assets/retrospective/16/first_nav.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const FeelEternity = () => {
   return (

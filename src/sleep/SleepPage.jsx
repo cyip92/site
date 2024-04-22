@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
-import WeekTable from "./WeekTable";
-import TimeInput from "./TimeInput";
+import WeekTable from "./WeekTable/WeekTable";
+import TimeInput from "./TimeInput/TimeInput";
 import "./styles/SleepPage.css";
 
 export const SleepPage = () => {

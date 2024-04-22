@@ -1,6 +1,6 @@
 import list from "../../assets/retrospective/27/AP_list.png";
 import set from "../../assets/retrospective/27/old_set_preview.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Wave3Test = () => {
   return (

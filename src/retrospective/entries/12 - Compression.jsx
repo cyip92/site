@@ -2,7 +2,7 @@ import compression from "../../assets/retrospective/12/Time_compression.png";
 import glyphSets from "../../assets/retrospective/12/glyph_sets_tickspeed.png";
 import nameless from "../../assets/retrospective/12/Hevi_Nameless_runaway.png";
 import squish from "../../assets/retrospective/12/softcap_RM.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const TimeCompression = () => {
   return (

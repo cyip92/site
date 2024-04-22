@@ -3,7 +3,7 @@ import blob from "../../assets/retrospective/30/prototype_blob.png";
 import cel7AM from "../../assets/retrospective/30/cel7_AM_mult_ref.png";
 import bars from "../../assets/retrospective/30/all_bars.png";
 import commits from "../../assets/retrospective/30/commit_graph.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Leaving = () => {
   return (

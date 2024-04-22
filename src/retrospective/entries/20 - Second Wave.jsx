@@ -3,7 +3,7 @@ import raNameless from "../../assets/retrospective/20/ra-nameless_reality.png";
 import raTeresa from "../../assets/retrospective/20/ra-teresa_reality.png";
 import halted from "../../assets/retrospective/20/halted_reality.png";
 import subReality from "../../assets/retrospective/20/sub_reality_ideas.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Wave2Start = () => {
   return (

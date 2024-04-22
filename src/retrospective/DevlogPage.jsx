@@ -1,43 +1,11 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import LogEntries from './entries/index.js';
 import DevlogSidebar from './DevlogSidebar.jsx';
+import DevlogNav from "./DevlogNav";
 import './styles/DevlogPage.css';
 import './styles/Entries.css';
-
-const DevlogNav = props => {
-  const prevEntry = LogEntries[props.entry.prev];
-  const nextEntry = LogEntries[props.entry.next];
-
-  return (
-    <div className="c-footer-nav">
-      {
-        prevEntry
-          ? <div className="o-footer-left">
-              ← Previous Entry
-              <br />
-              <Link to={`/ADdevlog${prevEntry.route}`}>{ prevEntry.title }</Link>
-            </div>
-          : <div />
-      }
-      {
-        nextEntry
-          ? <div className="o-footer-right">
-              Next Entry →
-              <br />
-              <Link to={`/ADdevlog${nextEntry.route}`}>{ nextEntry.title }</Link>
-            </div>
-          : null
-      }
-    </div>
-  )
-};
-
-DevlogNav.propTypes = {
-  entry: PropTypes.object
-}
 
 export const DevlogPage = props => {
   // The content for the text pane of this page is pulled from a file within the entries subfolder
@@ -80,10 +48,10 @@ export const DevlogPage = props => {
       </div>
     </>
   )
-}
+};
 
 DevlogPage.propTypes = {
   entry: PropTypes.object
-}
+};
 
 export default DevlogPage;

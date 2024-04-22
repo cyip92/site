@@ -2,7 +2,7 @@ import studies from "../../assets/retrospective/29/invalid_studies.png";
 import template from "../../assets/retrospective/29/script_template.gif";
 import glyphSac from "../../assets/retrospective/29/glyph_sac_pre-nudge.png";
 import celnav from "../../assets/retrospective/29/3d_pen_celnav.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Elephant = () => {
   return (

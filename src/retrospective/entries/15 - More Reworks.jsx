@@ -1,7 +1,7 @@
 import triad from "../../assets/retrospective/15/triad_sketch.png";
 import glyphTest from "../../assets/retrospective/15/glyph_tester.png";
 import infGlyph from "../../assets/retrospective/15/inf_glyph.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const VRework = () => {
   return (

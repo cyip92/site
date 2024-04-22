@@ -326,4 +326,3 @@ for (const key of Object.keys(ListedEntries)) {
 }
 
 export default LogEntries;
-7

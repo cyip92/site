@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import momentum from "../../assets/retrospective/23/old_momentum.png";
 import unbroken from "../../assets/retrospective/23/unbroken_wolfram.png";
 import timeskip from "../../assets/retrospective/23/mobile_timeskip.jpg";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Wave2Complete = () => {
   return (

@@ -1,6 +1,7 @@
 import cel3Tab from "../../assets/retrospective/7/prototype_enslaved.png";
 import ree from "../../assets/retrospective/7/notation_ree.gif";
-import { CaptionedFigure, ConversationLine } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
+import ConversationLine from "../common/ConversationLine";
 
 export const FirstCel3 = () => {
   return (

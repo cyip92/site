@@ -1,5 +1,5 @@
 import darkFix from "../../assets/retrospective/28/dark_theme.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Disagreement = () => {
   return (
@@ -82,9 +82,9 @@ export const Disagreement = () => {
         the new testers were running into. It was more than just an isolated incident; it was becoming a pattern,
         and people wanted it to stop:
         <div className="o-quote-box">
-          or else it's going to be a week of back and forth of tiny fixes before the testers actually see it
+          or else it&apos;s going to be a week of back and forth of tiny fixes before the testers actually see it
           <br />
-          I don't want to add this PR to the list of PRs that are sitting in limbo of &quot;almost done and not
+          I don&apos;t want to add this PR to the list of PRs that are sitting in limbo of &quot;almost done and not
           merged in yet because we keep finding all 20 bugs in it 3 at a time with a 2-day turnaround on every
           review&quot;
         </div>
@@ -93,7 +93,7 @@ export const Disagreement = () => {
         unresolved local merge on one of their own branches for nearly a whole week, yet they still insisted
         on reviewing everything. This was again something that people thought was unreasonable:
         <div className="o-quote-box">
-          we can't have most PRs blocked by your unresolved merge, this kinda defeats the purpose of multiple
+          we can&apos;t have most PRs blocked by your unresolved merge, this kinda defeats the purpose of multiple
           branches and developers in the first place
         </div>
         <br />
@@ -122,12 +122,12 @@ export const Disagreement = () => {
             I was told to revert the change because they would rather have the source code look a very
             particular way that was functionally the same:
             <div className="o-quote-box">
-              ... to be blunt, you've been saying you were planning to do this for the better part of the last
-              2 months and it's still remained unfixed even after it being brought up by w3 testers maybe 3-4
+              ... to be blunt, you&apos;ve been saying you were planning to do this for the better part of the last
+              2 months and it&apos;s still remained unfixed even after it being brought up by w3 testers maybe 3-4
               times in total; I would prefer keeping it in for the sake of it actually being fixed, and you
               can feel free to refactor it later if you want
               <br />
-              I don't see how explicit definitions of props instead of implicit defaults elsewhere in the code
+              I don&apos;t see how explicit definitions of props instead of implicit defaults elsewhere in the code
               is worse to the point of calling one acceptable and the other unreadable
             </div>
             <br />

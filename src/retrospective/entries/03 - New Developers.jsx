@@ -3,7 +3,7 @@ import challenges from '../../assets/retrospective/3/challenge_IDs.png';
 import runaway from '../../assets/retrospective/3/runaway_AM.png';
 import automator from '../../assets/retrospective/3/old_automator.png';
 import tophat from '../../assets/retrospective/3/automator_hat.jpg';
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const NewDevs = () => {
   return (

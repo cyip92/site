@@ -1,7 +1,7 @@
 import effects from "../../assets/retrospective/5/effect_order.png";
 import protGlyphs from "../../assets/retrospective/5/protected_glyphs.png";
 import disper from "../../assets/retrospective/5/disper_lore.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const BiggerTeam = () => {
   return (

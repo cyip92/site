@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import glyphTooltip from "../../assets/retrospective/25/improved_glyphs.png";
 import upgrades from "../../assets/retrospective/25/iU_wip.png";
-import { CaptionedFigure, ConversationLine } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
+import ConversationLine from "../common/ConversationLine";
 
 export const ImaginaryMachines = () => {
   return (

@@ -4,7 +4,7 @@ import sketch from "../../assets/retrospective/11/alchemy_sketch.jpg";
 import reality from "../../assets/retrospective/11/reality_glyph_conditions.png";
 import automatorPR from "../../assets/retrospective/11/automator_size.png";
 import blockmato from "../../assets/retrospective/11/blockmato_prototype.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const Rawork = () => {
   return (

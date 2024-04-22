@@ -2,7 +2,7 @@ import eter from "../../assets/retrospective/24/old_eter.gif";
 import dil from "../../assets/retrospective/24/old_dil.gif";
 import memories from "../../assets/retrospective/24/prototype_ra_memories.png";
 import loop from "../../assets/retrospective/24/looped_cel7.png";
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const TimeSkip = () => {
   return (

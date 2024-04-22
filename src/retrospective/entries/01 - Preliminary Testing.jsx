@@ -1,5 +1,5 @@
 import commands from '../../assets/retrospective/1/automator_tree.png';
-import { CaptionedFigure } from "./CommonElements";
+import CaptionedFigure from "../common/CaptionedFigure";
 
 export const PreTesting = () => {
   return (
