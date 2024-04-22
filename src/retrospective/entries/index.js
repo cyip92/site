@@ -34,6 +34,7 @@ import Wave3Test from './27 - Third Wave.jsx';
 import Disagreement from './28 - Internal Disagreement.jsx';
 import Elephant from "./29 - The Elephant.jsx";
 import Leaving from "./30 - Moving Onward.jsx";
+import DistantDevelopment from "./31 - Distant Development.jsx";
 
 const SpecialEntries = {
   Introduction: {
@@ -299,6 +300,14 @@ const ListedEntries = {
     title: "Moving Onward",
     posted: "April 19th, 2024",
     span: "February 2022 to May 2022",
+  },
+  31: {
+    content: DistantDevelopment,
+    bgImage: "devlog_cel_quotes.png",
+    bgFilter: "blur(0.05rem)",
+    title: "Distant Development",
+    posted: "April 26th, 2024",
+    span: "June 2022 to August 2022",
   },
 };
 
