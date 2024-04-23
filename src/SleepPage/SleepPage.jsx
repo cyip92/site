@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
@@ -7,13 +7,11 @@ import TimeInput from "./TimeInput/TimeInput";
 import "./styles/SleepPage.css";
 
 export const SleepPage = () => {
-  useEffect(() => {
-    document.title = "Sleep Pattern";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blobsleep.png`);
-  }, []);
-  
   return (
     <>
+      <Helmet>
+        <title>Sleep Pattern</title>
+      </Helmet>
       <div className="c-page-layout c-grayscale-content-bg">
         <div className="c-image-bg c-sleep-bg" />
         <div className="c-inactive-disclaimer">

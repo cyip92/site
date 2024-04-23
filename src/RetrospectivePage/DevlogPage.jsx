@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import PropTypes from 'prop-types';
 
 import DevlogSidebar from './DevlogSidebar.jsx';
@@ -11,11 +11,6 @@ export const DevlogPage = props => {
   // The content for the text pane of this page is pulled from a file within the entries subfolder
   const entry = props.entry;
 
-  useEffect(() => {
-    document.title = entry.posted ? `AD Devlog | ${entry.title}` : "Reality Update Retrospective";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/AD.png`);
-  }, [entry]);
-
   const containerClass = `c-page-layout c-devlog-full-page
     ${useLocation().pathname !== "/ADdevlog/" ? "c-grayscale-content-bg" : ""}`;
   const bgStyle = {
@@ -25,6 +20,15 @@ export const DevlogPage = props => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {
+            entry.posted
+              ? `AD Devlog | ${entry.title}`
+              : "Reality Update Retrospective"
+          }
+        </title>
+      </Helmet>
       <div className={containerClass}>
         <div
           className="c-image-bg"

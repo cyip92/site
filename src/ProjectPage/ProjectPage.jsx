@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import "./ProjectPage.css";
 
 import research from '../assets/projects/physics/vacuum_chamber.png';
@@ -55,13 +55,11 @@ export const Projects = [
 ];
 
 export const ProjectPage = () => {
-  useEffect(() => {
-    document.title = "Long-term Projects";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/stack.png`);
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>Long-term Projects</title>
+      </Helmet>
       <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <div className="c-image-bg c-project-list-bg" />
         <h1>Long-term Projects</h1>

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import { squishValue } from "./BlobSquish"
 import blobnote from '../../assets/blobnote.gif';
 import blobsquish from '../../assets/blobsquish.gif';
@@ -7,16 +7,14 @@ import blobpats from '../../assets/blobpats.gif';
 import "./BlobList.css";
 
 export const BlobList = () => {
-  useEffect(() => {
-    document.title = "Blobs!";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blob.png`);
-  }, []);
-  
   const pats = Number(localStorage.getItem("total-pats")) ?? 0;
   const bestSquish = Number(localStorage.getItem("best-squish")) ?? 0;
 
   return (
     <>
+      <Helmet>
+        <title>Blobs!</title>
+      </Helmet>
       <div>
         <img src={blobnote} />
         <br />

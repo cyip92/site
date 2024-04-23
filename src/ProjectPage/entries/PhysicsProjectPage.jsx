@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom";
 
 import periodicTable from '../../assets/projects/physics/IUPAC_Periodic_Table.jpg';
@@ -11,13 +11,11 @@ import ".././ProjectPage.css";
 import "./PhysicsProjectPage.css";
 
 export const PhysicsProjectPage = () => {
-  useEffect(() => {
-    document.title = `Projects | Physics Research`;
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/atom.png`);
-  });
-
   return (
     <>
+      <Helmet>
+        <title>Projects | Physics Research</title>
+      </Helmet>
       <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <div className="c-image-bg c-project-physics-bg" />
         <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>

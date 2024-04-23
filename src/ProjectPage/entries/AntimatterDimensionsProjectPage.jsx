@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import titleImg from '../../assets/projects/antimatterdimensions/AD_title_image.png';
@@ -9,13 +9,11 @@ import ".././ProjectPage.css";
 import "./AntimatterDimensionsProjectPage.css";
 
 export const AntimatterDimensionsProjectPage = () => {
-  useEffect(() => {
-    document.title = `Projects | Antimatter Dimensions`;
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/AD.png`);
-  });
-
   return (
     <>
+      <Helmet>
+        <title>Projects | Antimatter Dimensions</title>
+      </Helmet>
       <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <div className="c-image-bg c-project-ad-bg" />
         <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>

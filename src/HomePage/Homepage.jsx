@@ -1,16 +1,14 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import blobthink from '../assets/blobthink.png';
 
 import "./HomePage.css";
 
 export const HomePage = () => {
-  useEffect(() => {
-    document.title = "Website Home";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blobwave.png`);
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>Website Home</title>
+      </Helmet>
       <div className="c-page-layout c-vert-center c-narrow-home">
         <img src={blobthink} />
         <br />

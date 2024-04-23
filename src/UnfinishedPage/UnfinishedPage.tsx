@@ -1,14 +1,13 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import bloberm from '../assets/bloberm.png';
 import React from 'react';
 
 export const UnfinishedPage = () => {
-  useEffect(() => {
-    document.title = "Under construction";
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>Under construction</title>
+      </Helmet>
       <div className="c-page-layout">
         <img src={bloberm} />
         <br />

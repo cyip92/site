@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
+
 import blob from '../../assets/blob.png';
 import "./BlobSquish.css";
 
@@ -11,11 +13,6 @@ export const squishValue = val => {
 };
 
 export const BlobSquish = () => {
-  useEffect(() => {
-    document.title = "Pat the blob!";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blobpats.png`);
-  }, []);
-
   // Set up saving and loading first
   const savedPats = Number(localStorage.getItem("total-pats")) ?? 0;
   let savedBestSquish = Number(localStorage.getItem("best-squish")) ?? 0;
@@ -96,6 +93,9 @@ export const BlobSquish = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Pat the blob!</title>
+      </Helmet>
       <div>
         <img
           style={blobTransform}

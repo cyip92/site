@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import face from '../assets/headshot.jpg';
 import gmail from '../assets/icons/gmail.ico';
 import github from '../assets/icons/github.ico';
@@ -6,13 +6,11 @@ import linkedin from '../assets/icons/linkedin.ico';
 import "./AboutPage.css";
 
 export const AboutPage = () => {
-  useEffect(() => {
-    document.title = "About Me";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/info.jpg`);
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>About Me</title>
+      </Helmet>
       <div className="c-page-layout c-text c-grayscale-content-bg">
         <h1>About Me</h1>
         <div className="c-columns">

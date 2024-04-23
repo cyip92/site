@@ -1,14 +1,13 @@
-import { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import React from 'react';
 import blobdead from '../assets/blobdead.png';
 
 export const ErrorPage = () => {
-  useEffect(() => {
-    document.title = "Page not found";
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>Page not found</title>
+      </Helmet>
       <div className="c-page-layout">
         <h1>Error 404</h1>
         <br />

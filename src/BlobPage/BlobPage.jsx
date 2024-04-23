@@ -1,15 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Helmet } from "react-helmet";
 import BlobList from "./tabs/BlobList";
 import BlobSquish from "./tabs/BlobSquish";
 
 import "./BlobPage.css";
 
 export const BlobPage = () => {
-  useEffect(() => {
-    document.title = "Blobs!";
-    document.getElementById("favicon").setAttribute('href', `${window.rootURL}/favicon/blob.png`);
-  }, []);
-
   const [BlobTab, setTab] = useState(() => BlobList);
   const loadScores = () => {
     setTab(() => BlobList);
@@ -20,6 +16,9 @@ export const BlobPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Blobs!</title>
+      </Helmet>
       <div className="c-blob-tabs">
         <button className="o-blob-button" onClick={loadScores}>Scores</button>
         <button className="o-blob-button" onClick={loadSquish}>Squish</button>
