@@ -66,8 +66,6 @@ export type ProjectType = {
   component?: () => React.JSX.Element;
 }
 
-console.log(typeof noImg)
-
 export const ProjectPage = () => {
   return (
     <>
