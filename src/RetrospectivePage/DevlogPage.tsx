@@ -3,9 +3,10 @@ import { Helmet } from "react-helmet";
 import PropTypes from 'prop-types';
 
 import DevlogSidebar from './DevlogSidebar.jsx';
-import DevlogNav from "./DevlogNav";
+import DevlogNav from "./DevlogNav.js";
 import './styles/DevlogPage.css';
 import './styles/Entries.css';
+import React from "react";
 
 export const DevlogPage = props => {
   // The content for the text pane of this page is pulled from a file within the entries subfolder

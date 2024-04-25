@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 
 import TimeManager from "../TimeManager.js";
-import OutputInfo from "./OutputInfo";
+import OutputInfo from "./OutputInfo.js";
 import '../styles/TimeInput.css';
+import React from 'react';
 
 /**
  * Hook for all the input fields for custom time checking
@@ -42,9 +43,9 @@ export const TimeInput = () => {
     return setInputZone(index, 1);
   });
   const resetInput = () => {
-    TimeManager.inputTime = undefined;
-    TimeManager.inputZoneIndex = undefined;
-    TimeManager.inputZone = undefined;
+    TimeManager.inputTime = 0;
+    TimeManager.inputZoneIndex = 0;
+    TimeManager.inputZone = 0;
     setZoneIndex(TimeManager.offsetList.indexOf(TimeManager.localTimeZone));
     setTime(nowString());
   };

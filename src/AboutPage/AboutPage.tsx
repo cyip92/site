@@ -4,6 +4,7 @@ import gmail from '../assets/icons/gmail.ico';
 import github from '../assets/icons/github.ico';
 import linkedin from '../assets/icons/linkedin.ico';
 import "./AboutPage.css";
+import React from "react";
 
 export const AboutPage = () => {
   return (

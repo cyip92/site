@@ -10,7 +10,10 @@ export const TimeManager = {
     .sort((a, b) => a - b),
   // Arbitrary time (near time of implementation) which has 0 "week time"
   zeroWeekReference: 1694959200000,
-  // Note: The props inputTime, inputZone, and inputZoneIndex are assigned and unassigned within TimeInput.jsx
+  // These are assigned appropriate values within TimeInput
+  inputTime: 0,
+  inputZone: 0,
+  inputZoneIndex: 0,
 
   // Returns the UTC offset in hours (eg. UTC-5 returns -5)
   get localTimeZone() {
@@ -38,9 +41,9 @@ export const TimeManager = {
       .filter(n => n >= -14 && n <= 182);
   },
 
-  // Checks for whether or not the otherwise undefined input props have been set due to user input
+  // Checks for whether or not the otherwise default input props have been set due to user input
   get hasInputTime() {
-    return this.inputTime !== undefined && this.inputZone !== undefined;
+    return this.inputTime !== 0 && this.inputZone !== 0;
   },
 
   // Returns a difference in time (in hours) between the input time and right now (positive = input is in the future)
@@ -84,7 +87,7 @@ export const TimeManager = {
   toDateTimeString(time) {
     // Turn the time into an array of [day_of_week, hour, minute]
     let timeMin = Math.floor(10080 * (time / 168));
-    const DHMSArray = [];
+    const DHMSArray = Array<number>();
     const factors = [60, 24, 7];
     for (const factor of factors) {
       const next = timeMin % factor;
@@ -118,7 +121,7 @@ export const TimeManager = {
     }
 
     const quantify = (num, str) => num === 1 ? `${num} ${str}` :  `${num} ${str}s`;
-    const parts = [];
+    const parts = Array<string>();
     if (hr !== 0) parts.push(quantify(hr, "hour"));
     if (min !== 0) parts.push(quantify(min, "minute"));
     return parts.length === 0

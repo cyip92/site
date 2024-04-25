@@ -1,8 +1,9 @@
 import TimeManager from "../TimeManager.js";
-import SingleDay from "./SingleDay";
-import SingleSleep from "./SingleSleep";
-import TimeIndicator from "./TimeIndicator";
+import SingleDay from "./SingleDay.js";
+import SingleSleep from "./SingleSleep.js";
+import TimeIndicator from "./TimeIndicator.js";
 import '../styles/WeekTable.css';
+import React from "react";
 
 /**
  * Hook for the entire week calendar

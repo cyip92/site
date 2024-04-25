@@ -1,3 +1,4 @@
+import React from "react";
 import TimeManager from "./TimeManager.js";
 import { useState, useEffect } from "react";
 

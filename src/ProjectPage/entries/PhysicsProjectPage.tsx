@@ -9,6 +9,7 @@ import atoms from '../../assets/projects/physics/atoms_false_color.png';
 
 import ".././ProjectPage.css";
 import "./PhysicsProjectPage.css";
+import React from "react";
 
 export const PhysicsProjectPage = () => {
   return (

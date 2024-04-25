@@ -1,40 +1,40 @@
-import Introduction from "./Introduction"
-import FAQ from './FAQ.jsx';
-import MissingEntry from './MissingEntry.jsx';
+import Introduction from "./entries/Introduction.jsx"
+import FAQ from './entries/FAQ.jsx';
+import MissingEntry from './entries/MissingEntry.jsx';
 
 // Note: These imports generally won't follow standard naming conventions (matching the import name
 // to the file name) for the sake of keeping the contents of said files easier to search through and edit
-import PreTesting from './01 - Preliminary Testing.jsx';
-import WaveZero from './02 - Wave Zero.jsx';
-import NewDevs from './03 - New Developers.jsx';
-import Motivation from './04 - Motivation.jsx';
-import BiggerTeam from './05 - Team.jsx';
-import Rebalancing from './06 - Instability.jsx';
-import FirstCel3 from './07 - Untested Cel3.jsx';
-import RushCel4and5 from './08 - Celestial Rush.jsx';
-import NamelessVer2 from './09 - Nameless v2.jsx';
-import BeginFatigue from './10 - First Fatigue.jsx';
-import Rawork from './11 - Rawork.jsx';
-import TimeCompression from './12 - Compression.jsx';
-import WaveOne from './13 - First Wave.jsx';
-import Unfinished from './14 - Unfinished Work.jsx';
-import VRework from './15 - More Reworks.jsx';
-import FeelEternity from './16 - Feel Eternity.jsx';
-import Slower from './17 - A Break.jsx';
-import ThirdRa from './18 - Third Try.jsx';
-import Wave2Prep from './19 - Preparation.jsx';
-import Wave2Start from './20 - Second Wave.jsx';
-import Wave2Tension from './21 - Tensions.jsx';
-import Cel7Drafts from './22 - Cel7.jsx';
-import Wave2Complete from './23 - Wave 2 Finished.jsx';
-import TimeSkip from './24 - Time Skip.jsx';
-import ImaginaryMachines from './25 - Imaginary Machines.jsx';
-import Wave3Selection from './26 - Wave 3 Selection.jsx';
-import Wave3Test from './27 - Third Wave.jsx';
-import Disagreement from './28 - Internal Disagreement.jsx';
-import Elephant from "./29 - The Elephant.jsx";
-import Leaving from "./30 - Moving Onward.jsx";
-import DistantDevelopment from "./31 - Distant Development.jsx";
+import PreTesting from './entries/01 - Preliminary Testing.jsx';
+import WaveZero from './entries/02 - Wave Zero.jsx';
+import NewDevs from './entries/03 - New Developers.jsx';
+import Motivation from './entries/04 - Motivation.jsx';
+import BiggerTeam from './entries/05 - Team.jsx';
+import Rebalancing from './entries/06 - Instability.jsx';
+import FirstCel3 from './entries/07 - Untested Cel3.jsx';
+import RushCel4and5 from './entries/08 - Celestial Rush.jsx';
+import NamelessVer2 from './entries/09 - Nameless v2.jsx';
+import BeginFatigue from './entries/10 - First Fatigue.jsx';
+import Rawork from './entries/11 - Rawork.jsx';
+import TimeCompression from './entries/12 - Compression.jsx';
+import WaveOne from './entries/13 - First Wave.jsx';
+import Unfinished from './entries/14 - Unfinished Work.jsx';
+import VRework from './entries/15 - More Reworks.jsx';
+import FeelEternity from './entries/16 - Feel Eternity.jsx';
+import Slower from './entries/17 - A Break.jsx';
+import ThirdRa from './entries/18 - Third Try.jsx';
+import Wave2Prep from './entries/19 - Preparation.jsx';
+import Wave2Start from './entries/20 - Second Wave.jsx';
+import Wave2Tension from './entries/21 - Tensions.jsx';
+import Cel7Drafts from './entries/22 - Cel7.jsx';
+import Wave2Complete from './entries/23 - Wave 2 Finished.jsx';
+import TimeSkip from './entries/24 - Time Skip.jsx';
+import ImaginaryMachines from './entries/25 - Imaginary Machines.jsx';
+import Wave3Selection from './entries/26 - Wave 3 Selection.jsx';
+import Wave3Test from './entries/27 - Third Wave.jsx';
+import Disagreement from './entries/28 - Internal Disagreement.jsx';
+import Elephant from "./entries/29 - The Elephant.jsx";
+import Leaving from "./entries/30 - Moving Onward.jsx";
+import DistantDevelopment from "./entries/31 - Distant Development.jsx";
 
 const SpecialEntries = {
   Introduction: {
@@ -56,6 +56,8 @@ const SpecialEntries = {
   },
   MissingEntry: {
     content: MissingEntry,
+    bgImage: "devlog_intro.png",
+    bgFilter: "brightness(15%)",
     title: "Retrospective Entry Not Found"
   }
 };
@@ -311,8 +313,21 @@ const ListedEntries = {
   },
 };
 
+type LogEntryType = {
+  key: string;
+  content: () => React.JSX.Element;
+  bgImage: string;
+  bgFilter: string;
+  title: string;
+  route: string;
+  posted: string | undefined;
+  index: Number | undefined;
+  prev: string | undefined;
+  next: string | undefined;
+};
+
 // Dynamically add all the unspecified routes and prev/next references to the listed entries
-export const LogEntries = {};
+export const LogEntries: { [key: string]: LogEntryType } = {};
 for (const key of Object.keys(SpecialEntries)) {
   LogEntries[key] = SpecialEntries[key];
 }
@@ -322,7 +337,10 @@ for (const key of Object.keys(ListedEntries)) {
   ListedEntries[key].route = `/${index}`;
   if (!ListedEntries[index].prev) ListedEntries[index].prev = `Entry${index - 1}`;
   if (Object.keys(ListedEntries).includes(`${index + 1}`)) ListedEntries[key].next = `Entry${index + 1}`;
-  LogEntries[`Entry${key}`] = ListedEntries[key];
+
+  const entryKey = `Entry${key}`;
+  LogEntries[entryKey] = ListedEntries[key];
+  ListedEntries[key].key = entryKey;
 }
 
 export default LogEntries;

@@ -8,8 +8,9 @@ import noImg from '../assets/projects/no_image.png';
 import SingleProject from "./SingleProject";
 import PhysicsProjectPage from './entries/PhysicsProjectPage';
 import AntimatterDimensionsProjectPage from './entries/AntimatterDimensionsProjectPage';
+import React from "react";
 
-export const Projects = [
+export const Projects: Array<ProjectType> = [
   {
     id: "physics",
     image: research,
@@ -54,6 +55,19 @@ export const Projects = [
   },
 ];
 
+export type ProjectType = {
+  id: string;
+  image: string;
+  title: string;
+  category: string;
+  date: string;
+  fields: string;
+  description: string;
+  component?: () => React.JSX.Element;
+}
+
+console.log(typeof noImg)
+
 export const ProjectPage = () => {
   return (
     <>
@@ -70,7 +84,7 @@ export const ProjectPage = () => {
         </div>
         <br />
         <div className="c-project-cards">
-          { Projects.map(p => <SingleProject project={p} key={p.title} />) }
+          { Projects.map(p => <SingleProject project={p} key={p.id} />) }
         </div>
       </div>
     </>

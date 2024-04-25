@@ -7,6 +7,7 @@ import automator from '../../assets/projects/antimatterdimensions/automator.png'
 
 import ".././ProjectPage.css";
 import "./AntimatterDimensionsProjectPage.css";
+import React from "react";
 
 export const AntimatterDimensionsProjectPage = () => {
   return (

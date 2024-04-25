@@ -5,6 +5,7 @@ import SleepInfo from "./SleepInfo";
 import WeekTable from "./WeekTable/WeekTable";
 import TimeInput from "./TimeInput/TimeInput";
 import "./styles/SleepPage.css";
+import React from "react";
 
 export const SleepPage = () => {
   return (

@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import App from "./App";
+import React from "react";
 
 /**
  * This is a workaround of a workaround - due to hosting on Github pages, there's no server-side control for routing,
@@ -14,4 +15,4 @@ window.rootURL = process.env.NODE_ENV === "development"
   ? ""
   : "https://cyip92.github.io/site/";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);

@@ -15,7 +15,7 @@ export const CaptionedFigure = props => {
 CaptionedFigure.propTypes = {
   containerClass: PropTypes.string,
   imgPath: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
+  caption: PropTypes.string,
 };
 
 export default CaptionedFigure;

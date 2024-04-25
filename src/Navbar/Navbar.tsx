@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import './Navbar.css';
+import React from "react";
 
 const MainTabs = [
   {

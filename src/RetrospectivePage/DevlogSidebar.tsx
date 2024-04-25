@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 
-import LogEntries from './entries/index.js';
+import LogEntries from './index.js';
 import './styles/DevlogPage.css';
+import React from "react";
 
 function singleLink(entry, current, text) {
   const route = `/ADdevlog${entry.route}`;

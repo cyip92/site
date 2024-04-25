@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 import blob from '../../assets/blob.png';
 import "./BlobSquish.css";
+import React from 'react';
 
 const barValue = v => Math.abs(125 * Math.atan(v));
 export const squishValue = val => {
@@ -17,8 +18,8 @@ export const BlobSquish = () => {
   const savedPats = Number(localStorage.getItem("total-pats")) ?? 0;
   let savedBestSquish = Number(localStorage.getItem("best-squish")) ?? 0;
   const saveData = () => {
-    localStorage.setItem("total-pats", pats);
-    localStorage.setItem("best-squish", Math.max(savedBestSquish, maxSquish));
+    localStorage.setItem("total-pats", String(pats));
+    localStorage.setItem("best-squish", String(Math.max(savedBestSquish, maxSquish)));
   };
   const resetData = () => {
     if (!confirm("This is not an incremental game, resetting won't do anything special!")) return;

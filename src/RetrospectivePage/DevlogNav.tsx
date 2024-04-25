@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-import LogEntries from './entries/index.js';
+import LogEntries from './index.js';
 
 const DevlogNav = props => {
   const prevEntry = LogEntries[props.entry.prev];

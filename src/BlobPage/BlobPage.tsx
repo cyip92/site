@@ -4,6 +4,7 @@ import BlobList from "./tabs/BlobList";
 import BlobSquish from "./tabs/BlobSquish";
 
 import "./BlobPage.css";
+import React from 'react';
 
 export const BlobPage = () => {
   const [BlobTab, setTab] = useState(() => BlobList);

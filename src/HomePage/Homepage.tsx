@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import blobthink from '../assets/blobthink.png';
 
 import "./HomePage.css";
+import React from "react";
 
 export const HomePage = () => {
   return (
