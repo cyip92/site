@@ -313,7 +313,7 @@ const ListedEntries = {
   },
 };
 
-type LogEntryType = {
+export type LogEntryType = {
   key: string;
   content: () => React.JSX.Element;
   bgImage: string;
