@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import SleepFAQ from "./SleepFAQ";
@@ -10,9 +10,11 @@ import "./styles/SleepPage.css";
 const SleepPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Sleep Pattern</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Sleep Pattern</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout c-grayscale-content-bg">
         <div className="c-image-bg c-sleep-bg" />
         <div className="c-inactive-disclaimer">

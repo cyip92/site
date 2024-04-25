@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import blob from "../../assets/blob.png";
 import "./BlobSquish.css";
@@ -94,9 +94,11 @@ export const BlobSquish = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Pat the blob!</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Pat the blob!</title>
+        </Helmet>
+      </HelmetProvider>
       <div>
         <img
           style={blobTransform}

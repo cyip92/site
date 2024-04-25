@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import research from "../assets/projects/physics/vacuum_chamber.png";
@@ -68,9 +68,11 @@ export type ProjectType = {
 export const ProjectPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Long-term Projects</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Long-term Projects</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <div className="c-image-bg c-project-list-bg" />
         <h1>Long-term Projects</h1>

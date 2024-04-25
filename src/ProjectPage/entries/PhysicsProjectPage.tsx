@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -13,9 +13,11 @@ import "./PhysicsProjectPage.css";
 const PhysicsProjectPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Projects | Physics Research</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Projects | Physics Research</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout c-project-layout c-grayscale-content-bg">
         <div className="c-image-bg c-project-physics-bg" />
         <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>

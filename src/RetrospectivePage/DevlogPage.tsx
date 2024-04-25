@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -21,15 +21,17 @@ const DevlogPage = props => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          {
-            entry.posted
-              ? `AD Devlog | ${entry.title}`
-              : "Reality Update Retrospective"
-          }
-        </title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>
+            {
+              entry.posted
+                ? `AD Devlog | ${entry.title}`
+                : "Reality Update Retrospective"
+            }
+          </title>
+        </Helmet>
+      </HelmetProvider>
       <div className={containerClass}>
         <div
           className="c-image-bg"

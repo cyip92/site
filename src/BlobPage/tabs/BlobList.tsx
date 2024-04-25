@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import { squishValue } from "./BlobSquish";
@@ -14,9 +14,11 @@ const BlobList = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Blobs!</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Blobs!</title>
+        </Helmet>
+      </HelmetProvider>
       <div>
         <img src={blobnote} />
         <br />

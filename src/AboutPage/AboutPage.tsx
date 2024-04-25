@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import face from "../assets/headshot.jpg";
@@ -10,9 +10,11 @@ import "./AboutPage.css";
 const AboutPage = () => {
   return (
     <>
-      <Helmet>
-        <title>About Me</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>About Me</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout c-text c-grayscale-content-bg">
         <h1>About Me</h1>
         <div className="c-columns">

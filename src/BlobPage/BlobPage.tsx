@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import BlobList from "./tabs/BlobList";
 import BlobSquish from "./tabs/BlobSquish";
@@ -17,9 +17,11 @@ const BlobPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Blobs!</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Blobs!</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-blob-tabs">
         <button className="o-blob-button" onClick={loadScores}>Scores</button>
         <button className="o-blob-button" onClick={loadSquish}>Squish</button>

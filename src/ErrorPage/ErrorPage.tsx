@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import blobdead from "../assets/blobdead.png";
@@ -6,9 +6,11 @@ import blobdead from "../assets/blobdead.png";
 const ErrorPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Page not found</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Page not found</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout">
         <h1>Error 404</h1>
         <br />

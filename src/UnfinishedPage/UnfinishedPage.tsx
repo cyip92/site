@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
 import bloberm from "../assets/bloberm.png";
@@ -6,9 +6,11 @@ import bloberm from "../assets/bloberm.png";
 const UnfinishedPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Under construction</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Under construction</title>
+        </Helmet>
+      </HelmetProvider>
       <div className="c-page-layout">
         <img src={bloberm} />
         <br />
