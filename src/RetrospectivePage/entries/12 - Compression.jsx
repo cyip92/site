@@ -4,7 +4,7 @@ import nameless from "../../assets/retrospective/12/Hevi_Nameless_runaway.png";
 import squish from "../../assets/retrospective/12/softcap_RM.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const TimeCompression = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -209,4 +209,4 @@ export const TimeCompression = () => {
   )
 }
 
-export default TimeCompression;
+export default DevlogEntry;

@@ -1,17 +1,16 @@
 import { Helmet } from "react-helmet"
 import { Link } from "react-router-dom";
-
-import periodicTable from '../../assets/projects/physics/IUPAC_Periodic_Table.jpg';
-import opticalTable from '../../assets/projects/physics/optical_table.png';
-import thesis from '../../assets/projects/physics/Holmium_Thesis.pdf';
-import zeeman from '../../assets/projects/physics/Holmium_Zeeman.gif';
-import atoms from '../../assets/projects/physics/atoms_false_color.png';
-
-import ".././ProjectPage.css";
-import "./PhysicsProjectPage.css";
 import React from "react";
 
-export const PhysicsProjectPage = () => {
+import periodicTable from "../../assets/projects/physics/IUPAC_Periodic_Table.jpg";
+import opticalTable from "../../assets/projects/physics/optical_table.png";
+import thesis from "../../assets/projects/physics/Holmium_Thesis.pdf";
+import zeeman from "../../assets/projects/physics/Holmium_Zeeman.gif";
+import atoms from "../../assets/projects/physics/atoms_false_color.png";
+import ".././ProjectPage.css";
+import "./PhysicsProjectPage.css";
+
+const PhysicsProjectPage = () => {
   return (
     <>
       <Helmet>

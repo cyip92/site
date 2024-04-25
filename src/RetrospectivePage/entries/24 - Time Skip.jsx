@@ -4,7 +4,7 @@ import memories from "../../assets/retrospective/24/prototype_ra_memories.png";
 import loop from "../../assets/retrospective/24/looped_cel7.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const TimeSkip = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -199,4 +199,4 @@ export const TimeSkip = () => {
   )
 }
 
-export default TimeSkip;
+export default DevlogEntry;

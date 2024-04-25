@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-export const CaptionedFigure = props => {
+const CaptionedFigure = props => {
   return (
     <>
       <div className={props.containerClass}>

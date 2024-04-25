@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
+
 import BlobList from "./tabs/BlobList";
 import BlobSquish from "./tabs/BlobSquish";
-
 import "./BlobPage.css";
-import React from 'react';
 
-export const BlobPage = () => {
+const BlobPage = () => {
   const [BlobTab, setTab] = useState(() => BlobList);
   const loadScores = () => {
     setTab(() => BlobList);

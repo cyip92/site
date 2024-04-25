@@ -4,7 +4,7 @@ import unbroken from "../../assets/retrospective/23/unbroken_wolfram.png";
 import timeskip from "../../assets/retrospective/23/mobile_timeskip.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Wave2Complete = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -214,4 +214,4 @@ export const Wave2Complete = () => {
   )
 }
 
-export default Wave2Complete;
+export default DevlogEntry;

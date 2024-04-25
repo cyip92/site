@@ -6,7 +6,7 @@ import automatorPR from "../../assets/retrospective/11/automator_size.png";
 import blockmato from "../../assets/retrospective/11/blockmato_prototype.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Rawork = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -234,4 +234,4 @@ export const Rawork = () => {
   )
 }
 
-export default Rawork;
+export default DevlogEntry;

@@ -1,13 +1,13 @@
 import { Helmet } from "react-helmet";
+import React from "react";
 
 import SleepFAQ from "./SleepFAQ";
 import SleepInfo from "./SleepInfo";
 import WeekTable from "./WeekTable/WeekTable";
 import TimeInput from "./TimeInput/TimeInput";
 import "./styles/SleepPage.css";
-import React from "react";
 
-export const SleepPage = () => {
+const SleepPage = () => {
   return (
     <>
       <Helmet>

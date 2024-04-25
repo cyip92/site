@@ -4,7 +4,7 @@ import glyphSac from "../../assets/retrospective/29/glyph_sac_pre-nudge.png";
 import celnav from "../../assets/retrospective/29/3d_pen_celnav.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Elephant = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -247,4 +247,4 @@ export const Elephant = () => {
   )
 }
 
-export default Elephant;
+export default DevlogEntry;

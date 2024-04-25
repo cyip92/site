@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet";
-import React from 'react';
-import blobdead from '../assets/blobdead.png';
+import React from "react";
 
-export const ErrorPage = () => {
+import blobdead from "../assets/blobdead.png";
+
+const ErrorPage = () => {
   return (
     <>
       <Helmet>

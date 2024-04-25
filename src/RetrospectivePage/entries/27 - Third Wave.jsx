@@ -2,7 +2,7 @@ import list from "../../assets/retrospective/27/AP_list.png";
 import set from "../../assets/retrospective/27/old_set_preview.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Wave3Test = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -240,4 +240,4 @@ export const Wave3Test = () => {
   )
 }
 
-export default Wave3Test;
+export default DevlogEntry;

@@ -1,15 +1,14 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import titleImg from '../../assets/projects/antimatterdimensions/AD_title_image.png';
-import dimensions from '../../assets/projects/antimatterdimensions/dim_cascade.png';
-import automator from '../../assets/projects/antimatterdimensions/automator.png';
-
-import ".././ProjectPage.css";
-import "./AntimatterDimensionsProjectPage.css";
 import React from "react";
 
-export const AntimatterDimensionsProjectPage = () => {
+import titleImg from "../../assets/projects/antimatterdimensions/AD_title_image.png";
+import dimensions from "../../assets/projects/antimatterdimensions/dim_cascade.png";
+import automator from "../../assets/projects/antimatterdimensions/automator.png";
+import ".././ProjectPage.css";
+import "./AntimatterDimensionsProjectPage.css";
+
+const AntimatterDimensionsProjectPage = () => {
   return (
     <>
       <Helmet>

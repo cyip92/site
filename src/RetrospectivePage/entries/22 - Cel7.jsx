@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import ConversationLine from "../common/ConversationLine";
 
-export const Cel7Drafts = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -268,4 +268,4 @@ export const Cel7Drafts = () => {
   )
 }
 
-export default Cel7Drafts;
+export default DevlogEntry;

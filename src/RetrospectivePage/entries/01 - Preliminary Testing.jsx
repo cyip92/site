@@ -1,7 +1,7 @@
-import commands from '../../assets/retrospective/1/automator_tree.png';
+import commands from "../../assets/retrospective/1/automator_tree.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const PreTesting = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -84,4 +84,4 @@ export const PreTesting = () => {
   )
 }
 
-export default PreTesting;
+export default DevlogEntry;

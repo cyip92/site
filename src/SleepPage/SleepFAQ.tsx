@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SleepFAQ = () => {
+const SleepFAQ = () => {
   return (
     <>
       <div>

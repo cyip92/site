@@ -1,4 +1,4 @@
-export const MissingEntry = () => {
+const MissingEntry = () => {
   return (
     <>
       <div>

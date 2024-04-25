@@ -3,7 +3,7 @@
  * When a sleep interval is referenced, it will always be referenced with respect to the sleep start time; therefore
  * the first 4 hours are assumed to be asleep and the following 10 hours are awake.
  */
-export const TimeManager = {
+const TimeManager = {
   days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   offsetList: [...Array(27).keys()].map(n => n - 12)
     .concat([-9.5, -3.5, 3.5, 4.5, 5.5, 5.75, 6.5, 8.75, 9.5, 10.5, 12.75])

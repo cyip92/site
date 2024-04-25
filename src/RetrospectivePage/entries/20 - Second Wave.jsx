@@ -5,7 +5,7 @@ import halted from "../../assets/retrospective/20/halted_reality.png";
 import subReality from "../../assets/retrospective/20/sub_reality_ideas.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Wave2Start = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -236,4 +236,4 @@ export const Wave2Start = () => {
   )
 }
 
-export default Wave2Start;
+export default DevlogEntry;

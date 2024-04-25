@@ -1,7 +1,7 @@
 import darkFix from "../../assets/retrospective/28/dark_theme.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Disagreement = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -197,4 +197,4 @@ export const Disagreement = () => {
   )
 }
 
-export default Disagreement;
+export default DevlogEntry;

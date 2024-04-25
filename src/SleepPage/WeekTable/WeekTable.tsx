@@ -1,14 +1,15 @@
+import React from "react";
+
 import TimeManager from "../TimeManager.js";
 import SingleDay from "./SingleDay.js";
 import SingleSleep from "./SingleSleep.js";
 import TimeIndicator from "./TimeIndicator.js";
-import '../styles/WeekTable.css';
-import React from "react";
+import "../styles/WeekTable.css";
 
 /**
  * Hook for the entire week calendar
  */
-export const WeekTable = () => {
+const WeekTable = () => {
   return (
     <>
       <div className="c-full-week">

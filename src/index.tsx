@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import React from "react";
 
 import App from "./App";
-import React from "react";
+import "./index.css";
 
 /**
  * This is a workaround of a workaround - due to hosting on Github pages, there's no server-side control for routing,

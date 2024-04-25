@@ -6,7 +6,7 @@ import companion from "../../assets/retrospective/19/old_companion.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const Wave2Prep = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -280,4 +280,4 @@ export const Wave2Prep = () => {
   )
 }
 
-export default Wave2Prep;
+export default DevlogEntry;

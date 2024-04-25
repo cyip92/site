@@ -2,10 +2,10 @@ import doomed from "../../assets/retrospective/26/disabled_doomed.gif";
 import pelle from "../../assets/retrospective/26/pelle_res.png";
 import event from "../../assets/retrospective/26/automator_event_log.gif";
 import blobCode from "../../assets/retrospective/26/automator_blob.png";
-import blob from '../../assets/blob.png';
+import blob from "../../assets/blob.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Wave3Selection = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -227,4 +227,4 @@ export const Wave3Selection = () => {
   )
 }
 
-export default Wave3Selection;
+export default DevlogEntry;

@@ -3,7 +3,7 @@ import ree from "../../assets/retrospective/7/notation_ree.gif";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const FirstCel3 = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -263,4 +263,4 @@ export const FirstCel3 = () => {
   )
 }
 
-export default FirstCel3;
+export default DevlogEntry;

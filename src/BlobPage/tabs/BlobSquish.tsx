@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
-import blob from '../../assets/blob.png';
+import blob from "../../assets/blob.png";
 import "./BlobSquish.css";
-import React from 'react';
 
 const barValue = v => Math.abs(125 * Math.atan(v));
 export const squishValue = val => {

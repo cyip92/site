@@ -3,7 +3,7 @@ import glyphTest from "../../assets/retrospective/15/glyph_tester.png";
 import infGlyph from "../../assets/retrospective/15/inf_glyph.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const VRework = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -231,4 +231,4 @@ export const VRework = () => {
   )
 }
 
-export default VRework;
+export default DevlogEntry;

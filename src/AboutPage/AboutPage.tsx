@@ -1,12 +1,13 @@
 import { Helmet } from "react-helmet";
-import face from '../assets/headshot.jpg';
-import gmail from '../assets/icons/gmail.ico';
-import github from '../assets/icons/github.ico';
-import linkedin from '../assets/icons/linkedin.ico';
-import "./AboutPage.css";
 import React from "react";
 
-export const AboutPage = () => {
+import face from "../assets/headshot.jpg";
+import gmail from "../assets/icons/gmail.ico";
+import github from "../assets/icons/github.ico";
+import linkedin from "../assets/icons/linkedin.ico";
+import "./AboutPage.css";
+
+const AboutPage = () => {
   return (
     <>
       <Helmet>

@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import './Navbar.css';
 import React from "react";
+
+import "./Navbar.css";
 
 const MainTabs = [
   {
@@ -38,7 +39,7 @@ const TabGroups = [
   }
 ];
 
-export const Navbar = () => {
+const Navbar = () => {
   const currentRoute = useLocation().pathname;
   const matchedRoute = route => (route === "/"
     ? currentRoute === "/"

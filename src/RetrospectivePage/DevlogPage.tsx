@@ -1,14 +1,14 @@
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import PropTypes from 'prop-types';
-
-import DevlogSidebar from './DevlogSidebar.jsx';
-import DevlogNav from "./DevlogNav.js";
-import './styles/DevlogPage.css';
-import './styles/Entries.css';
+import PropTypes from "prop-types";
 import React from "react";
 
-export const DevlogPage = props => {
+import DevlogSidebar from "./DevlogSidebar.jsx";
+import DevlogNav from "./DevlogNav.js";
+import "./styles/DevlogPage.css";
+import "./styles/Entries.css";
+
+const DevlogPage = props => {
   // The content for the text pane of this page is pulled from a file within the entries subfolder
   const entry = props.entry;
 

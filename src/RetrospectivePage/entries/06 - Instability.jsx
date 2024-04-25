@@ -2,7 +2,7 @@ import perks from "../../assets/retrospective/6/tree_restructure.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const Rebalancing = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -274,4 +274,4 @@ export const Rebalancing = () => {
   )
 }
 
-export default Rebalancing;
+export default DevlogEntry;

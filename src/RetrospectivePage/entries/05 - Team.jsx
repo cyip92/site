@@ -3,7 +3,7 @@ import protGlyphs from "../../assets/retrospective/5/protected_glyphs.png";
 import disper from "../../assets/retrospective/5/disper_lore.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const BiggerTeam = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -206,4 +206,4 @@ export const BiggerTeam = () => {
   )
 }
 
-export default BiggerTeam;
+export default DevlogEntry;

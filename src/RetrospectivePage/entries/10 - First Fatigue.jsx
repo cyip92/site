@@ -5,7 +5,7 @@ import vGoals from "../../assets/retrospective/10/V_difficulty.png";
 import reactivity from "../../assets/retrospective/10/reactive.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const BeginFatigue = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -209,4 +209,4 @@ export const BeginFatigue = () => {
   )
 }
 
-export default BeginFatigue;
+export default DevlogEntry;

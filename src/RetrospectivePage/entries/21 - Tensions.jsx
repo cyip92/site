@@ -1,4 +1,4 @@
-export const Wave2Tension = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -255,4 +255,4 @@ export const Wave2Tension = () => {
   )
 }
 
-export default Wave2Tension;
+export default DevlogEntry;

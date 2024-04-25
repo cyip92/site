@@ -1,13 +1,13 @@
-import weakAD from '../../assets/retrospective/2/admultlv2.png';
-import challenge from '../../assets/retrospective/2/autochall.png';
-import dilPow from '../../assets/retrospective/2/dilationpow.png';
-import largeIPow from '../../assets/retrospective/2/ipow.png';
-import zeroMult from '../../assets/retrospective/2/mult0.png';
-import useless from '../../assets/retrospective/2/repdtmult.png';
-import duplicity from '../../assets/retrospective/2/duplicity.png';
+import weakAD from "../../assets/retrospective/2/admultlv2.png";
+import challenge from "../../assets/retrospective/2/autochall.png";
+import dilPow from "../../assets/retrospective/2/dilationpow.png";
+import largeIPow from "../../assets/retrospective/2/ipow.png";
+import zeroMult from "../../assets/retrospective/2/mult0.png";
+import useless from "../../assets/retrospective/2/repdtmult.png";
+import duplicity from "../../assets/retrospective/2/duplicity.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const WaveZero = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -183,4 +183,4 @@ export const WaveZero = () => {
   )
 }
 
-export default WaveZero;
+export default DevlogEntry;

@@ -1,13 +1,14 @@
 import { Helmet } from "react-helmet";
-import { squishValue } from "./BlobSquish"
-import blobnote from '../../assets/blobnote.gif';
-import blobsquish from '../../assets/blobsquish.gif';
-import blobpats from '../../assets/blobpats.gif';
-
-import "./BlobList.css";
 import React from "react";
 
-export const BlobList = () => {
+import { squishValue } from "./BlobSquish";
+import blobnote from "../../assets/blobnote.gif";
+import blobsquish from "../../assets/blobsquish.gif";
+import blobpats from "../../assets/blobpats.gif";
+
+import "./BlobList.css";
+
+const BlobList = () => {
   const pats = Number(localStorage.getItem("total-pats")) ?? 0;
   const bestSquish = Number(localStorage.getItem("best-squish")) ?? 0;
 

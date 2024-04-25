@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
-export const ConversationLine = props => {
+const ConversationLine = props => {
   const textClass = `c-dialogue-text ${props.strike ? "c-dialogue-strike" : ""}`;
 
   return (

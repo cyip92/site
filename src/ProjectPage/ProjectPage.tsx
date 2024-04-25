@@ -1,14 +1,13 @@
 import { Helmet } from "react-helmet";
-import "./ProjectPage.css";
-
-import research from '../assets/projects/physics/vacuum_chamber.png';
-import logoAD from '../assets/projects/AD_loading.png';
-import noImg from '../assets/projects/no_image.png';
-
-import SingleProject from "./SingleProject";
-import PhysicsProjectPage from './entries/PhysicsProjectPage';
-import AntimatterDimensionsProjectPage from './entries/AntimatterDimensionsProjectPage';
 import React from "react";
+
+import research from "../assets/projects/physics/vacuum_chamber.png";
+import logoAD from "../assets/projects/AD_loading.png";
+import noImg from "../assets/projects/no_image.png";
+import SingleProject from "./SingleProject";
+import PhysicsProjectPage from "./entries/PhysicsProjectPage";
+import AntimatterDimensionsProjectPage from "./entries/AntimatterDimensionsProjectPage";
+import "./ProjectPage.css";
 
 export const Projects: Array<ProjectType> = [
   {
@@ -64,7 +63,7 @@ export type ProjectType = {
   fields: string;
   description: string;
   component?: () => React.JSX.Element;
-}
+};
 
 export const ProjectPage = () => {
   return (
@@ -87,6 +86,4 @@ export const ProjectPage = () => {
       </div>
     </>
   )
-}
-
-export default ProjectPage;
+};

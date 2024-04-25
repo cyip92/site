@@ -3,7 +3,7 @@ import multTab from "../../assets/retrospective/18/mult_tab_sketch.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const ThirdRa = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -242,4 +242,4 @@ export const ThirdRa = () => {
   )
 }
 
-export default ThirdRa;
+export default DevlogEntry;

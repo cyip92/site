@@ -3,7 +3,7 @@ import newUI from "../../assets/retrospective/4/new_UI.png";
 import multipliers from "../../assets/retrospective/4/console_mults.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Motivation = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -272,4 +272,4 @@ export const Motivation = () => {
   )
 }
 
-export default Motivation;
+export default DevlogEntry;

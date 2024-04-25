@@ -5,7 +5,7 @@ import codefactor from "../../assets/retrospective/9/codefactor.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const NamelessVer2 = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -309,4 +309,4 @@ export const NamelessVer2 = () => {
   )
 }
 
-export default NamelessVer2;
+export default DevlogEntry;

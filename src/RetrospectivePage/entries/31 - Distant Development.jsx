@@ -1,7 +1,7 @@
 import performance from "../../assets/retrospective/31/glyph_tab_performance.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const DistantDevelopment = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -255,4 +255,4 @@ export const DistantDevelopment = () => {
   )
 }
 
-export default DistantDevelopment;
+export default DevlogEntry;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const FAQ = () => {
+const FAQ = () => {
   return (
     <>
       <div>

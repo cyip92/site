@@ -1,37 +1,37 @@
 import Introduction from "./entries/Introduction.jsx"
-import FAQ from './entries/FAQ.jsx';
-import MissingEntry from './entries/MissingEntry.jsx';
+import FAQ from "./entries/FAQ.jsx";
+import MissingEntry from "./entries/MissingEntry.jsx";
 
 // Note: These imports generally won't follow standard naming conventions (matching the import name
 // to the file name) for the sake of keeping the contents of said files easier to search through and edit
-import PreTesting from './entries/01 - Preliminary Testing.jsx';
-import WaveZero from './entries/02 - Wave Zero.jsx';
-import NewDevs from './entries/03 - New Developers.jsx';
-import Motivation from './entries/04 - Motivation.jsx';
-import BiggerTeam from './entries/05 - Team.jsx';
-import Rebalancing from './entries/06 - Instability.jsx';
-import FirstCel3 from './entries/07 - Untested Cel3.jsx';
-import RushCel4and5 from './entries/08 - Celestial Rush.jsx';
-import NamelessVer2 from './entries/09 - Nameless v2.jsx';
-import BeginFatigue from './entries/10 - First Fatigue.jsx';
-import Rawork from './entries/11 - Rawork.jsx';
-import TimeCompression from './entries/12 - Compression.jsx';
-import WaveOne from './entries/13 - First Wave.jsx';
-import Unfinished from './entries/14 - Unfinished Work.jsx';
-import VRework from './entries/15 - More Reworks.jsx';
-import FeelEternity from './entries/16 - Feel Eternity.jsx';
-import Slower from './entries/17 - A Break.jsx';
-import ThirdRa from './entries/18 - Third Try.jsx';
-import Wave2Prep from './entries/19 - Preparation.jsx';
-import Wave2Start from './entries/20 - Second Wave.jsx';
-import Wave2Tension from './entries/21 - Tensions.jsx';
-import Cel7Drafts from './entries/22 - Cel7.jsx';
-import Wave2Complete from './entries/23 - Wave 2 Finished.jsx';
-import TimeSkip from './entries/24 - Time Skip.jsx';
-import ImaginaryMachines from './entries/25 - Imaginary Machines.jsx';
-import Wave3Selection from './entries/26 - Wave 3 Selection.jsx';
-import Wave3Test from './entries/27 - Third Wave.jsx';
-import Disagreement from './entries/28 - Internal Disagreement.jsx';
+import PreTesting from "./entries/01 - Preliminary Testing.jsx";
+import WaveZero from "./entries/02 - Wave Zero.jsx";
+import NewDevs from "./entries/03 - New Developers.jsx";
+import Motivation from "./entries/04 - Motivation.jsx";
+import BiggerTeam from "./entries/05 - Team.jsx";
+import Rebalancing from "./entries/06 - Instability.jsx";
+import FirstCel3 from "./entries/07 - Untested Cel3.jsx";
+import RushCel4and5 from "./entries/08 - Celestial Rush.jsx";
+import NamelessVer2 from "./entries/09 - Nameless v2.jsx";
+import BeginFatigue from "./entries/10 - First Fatigue.jsx";
+import Rawork from "./entries/11 - Rawork.jsx";
+import TimeCompression from "./entries/12 - Compression.jsx";
+import WaveOne from "./entries/13 - First Wave.jsx";
+import Unfinished from "./entries/14 - Unfinished Work.jsx";
+import VRework from "./entries/15 - More Reworks.jsx";
+import FeelEternity from "./entries/16 - Feel Eternity.jsx";
+import Slower from "./entries/17 - A Break.jsx";
+import ThirdRa from "./entries/18 - Third Try.jsx";
+import Wave2Prep from "./entries/19 - Preparation.jsx";
+import Wave2Start from "./entries/20 - Second Wave.jsx";
+import Wave2Tension from "./entries/21 - Tensions.jsx";
+import Cel7Drafts from "./entries/22 - Cel7.jsx";
+import Wave2Complete from "./entries/23 - Wave 2 Finished.jsx";
+import TimeSkip from "./entries/24 - Time Skip.jsx";
+import ImaginaryMachines from "./entries/25 - Imaginary Machines.jsx";
+import Wave3Selection from "./entries/26 - Wave 3 Selection.jsx";
+import Wave3Test from "./entries/27 - Third Wave.jsx";
+import Disagreement from "./entries/28 - Internal Disagreement.jsx";
 import Elephant from "./entries/29 - The Elephant.jsx";
 import Leaving from "./entries/30 - Moving Onward.jsx";
 import DistantDevelopment from "./entries/31 - Distant Development.jsx";
@@ -327,7 +327,7 @@ type LogEntryType = {
 };
 
 // Dynamically add all the unspecified routes and prev/next references to the listed entries
-export const LogEntries: { [key: string]: LogEntryType } = {};
+const LogEntries: { [key: string]: LogEntryType } = {};
 for (const key of Object.keys(SpecialEntries)) {
   LogEntries[key] = SpecialEntries[key];
 }

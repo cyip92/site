@@ -6,7 +6,7 @@ import oldReality from "../../assets/retrospective/17/old_reality.gif";
 import navV from "../../assets/retrospective/17/nav_V_unlock.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Slower = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -175,4 +175,4 @@ export const Slower = () => {
   )
 }
 
-export default Slower;
+export default DevlogEntry;

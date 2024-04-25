@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import React from "react";
 
 import TimeManager from "../TimeManager.js";
 import OutputInfo from "./OutputInfo.js";
-import '../styles/TimeInput.css';
-import React from 'react';
+import "../styles/TimeInput.css";
 
 /**
  * Hook for all the input fields for custom time checking
  */
-export const TimeInput = () => {
+const TimeInput = () => {
   // We want to make sure both are set when changing any of the settings, but also have to make sure they don't
   // call each other recursively
   const setInputTime = time => {

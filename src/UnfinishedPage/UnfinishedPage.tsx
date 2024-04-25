@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet";
-import bloberm from '../assets/bloberm.png';
-import React from 'react';
+import React from "react";
 
-export const UnfinishedPage = () => {
+import bloberm from "../assets/bloberm.png";
+
+const UnfinishedPage = () => {
   return (
     <>
       <Helmet>

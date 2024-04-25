@@ -1,8 +1,9 @@
 import React from "react";
-import TimeManager from "./TimeManager.js";
 import { useState, useEffect } from "react";
 
-export const SleepInfo = () => {
+import TimeManager from "./TimeManager.js";
+
+const SleepInfo = () => {
   const [data, setData] = useState(TimeManager.fullSleepData());
   useEffect(() => {
     const interval = setInterval(() => {

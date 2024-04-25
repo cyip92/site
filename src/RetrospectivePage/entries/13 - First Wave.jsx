@@ -1,4 +1,4 @@
-export const WaveOne = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -183,4 +183,4 @@ export const WaveOne = () => {
   )
 }
 
-export default WaveOne;
+export default DevlogEntry;

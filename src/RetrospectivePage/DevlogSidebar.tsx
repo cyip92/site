@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-
-import LogEntries from './index.js';
-import './styles/DevlogPage.css';
 import React from "react";
+
+import LogEntries from "./index.js";
+import "./styles/DevlogPage.css";
 
 function singleLink(entry, current, text) {
   const route = `/ADdevlog${entry.route}`;
@@ -19,7 +19,7 @@ function singleLink(entry, current, text) {
   )
 }
 
-export const DevlogSidebar = () => {
+const DevlogSidebar = () => {
   const currentRoute = useLocation().pathname;
   return (
     <>

@@ -4,7 +4,7 @@ import upgrades from "../../assets/retrospective/25/iU_wip.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
 
-export const ImaginaryMachines = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -279,4 +279,4 @@ export const ImaginaryMachines = () => {
   )
 }
 
-export default ImaginaryMachines;
+export default DevlogEntry;

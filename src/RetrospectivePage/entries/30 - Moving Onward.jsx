@@ -5,7 +5,7 @@ import bars from "../../assets/retrospective/30/all_bars.png";
 import commits from "../../assets/retrospective/30/commit_graph.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 
-export const Leaving = () => {
+const DevlogEntry = () => {
   return (
     <>
       <div>
@@ -220,4 +220,4 @@ export const Leaving = () => {
   )
 }
 
-export default Leaving;
+export default DevlogEntry;
