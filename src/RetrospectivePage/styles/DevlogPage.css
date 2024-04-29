@@ -1,28 +1,24 @@
 .c-devlog-full-page {
-  top: var(--navbar-height);
   display: flex;
   flex-direction: row;
   height: 100%;
 }
 
 .c-devlog-main-content {
-  position: relative;
-  top: 0;
   width: calc(100% - 4rem);
   text-align: left;
 }
 
 .c-devlog-sidebar {
   position: sticky;
-  top: calc(var(--navbar-height));
-  display: grid;
-  grid-auto-rows: 2rem 3rem auto;
+  top: var(--navbar-height);
   margin-right: 1rem;
   padding-bottom: 10rem;
   width: 16rem;
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - 1.5 * var(--navbar-height));
   padding: 1.5rem;
   text-align: left;
+  line-height: 1.8;
   overflow-y: scroll;
 }
 

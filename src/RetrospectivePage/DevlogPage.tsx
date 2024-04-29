@@ -37,9 +37,7 @@ const DevlogPage = props => {
           className="c-image-bg"
           style={bgStyle}
         />
-        <div className="c-devlog-sidebar">
-          <DevlogSidebar />
-        </div>
+        <DevlogSidebar />
         <div className="c-devlog-main-content">
           <h1>{ entry.title }</h1>
           <div className="o-devlog-dates">

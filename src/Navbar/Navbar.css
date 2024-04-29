@@ -1,5 +1,6 @@
 .c-main-options {
   top: 0;
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -9,7 +10,8 @@
   border-color: white;
   width: 100%;
   height: var(--navbar-height);
-  background: linear-gradient(to bottom, #aaa 0%, #aaa 90%, transparent 100%);
+  background: #0de;
+  box-shadow: 0 0 1rem black;
   z-index: 1;
 }
 
@@ -24,16 +26,12 @@
 }
 
 .o-single-option:hover {
-  background: linear-gradient(to bottom, #777 0%, #777 90%, transparent 100%);
+  background: #0ac;
   color: black;
 }
 
 .o-current-option {
-  background: linear-gradient(to bottom, transparent 0%, transparent 90%, white 100%);
-}
-
-.o-current-option:hover {
-  background: linear-gradient(to bottom, #777 0%, #777 90%, white 100%);
+  box-shadow: 0 -0.4rem 0 -0.2rem white inset;
 }
 
 .c-tab-group {
@@ -45,18 +43,20 @@
 }
 
 .o-current-subtab {
-  background: linear-gradient(to left, transparent 0%, transparent 95%, white 100%);
+  box-shadow: 0.4rem 0 0 -0.2rem white inset;
 }
 
 .o-current-subtab:last-child {
-  background: linear-gradient(to left, transparent 0%, transparent 95%, white 100%);
+  box-shadow: 0.4rem 0 0 -0.2rem white inset;
   border-radius: 0 0 0.6rem 0.6rem;
 }
 
 .c-subtab-group {
-  background-color: #666;
+  background-color: #8de;
   border-radius: 0 0 0.6rem 0.6rem;
-  box-shadow: inset 0 0 0.3rem 0.3rem #aaa;
+  box-shadow: 0 0.6rem 0.3rem -0.6rem rgba(0, 0, 0, 0.5),
+    0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5),
+    -0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 
 .o-subtab-option {
@@ -70,6 +70,12 @@
 }
 
 .o-subtab-option:hover {
-  background: linear-gradient(to left, #777 0%, #777 90%, transparent 100%);
+  background: #8ac;
   color: black;
+}
+
+.o-subtab-option:hover:last-child {
+  background: #8ac;
+  color: black;
+  border-radius: 0 0 0.6rem 0.6rem;
 }

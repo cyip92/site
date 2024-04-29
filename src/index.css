@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #555;
+  background: linear-gradient(to bottom, #777 0%, #222 95%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,11 +25,11 @@
 
 a {
   font-weight: 500;
-  color: #9095ff;
+  color: #8af;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #37c;
 }
 
 body {
@@ -93,7 +93,7 @@ button:disabled{
 
 .c-grayscale-content-bg {
   background: linear-gradient(to right, transparent 0%,
-    rgba(50, 50, 50, 0.92) 3%, rgba(50, 50, 50, 0.92) 97%,
+    rgba(100, 110, 110, 0.8) 2%, rgba(100, 110, 110, 0.8) 98%,
     transparent 100%);
 }
 

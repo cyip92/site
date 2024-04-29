@@ -28,7 +28,7 @@ const TabGroups = [
         text: "Weekly Sleep Pattern"
       },
       {
-        route: "/ADdevlog/",
+        route: "/ADdevlog/intro",
         text: "Antimatter Dimensions Retrospective"
       },
       {
@@ -68,15 +68,15 @@ const Navbar = () => {
               <div key={group.name}>
                 <div
                   className="o-single-option o-tab-group"
-                  onMouseEnter={e => { setIsHovering(true) }}
-                  onMouseLeave={e => { setIsHovering(false) }}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
                 >
                   ⇃ { group.name }
                 </div>
                 <div
                   className="c-subtab-group"
-                  onMouseEnter={e => { setIsHovering(true) }}
-                  onMouseLeave={e => { setIsHovering(false) }}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
                   style={{ display: isHovering ? "block" : "none" }}
                 >
                   {

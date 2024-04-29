@@ -33,9 +33,11 @@ const DevlogSidebar = () => {
   }
 
   return (
-    <>
+    <div className="c-devlog-sidebar">
       { singleLink(LogEntries.Introduction, "Introduction") }
       { singleLink(LogEntries.FAQ, "FAQ Page") }
+      <br />
+      <div className="o-divider" />
       <div>
         <h3>Entries:</h3>
         {
@@ -49,7 +51,13 @@ const DevlogSidebar = () => {
           )
         }
       </div>
-    </>
+      <div className="o-divider" />
+      <br />
+      { 
+        // Note: Will cause a duplicate key error in the console until the page is added
+        singleLink(LogEntries.FAQ, "Epilogue (placeholder)")
+      }
+    </div>
   )
 };
 

@@ -17,4 +17,5 @@
 
 .c-project-ad-bg {
   background-image: url("/bg/Project_AD.png");
+  filter: blur(0.1rem);
 }
