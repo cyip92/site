@@ -33,3 +33,8 @@
 .o-null {
   display: none;
 }
+
+.c-about-bg {
+  background-image: url("/bg/about.png");
+  filter: blur(0.1rem);
+}

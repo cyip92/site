@@ -1,7 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
-import face from "../assets/headshot.jpg";
+import face from "../assets/headshot.png";
 import gmail from "../assets/icons/gmail.ico";
 import github from "../assets/icons/github.ico";
 import linkedin from "../assets/icons/linkedin.ico";
@@ -16,6 +16,7 @@ const AboutPage = () => {
         </Helmet>
       </HelmetProvider>
       <div className="c-page-layout c-text c-grayscale-content-bg">
+        <div className="c-image-bg c-about-bg" />
         <h1>About Me</h1>
         <div className="c-columns">
           <div className="c-narrow">
