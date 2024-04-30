@@ -5,17 +5,12 @@ import React from "react";
 /**
  * Hook for a box representing a single project, with data pulled from the Projects object above
  */
-const SingleProject = props => {
+const SingleProjectCard = props => {
   const proj = props.project;
-
   return (
     <>
       <div className="c-single-project">
-        {
-          proj.image
-            ? <img src={proj.image} className="c-img-fixed-size" />
-            : null
-        }
+        <img src={proj.cardImg} className="c-img-fixed-size" />
         <b>{ proj.title }</b>
         <i>{ proj.category }</i>
         <i>{ proj.date }</i>
@@ -36,8 +31,8 @@ const SingleProject = props => {
   )
 };
 
-SingleProject.propTypes = {
+SingleProjectCard.propTypes = {
   project: PropTypes.object.isRequired,
 };
 
-export default SingleProject;
+export default SingleProjectCard;

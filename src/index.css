@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(to bottom, #777 0%, #222 95%);
+  background: linear-gradient(to bottom, #788 0%, #222 95%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,7 +18,7 @@
   -webkit-text-size-adjust: 100%;
 
   --navbar-height: 4.5rem;
-  --navbar-btn-size: 15rem;
+  --navbar-btn-size: 8rem;
 }
 
 /* #region Global Tags */
@@ -88,7 +88,7 @@ button:disabled{
   place-self: center;
   max-width: 75rem;
   padding: 0 4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .c-grayscale-content-bg {

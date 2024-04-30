@@ -49,7 +49,7 @@
 }
 
 .c-img-fixed-size {
-  object-fit: contain;
+  object-fit: cover;
   height: 20rem;
   margin-bottom: 1rem;
 }

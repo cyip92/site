@@ -45,9 +45,6 @@ const Navbar = () => {
     ? currentRoute === "/"
     : currentRoute.startsWith(route));
 
-  // Subtab hover state tracking
-  const [isHovering, setIsHovering] = useState(false);
-
   return (
     <>
       <div className="c-main-options">
@@ -62,39 +59,28 @@ const Navbar = () => {
             </Link>
           )
         }
-        <div className="c-tab-group">
-          {
-            TabGroups.map(group =>
-              <div key={group.name}>
-                <div
-                  className="o-single-option o-tab-group"
-                  onMouseEnter={() => setIsHovering(true)}
-                  onMouseLeave={() => setIsHovering(false)}
-                >
-                  ⇃ { group.name }
-                </div>
-                <div
-                  className="c-subtab-group"
-                  onMouseEnter={() => setIsHovering(true)}
-                  onMouseLeave={() => setIsHovering(false)}
-                  style={{ display: isHovering ? "block" : "none" }}
-                >
-                  {
-                    group.subtabs.map(tab =>
-                      <Link
-                        className={`o-subtab-option ${matchedRoute(tab.route) ? "o-current-subtab" : ""}`}
-                        to={tab.route}
-                        key={tab.text}
-                      >
-                        { tab.text }
-                      </Link>
-                    )
-                  }
-                </div>
+        {
+          TabGroups.map(group =>
+            <div className="c-tab-group" key={group.name}>
+              <div className="o-single-option">
+                ⇃ { group.name }
               </div>
-            )
-          }
-        </div>
+              <div className="c-subtab-group">
+                {
+                  group.subtabs.map(tab =>
+                    <Link
+                      className={`o-subtab-option ${matchedRoute(tab.route) ? "o-current-subtab" : ""}`}
+                      to={tab.route}
+                      key={tab.text}
+                    >
+                      { tab.text }
+                    </Link>
+                  )
+                }
+              </div>
+            </div>
+          )
+        }
       </div>
     </>
   )

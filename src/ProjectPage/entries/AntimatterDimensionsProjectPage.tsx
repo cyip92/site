@@ -1,4 +1,3 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -11,19 +10,12 @@ import "./AntimatterDimensionsProjectPage.css";
 const AntimatterDimensionsProjectPage = () => {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Projects | Antimatter Dimensions</title>
-        </Helmet>
-      </HelmetProvider>
-      <div className="c-page-layout c-project-layout c-grayscale-content-bg">
-        <div className="c-image-bg c-project-ad-bg" />
-        <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>
-        <div className="c-centered-image">
-          <u><h1>Antimatter Dimensions</h1></u>
-          <img src={titleImg} className="o-header-image" />
-        </div>
+      <div className="c-image-bg c-project-ad-bg" />
+      <div className="c-centered-image">
+        <img src={titleImg} className="o-header-image" />
+      </div>
 
+      <div>
         <u><h3>Description</h3></u>
         Antimatter Dimensions is an Idle Incremental game originally created by a Finnish developer who goes by the
         online alias of Hevipelle. The distinction between Idle and Incremental games is somewhat disagreed upon, but

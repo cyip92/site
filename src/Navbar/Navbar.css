@@ -1,14 +1,13 @@
 .c-main-options {
   top: 0;
   position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(1fr, 4);
   margin-bottom: -0.5rem;
   border-width: 0.2rem;
   border-color: white;
-  width: 100%;
+  min-width: calc(4 * var(--navbar-btn-size));
   height: var(--navbar-height);
   background: #0de;
   box-shadow: 0 0 1rem black;
@@ -16,10 +15,11 @@
 }
 
 .o-single-option {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--navbar-btn-size);
+  min-width: var(--navbar-btn-size);
   height: var(--navbar-height);
   line-height: 1.1;
   color: black;
@@ -36,10 +36,8 @@
 
 .c-tab-group {
   top: 0;
-}
-
-.o-tab-group {
   font-weight: bold;
+  width: 100%;
 }
 
 .o-current-subtab {
@@ -52,19 +50,27 @@
 }
 
 .c-subtab-group {
+  display: none;
+  position: absolute;
   background-color: #8de;
   border-radius: 0 0 0.6rem 0.6rem;
   box-shadow: 0 0.6rem 0.3rem -0.6rem rgba(0, 0, 0, 0.5),
     0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5),
     -0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  width: calc(25% - 0.5rem);
+}
+
+.c-tab-group:hover .c-subtab-group {
+  display: block;
 }
 
 .o-subtab-option {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--navbar-btn-size);
+  min-width: var(--navbar-btn-size);
   height: var(--navbar-height);
+  padding: 0 1rem;
   line-height: 1.1;
   color: black;
 }

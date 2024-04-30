@@ -1,9 +1,7 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import React from "react";
 
+import titleImg from "../../assets/projects/physics/optical_table.png";
 import periodicTable from "../../assets/projects/physics/IUPAC_Periodic_Table.jpg";
-import opticalTable from "../../assets/projects/physics/optical_table.png";
 import thesis from "../../assets/projects/physics/Holmium_Thesis.pdf";
 import zeeman from "../../assets/projects/physics/Holmium_Zeeman.gif";
 import atoms from "../../assets/projects/physics/atoms_false_color.png";
@@ -13,19 +11,12 @@ import "./PhysicsProjectPage.css";
 const PhysicsProjectPage = () => {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Projects | Physics Research</title>
-        </Helmet>
-      </HelmetProvider>
-      <div className="c-page-layout c-project-layout c-grayscale-content-bg">
-        <div className="c-image-bg c-project-physics-bg" />
-        <Link to="/projects" className="o-return-link">{ `< Back to Project List` }</Link>
-        <div className="c-centered-image">
-          <u><h1>Rare Earth Laser Physics</h1></u>
-          <img src={opticalTable} className="o-header-image" />
-        </div>
+      <div className="c-image-bg c-project-physics-bg" />
+      <div className="c-centered-image">
+        <img src={titleImg} className="o-header-image" />
+      </div>
 
+      <div>
         <u><h3>Description</h3></u>
         The Holmium experiment in the Saffman Lab was an experiment primarily aimed towards using neutral holmium atoms
         for the sake of forming qubits (quantum bits) in a quantum computer. Holmium&apos;s complicated electron shell

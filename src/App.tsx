@@ -15,6 +15,7 @@ import "./index.css";
 
 // Fairly self-explanatory; this forces the browser to scroll to the top when changing pages
 import { useEffect } from "react";
+import SingleProjectPage from "./ProjectPage/entries/SingleProjectPage.tsx";
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -27,9 +28,9 @@ const App = () => {
   return (
     <React.StrictMode>
       <HashRouter>
+        <Navbar />
+        <ScrollToTop />
         <div className="c-site-layout">
-          <Navbar />
-          <ScrollToTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
@@ -42,7 +43,7 @@ const App = () => {
                     <Route
                       key={Proj.id}
                       path={`/projects/${Proj.id}`}
-                      element={Proj.component?.()}
+                      element={<SingleProjectPage projectData={Proj} />}
                     />
                 )
               }
