@@ -73,7 +73,9 @@ const Navbar = () => {
                       to={tab.route}
                       key={tab.text}
                     >
-                      { tab.text }
+                      <div className="o-subtab-text">
+                        { tab.text }
+                      </div>
                     </Link>
                   )
                 }

@@ -1,27 +1,6 @@
-.c-columns {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.c-narrow {
-  width: 15%;
-  padding: 1rem;
-}
-
-.c-wide {
-  width: 80%;
-}
 
 .c-contact-info {
   font-size: 1.2rem;
-}
-
-.o-img-fit {
-  width: 100%;
 }
 
 .o-img-icon {

@@ -5,6 +5,7 @@ import face from "../assets/headshot.png";
 import gmail from "../assets/icons/gmail.ico";
 import github from "../assets/icons/github.ico";
 import linkedin from "../assets/icons/linkedin.ico";
+import TwoColumn from "../common/TwoColumn";
 import "./AboutPage.css";
 
 const AboutPage = () => {
@@ -18,11 +19,12 @@ const AboutPage = () => {
       <div className="c-page-layout c-text c-grayscale-content-bg">
         <div className="c-image-bg c-about-bg" />
         <h1>About Me</h1>
-        <div className="c-columns">
-          <div className="c-narrow">
-            <img src={face} className="o-img-fit" />
-          </div>
-          <div className="c-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={6}
+        >
+          <img src={face} className="c-inset-img" />
+          <>
             Hi! My name is Chris Yip, and I am a Physicist and Front-End Web Developer. I completed a Bachelors Degree
             with a dual major in Physics and Computer Science in 2014, and then continued on to achieve a Doctorate in
             Physics in 2021. During the tail end of my PhD, I found myself relatively unsatisfied with my work in
@@ -34,8 +36,8 @@ const AboutPage = () => {
             life until my early twenties on the west coast of the USA (California), before moving to the midwest
             USA (Wisconsin) for my Physics PhD. I recently moved to the United Kingdom, having arrived in January 2024,
             and intend to stay here for the foreseeable future.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
 
         My mindset has always been one of learning new things, and returning back to software development has not
         lessened that motivation. I am currently working through getting certificates for Full-Stack Development with

@@ -6,7 +6,7 @@ import SleepPage from "./SleepPage/SleepPage"
 import { Projects, ProjectPage } from "./ProjectPage/ProjectPage"
 import BlobPage from "./BlobPage/BlobPage";
 import DevlogPage from "./RetrospectivePage/DevlogPage";
-import HomePage from "./HomePage/HomePage.jsx";
+import HomePage from "./HomePage/HomePage.tsx";
 import AboutPage from "./AboutPage/AboutPage.jsx";
 import ErrorPage from "./ErrorPage/ErrorPage.js";
 import UnfinishedPage from "./UnfinishedPage/UnfinishedPage.tsx";

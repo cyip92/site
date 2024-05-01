@@ -8,6 +8,7 @@
   border-width: 0.2rem;
   border-color: white;
   min-width: calc(4 * var(--navbar-btn-size));
+  width: 100%;
   height: var(--navbar-height);
   background: #0de;
   box-shadow: 0 0 1rem black;
@@ -57,7 +58,7 @@
   box-shadow: 0 0.6rem 0.3rem -0.6rem rgba(0, 0, 0, 0.5),
     0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5),
     -0.4rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
-  width: calc(25% - 0.5rem);
+  width: 25%;
 }
 
 .c-tab-group:hover .c-subtab-group {
@@ -70,7 +71,6 @@
   align-items: center;
   min-width: var(--navbar-btn-size);
   height: var(--navbar-height);
-  padding: 0 1rem;
   line-height: 1.1;
   color: black;
 }
@@ -84,4 +84,8 @@
   background: #8ac;
   color: black;
   border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.o-subtab-text {
+  padding: 0 1rem;
 }

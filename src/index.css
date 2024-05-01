@@ -10,6 +10,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(to bottom, #788 0%, #222 95%);
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,7 +19,7 @@
   -webkit-text-size-adjust: 100%;
 
   --navbar-height: 4.5rem;
-  --navbar-btn-size: 8rem;
+  --navbar-btn-size: 10rem;
 }
 
 /* #region Global Tags */
@@ -35,8 +36,6 @@ a:hover {
 body {
   place-items: center;
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -114,15 +113,6 @@ button:disabled{
 
 .c-text {
   text-align: left;
-}
-
-.c-two-columns {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .c-inset-img {
