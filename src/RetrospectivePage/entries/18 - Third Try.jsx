@@ -2,6 +2,7 @@ import oldCel6 from "../../assets/retrospective/18/cel6_layer_down.png";
 import multTab from "../../assets/retrospective/18/mult_tab_sketch.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -40,54 +41,55 @@ const DevlogEntry = () => {
         alter the progression pace to be more suitable. Lai&apos;tela was still only a half-complete Celestial.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
-            The first thing was its Reality; the original left you with nothing to do after entering. I had
-            an idea which seemed interesting at first - it fed all the main currencies through the
-            prestige formulas <i>twice</i>. It was neat in concept, but ended up being &quot;Teresa&apos;s
-            reality with the only real distinction that it&apos;s like 150x worse.&quot;
-            <br />
-            <br />
+        The first thing was its Reality; the original left you with nothing to do after entering. I had
+        an idea which seemed interesting at first - it fed all the main currencies through the
+        prestige formulas <i>twice</i>. It was neat in concept, but ended up being &quot;Teresa&apos;s
+        reality with the only real distinction that it&apos;s like 150x worse.&quot;
+        <br />
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             Omsi had the idea for adding a new resource specific to the Reality, and that
             ended up leading to our final version even despite the rest of the game changing around it:
-        <div className="o-quote-box">
-          <ConversationLine
-            name="Omsi"
-            text={`maybe you could add some sort of other effect? just throwing things out, what if there
-              was "entropy" that increased faster based on your antimatter, and the more entropy you have,
-              you get some sort of buff, but at 100% entropy you're forced to end the reality (like
-              failing an ec, but you keep your record)`}
+            <div className="o-quote-box">
+              <ConversationLine
+                name="Omsi"
+                text={`maybe you could add some sort of other effect? just throwing things out, what if there
+                  was "entropy" that increased faster based on your antimatter, and the more entropy you have,
+                  you get some sort of buff, but at 100% entropy you're forced to end the reality (like
+                  failing an ec, but you keep your record)`}
+              />
+              <ConversationLine
+                name="Me"
+                text={`I was also thinking about the reward structure for a bit too, and I feel like doing it
+                  once for a reward but then being able to repeat it again for a higher reward but harder could
+                  be cool if the nerf structure works out with that`}
+              />
+              <ConversationLine
+                name="Me"
+                text={`kinda like ECs, but instead of the goal changing, the goal stays the same but the
+                  challenge gets harder`}
+              />
+              <ConversationLine
+                name="Me"
+                text={`since Laitela adds dimensions, it might be thematic if the second time through all 8th
+                dim production is disabled, then the third time through 7-8th dims are disabled, etc`}
+              />
+              <ConversationLine
+                name="Omsi"
+                text={`you could even have the goal be destroying the reality with entropy, and the reward
+                based off how fast you do it`}
+              />
+            </div>
+          </>
+          <CaptionedFigure
+            imgPath={oldCel6}
+            caption={`The description of the first attempted new Lai'tela Reality`}
           />
-          <ConversationLine
-            name="Me"
-            text={`I was also thinking about the reward structure for a bit too, and I feel like doing it
-              once for a reward but then being able to repeat it again for a higher reward but harder could
-              be cool if the nerf structure works out with that`}
-          />
-          <ConversationLine
-            name="Me"
-            text={`kinda like ECs, but instead of the goal changing, the goal stays the same but the
-              challenge gets harder`}
-          />
-          <ConversationLine
-            name="Me"
-            text={`since Laitela adds dimensions, it might be thematic if the second time through all 8th
-            dim production is disabled, then the third time through 7-8th dims are disabled, etc`}
-          />
-          <ConversationLine
-            name="Omsi"
-            text={`you could even have the goal be destroying the reality with entropy, and the reward
-            based off how fast you do it`}
-          />
-        </div>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={oldCel6}
-              caption={`The description of the first attempted new Lai'tela Reality`}
-            />
-          </div>
-        </div>
+        </TwoColumn>
         <br />
         The full concept we went with was a combination of these two ideas in that conversation -
         Lai&apos;tela&apos;s Reality used a special resource called Entropy which acted as a time limit:

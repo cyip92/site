@@ -4,7 +4,6 @@ import React from "react";
 
 import { ProjectType } from "../ProjectPage";
 import ".././ProjectPage.css";
-import "./AntimatterDimensionsProjectPage.css";
 
 const SingleProjectPage = ({ projectData } : { projectData: ProjectType }) => {
   return (

@@ -1,6 +1,7 @@
 import darknessGlyph from "../../assets/retrospective/16/glyph_of_darkness.png";
 import firstNav from "../../assets/retrospective/16/first_nav.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -72,8 +73,12 @@ const DevlogEntry = () => {
         Boson&quot; felt like too much of a concrete entity rather than an abstract resource,
         which contrasted somewhat with the rest of the game&apos;s resources. Mechanically,
         people found lots of issues as they playtested its content:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             <ul>
               <li>
                 It was weird that it immediately introduced three new resources nearly simultaneously,
@@ -106,15 +111,13 @@ const DevlogEntry = () => {
             new Glyph type which had new effects and the tentative name of &quot;Glyph of
             Darkness,&quot; but like most things during these conversations it never actually made
             it into the game.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={darknessGlyph}
-              caption={`Tentative effects of a new Glyph type; at this point of development, Glyph
-                levels were capped at 10,000`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={darknessGlyph}
+            caption={`Tentative effects of a new Glyph type; at this point of development, Glyph
+              levels were capped at 10,000`}
+          />
+        </TwoColumn>
         <br />
         It would be a bit more time before we actually all agreed upon some kind of a new system to
         replace what we already had, but it was now something that we had on our minds.
@@ -169,29 +172,27 @@ const DevlogEntry = () => {
         Achievement 134 (1e18,000 Replicanti, down from 1e20,000).
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={firstNav}
-              caption={"First in-game image of Celestial Navigation"}
-            />
-          </div>
-          <div className="c-col-wide">
-            People on the team started worrying about the fact that more and more players were getting extremely
-            far past all the new nerfs we added that started at 1e4000 EP. There were a few ideas,
-            such as reducing just the first Reality and giving a &quot;Trophy Glyph&quot; for people who specifically
-            grinded very very far. This didn&apos;t go anywhere immediately, although it did likely plant
-            the idea for the &quot;Companion Glyph&quot; and some first-Reality reductions which we would
-            implement later on.
-          </div>
-        </div>
+        People on the team started worrying about the fact that more and more players were getting extremely
+        far past all the new nerfs we added that started at 1e4000 EP. There were a few ideas,
+        such as reducing just the first Reality and giving a &quot;Trophy Glyph&quot; for people who specifically
+        grinded very very far. This didn&apos;t go anywhere immediately, although it did likely plant
+        the idea for the &quot;Companion Glyph&quot; and some first-Reality reductions which we would
+        implement later on.
         <br />
-        Garnet also started working on getting Celestial Navigation content into the game itself too.
-        There was no background image yet, but a lot of the initial paths were laid out and never
-        really changed afterward. This was partially because the initial formatting was a bit obtuse
-        and hard to understand, and partially because nobody really understood how the code for the
-        spirals were supposed to work.
         <br />
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={5}
+        >
+          <CaptionedFigure imgPath={firstNav} />
+          <>
+            Garnet also started working on getting Celestial Navigation content into the game itself too.
+            There was no background image yet, but a lot of the initial paths were laid out and never
+            really changed afterward. This was partially because the initial formatting was a bit obtuse
+            and hard to understand, and partially because nobody really understood how the code for the
+            spirals were supposed to work.
+          </>
+        </TwoColumn>
         <br />
         <i>
           The big event for next week&apos;s entry is that Dan joins development again... sort of.

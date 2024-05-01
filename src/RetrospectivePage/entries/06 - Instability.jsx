@@ -1,6 +1,7 @@
 import perks from "../../assets/retrospective/6/tree_restructure.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -60,14 +61,16 @@ const DevlogEntry = () => {
         which resulted in us turning it into a feature by adding a new perk which did exactly that.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={perks}
-              caption={"The reorganized perk tree with old functional groupings"}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={perks}
+            caption={"The reorganized perk tree with old functional groupings"}
+          />
+          <>
             As we would find out when some of the testing team later tried a perkless playthrough for fun, this
             change would be the main thing that changed progress from &quot;really scuffed and painful&quot; to
             &quot;literally impossible.&quot;
@@ -76,13 +79,12 @@ const DevlogEntry = () => {
             I also did a perk tree revamp - adding colors, rearranging the nodes, and giving
             them all proper IDs and labels instead of &quot;whatever order they were implemented in.&quot; The
             new labels weren&apos;t that good (a letter plus a number) but were still better than just 0-63.
-            <br />
-            <br />
-            Perks were still nowhere near their final version, but this was enough of a change that some
-            testers felt like playing through again with the new arrangement because it seemed to offer more
-            meaningful choices.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
+        <br />
+        Perks were still nowhere near their final version, but this was enough of a change that some
+        testers felt like playing through again with the new arrangement because it seemed to offer more
+        meaningful choices.
 
         <h3>Other Early Content</h3>
         Earth started filling out new content entries for the in-game How to Play (H2P). This was still the very

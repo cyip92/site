@@ -3,6 +3,7 @@ import glyphTooltip from "../../assets/retrospective/25/improved_glyphs.png";
 import upgrades from "../../assets/retrospective/25/iU_wip.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -142,8 +143,12 @@ const DevlogEntry = () => {
         largely work we had to do regardless.
 
         <h3>Other Changes</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={3}
+          rightBorder={true}
+        >
+          <>
             I decided to ease myself back into development by playing through all of Reality content again.
             This was also partially because the last time I experienced the earliest new content, it
             had completely different balancing due to numerous changes to upgrades and perk structure since then.
@@ -181,14 +186,12 @@ const DevlogEntry = () => {
                 more in check.
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={glyphTooltip}
-              caption={"Before and after the Glyph tooltip change"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={glyphTooltip}
+            caption={"Before and after the Glyph tooltip change"}
+          />
+        </TwoColumn>
 
         <h3>Tying It Together</h3>
         A month or so later, Jazz and I started trying to hammer out all the specific details

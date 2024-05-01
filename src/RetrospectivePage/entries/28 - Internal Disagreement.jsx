@@ -1,5 +1,6 @@
 import darkFix from "../../assets/retrospective/28/dark_theme.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -110,8 +111,12 @@ const DevlogEntry = () => {
         when there were in fact at least three different potentially equally-valid options to choose between.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={4}
+          rightBorder={true}
+        >
+          <>
             This was a particularly frustrating argument because I was the one who wrote Glyph Alchemy and it
             later turned out that they had never actually played it themselves on account of it being past
             unblinding for their wave. Our solution we ended up going with was to simplify the mechanics so
@@ -136,14 +141,12 @@ const DevlogEntry = () => {
               data, arguably as popularised by The Zen of Python nearly 20 years ago. By some standards I was
               being told to make my code <u>less</u> readable.)
             </i>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={darkFix}
-              caption={`Being told the fix was added to the game "5 days ago" when it was still unfixed`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={darkFix}
+            caption={`Being told the fix was added to the game "5 days ago" when it was still unfixed`}
+          />
+        </TwoColumn>
         <br />
         After having my code style micromanaged, I was then straight-up lied to about the fix already
         being in the game.

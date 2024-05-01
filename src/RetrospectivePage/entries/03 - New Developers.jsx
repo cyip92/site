@@ -4,6 +4,7 @@ import runaway from "../../assets/retrospective/3/runaway_AM.png";
 import automator from "../../assets/retrospective/3/old_automator.png";
 import tophat from "../../assets/retrospective/3/automator_hat.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -51,8 +52,12 @@ const DevlogEntry = () => {
         were currently the most annoyed at.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             The initial perks... weren&apos;t good, but they often felt good simply because not having them was even
             worse. Some examples of what we had initially:
             <ul>
@@ -80,15 +85,12 @@ const DevlogEntry = () => {
                 don&apos;t spend resources), PASS (passive Time Study boosts), and all PEC perks (passive EC completion)
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={oldPerks}
-              caption={"The first \"complete\" version of the perk system"}
-            />
-          </div>
-        </div>
-
+          </>
+          <CaptionedFigure
+            imgPath={oldPerks}
+            caption={"The first \"complete\" version of the perk system"}
+          />
+        </TwoColumn>
 
         <h3>My contributions</h3>
         A pause for personal context - while I do have lots of general coding experience, I had never touched anything
@@ -126,14 +128,16 @@ const DevlogEntry = () => {
 
 
         <h3>Improving the Code</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={challenges}
-              caption={"Some old data formatting was... interesting"}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={challenges}
+            caption={"Some old data formatting was... interesting"}
+          />
+          <>
             On September 15th, Razenpok joined the dev team! Initially his main role was migrating all of AD into
             Vue.js, something he&apos;d be doing gradually for the next few months as we continued developing
             content. Changing the game&apos;s code to use the Vue.js framework was something which Hevi really wanted
@@ -150,8 +154,8 @@ const DevlogEntry = () => {
             more structured and professional, which was important for organizational purposes now that there were five
             of us (Hevi, Omsi, Razen, Iker, and me) working on the game&apos;s code at once. As a side note - Hevi
             made a Trello board, but we eventually ended up moving almost everything to Github.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         
 
         <h3>Community Dynamics</h3>

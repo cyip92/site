@@ -4,6 +4,7 @@ import raTeresa from "../../assets/retrospective/20/ra-teresa_reality.png";
 import halted from "../../assets/retrospective/20/halted_reality.png";
 import subReality from "../../assets/retrospective/20/sub_reality_ideas.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -120,8 +121,12 @@ const DevlogEntry = () => {
         once you get to that point; the loophole was no longer necessary.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={3}
+          rightBorder={true}
+        >
+          <>
             Shortly after adding that functionality, we found that the seeded RNG process to generate Glyphs
             wasn&apos;t as stable as we thought - in certain situations, one or two attributes on a Glyph
             may change in such a way that the other options generated afterward end up being drastically
@@ -132,14 +137,12 @@ const DevlogEntry = () => {
             seeded RNG, and sometimes it would make 12. That one extra RNG call would shift all subsequent
             values, in such a way that now the random number for rarity could be used for type instead,
             the number for the first effect would be used for rarity, etc.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={unstable}
-              caption={"An example of the unstable choices"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={unstable}
+            caption={"An example of the unstable choices"}
+          />
+        </TwoColumn>
         <br />
         Our solution was to standardize the number of RNG calls so that every Glyph generated uses the
         same count of random numbers, even if many of them are discarded. For the typical player, this

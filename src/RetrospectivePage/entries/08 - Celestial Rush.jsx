@@ -2,6 +2,7 @@ import cel4 from "../../assets/retrospective/8/prototype_V.png";
 import cel5 from "../../assets/retrospective/8/prototype_Ra.png";
 import automator from "../../assets/retrospective/8/automator.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -77,8 +78,11 @@ const DevlogEntry = () => {
         The core mechanic for Ra wasn&apos;t directly inspired by anything according to Hevi, but Omsi and I pointed
         out that it looked strikingly similar to Fluffy in Trimps. It&apos;s hard to tell if there was inspiration
         from any other sources since it&apos;s not a unique system. The initial implementation had the following:
-        <div className="c-entries-columns">
-          <div className="c-col-equal">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={1}
+        >
+          <>
             <ul>
               <li>
                 You get a companion from Teresa which gets experience per Reality, depending on Glyph level. The
@@ -105,13 +109,11 @@ const DevlogEntry = () => {
                 You would gain an exp multiplier to Teresa based on your highest EP gained on Teresa&apos;s run
               </li>
             </ul>
-          </div>
-          <div className="c-col-equal">
-            <CaptionedFigure
-              imgPath={cel5}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={cel5}
+          />
+        </TwoColumn>
         Some of the initial mechanics stayed all the way until release, but there were notable differences:
         <ul>
           <li>
@@ -130,13 +132,14 @@ const DevlogEntry = () => {
         of the update.
 
         <h3>Automator Improvements</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={automator}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+        >
+          <CaptionedFigure
+            imgPath={automator}
+          />
+          <>
             Razen decided to start working on improving the Automator, first adding comments and labels
             which wouldn&apos;t contribute to the line count limit. He also started looking into finite automata
             to make a proper compiler which could give error feedback.
@@ -155,8 +158,8 @@ const DevlogEntry = () => {
             <br />
             In addition to technical backend changes, Razen also got started on a substantial UI rework for the
             Automator as well.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
 
         <h3>Time to Test?</h3>
         Perks got a few changes:

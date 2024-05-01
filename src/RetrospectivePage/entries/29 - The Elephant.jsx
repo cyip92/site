@@ -3,6 +3,7 @@ import template from "../../assets/retrospective/29/script_template.gif";
 import glyphSac from "../../assets/retrospective/29/glyph_sac_pre-nudge.png";
 import celnav from "../../assets/retrospective/29/3d_pen_celnav.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -23,8 +24,12 @@ const DevlogEntry = () => {
         a lack of standardisation.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             As people in the 3rd wave reached and passed through V, they found more and more of these
             weird edge cases and odd display bugs, as well as a few instances where Time Study trees
             would simply fail to import Triad or EC studies altogether or deduct the wrong amount of
@@ -36,14 +41,12 @@ const DevlogEntry = () => {
             Time Studies are a general core mechanic that affects basically everything in the game, so
             it was a fairly involved rewrite. I worked together on it with one of the new testers,
             Vnge, and he did a very good job at catching bugs and reviewing it as it was coming together.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={studies}
-              caption="This detailed info was basically impossible to do before the rewrite"
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={studies}
+            caption="This detailed info was basically impossible to do before the rewrite"
+          />
+        </TwoColumn>
 
         <h3>Script Templates</h3>
         In a further attempt to make the Automator more approachable to non-programmers, I made a
@@ -139,8 +142,12 @@ const DevlogEntry = () => {
         <h3>Minor Things</h3>
         There were a few other somewhat notable things that happened, but not with enough detail or
         content to really warrant dedicated sections:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             <ul>
               <li>
                 One of the new testers, GirixK, got a 3D printing pen and wanted to test it out on
@@ -161,14 +168,12 @@ const DevlogEntry = () => {
                 also ended up working on a ton of stuff which will show up in the next entry as well.
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={glyphSac}
-              caption="The previous values at the cap, which also only got applied to the basic 5 types back then"
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={glyphSac}
+            caption="The previous values at the cap, which also only got applied to the basic 5 types back then"
+          />
+        </TwoColumn>
         <div className="c-centered-img">
           <div className="o-small-center-img">
             <CaptionedFigure

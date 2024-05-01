@@ -2,6 +2,7 @@ import cel3Tab from "../../assets/retrospective/7/prototype_enslaved.png";
 import ree from "../../assets/retrospective/7/notation_ree.gif";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -29,14 +30,16 @@ const DevlogEntry = () => {
         and pretending it never happened.
 
         <h3>The Third Celestial</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-equal--bordered">
-            <CaptionedFigure
-              imgPath={cel3Tab}
-              caption={"The in-game tab for the 3rd Celestial"}
-            />
-          </div>
-          <div className="c-col-equal">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={1}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={cel3Tab}
+            caption={"The in-game tab for the 3rd Celestial"}
+          />
+          <>
             Nameless was the first Celestial which ended up being changed significantly by the time the game was
             released. The overall structure of its content was mostly the same, with the ability to store extra
             running time and release it later all at once in a single big burst. Stored game time was also used
@@ -51,8 +54,8 @@ const DevlogEntry = () => {
             <br />
             Dan may have been the only one to actually have tested the Reality when it was implemented, and
             according to him it was very easy and straightforward.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         Was that it? Yup, and a lot would happen between now and the next time we looked at all the game
         mechanics within Nameless. 
@@ -155,8 +158,12 @@ const DevlogEntry = () => {
             remember where the idea came from.
           </li>
         </ul>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             There were also a few scrapped notations:
             <ul>
               <li>
@@ -178,14 +185,12 @@ const DevlogEntry = () => {
                 every number was spelled out (ie. &quot;3.21e52&quot; turned into &quot;three.twooneefivetwo&quot;).
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={ree}
-              caption={"Ree Notation"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={ree}
+            caption={"Ree Notation"}
+          />
+        </TwoColumn>
         <br />
         We&apos;d end up adding a handful more notations over time, and much later in the year we separated out the
         notation code into its own&nbsp;

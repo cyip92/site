@@ -4,6 +4,7 @@ import alteredTime from "../../assets/retrospective/14/altered_time.png";
 import navIdea from "../../assets/retrospective/14/nav_prototype.png";
 import navSketch from "../../assets/retrospective/14/nav_sketch.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -35,8 +36,11 @@ const DevlogEntry = () => {
         layout and appearance was given a black-and-white motif; Hevi thought it would be cool to combine
         this with the final Celestial being primarily black visuals, as a stark contrast between the two.
         This version had all these resources and mechanics which interacted tightly with each other:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+        >
+          <>
             <ul>
               <li>
                 <b>Dark Matter</b>: Matter was simply renamed to this, which kept the same effect of
@@ -55,11 +59,9 @@ const DevlogEntry = () => {
                 <b>Dark Energy</b>: This new resource was used primarily for powerful one-time purchases.
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure imgPath={cel6Upg} />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure imgPath={cel6Upg} />
+        </TwoColumn>
 
         <h3>Ra&apos;s Third Capstone</h3>
         We continued to fill out Ra&apos;s content with Teresa&apos;s capstone mechanic. Considering how
@@ -79,14 +81,16 @@ const DevlogEntry = () => {
           </li>
         </ul>
         
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={alteredTime}
-              caption={"An Altered Glyph with the old tickspeed threshold effect"}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={alteredTime}
+            caption={"An Altered Glyph with the old tickspeed threshold effect"}
+          />
+          <>
             This mechanic was an attempt at a late-game solution to the fact that Glyph sacrifice was a boring
             mechanic to many testers. It was mostly just an irrelevant upward-ticking resource counter and there
             wasn&apos;t any meaningful player action that could be done to influence it other than simply more
@@ -100,8 +104,8 @@ const DevlogEntry = () => {
             sacrifice. In addition to adding an incentive to pay attention to Glyph sacrifice again, we also
             modified the formula for sacrifice value to ramp up much more quickly above Glyph level 10,000 in
             order to give additional value to pushing higher despite the harsh level instability softcap.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         All of the new Altered effects we added were pretty much exactly what you can see in-game in the
         final version save for one difference - the additional effect for Power Glyphs was a multiplier

@@ -1,5 +1,6 @@
 import commands from "../../assets/retrospective/1/automator_tree.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -46,14 +47,16 @@ const DevlogEntry = () => {
         <br />
         <br />
         
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
             <CaptionedFigure
               imgPath={commands}
               caption={"The scrapped \"automator command unlock tree\" and its expensive commands"}
             />
-          </div>
-          <div className="c-col-wide">
+          <>
             A brief summary of we did during this month:
             <br />
             <li>
@@ -74,8 +77,8 @@ const DevlogEntry = () => {
               commands. It unlocked at 3 realities, had a command limit based on reality count, and you had to purchase
               every command for RM.
             </li>
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         Throughout this month, not even the testers knew anything about the update at all, not even that it was being
         tested and developed. All of this was going to change near the end of July 2018.

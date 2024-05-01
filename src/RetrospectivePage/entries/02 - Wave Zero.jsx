@@ -6,6 +6,7 @@ import zeroMult from "../../assets/retrospective/2/mult0.png";
 import useless from "../../assets/retrospective/2/repdtmult.png";
 import duplicity from "../../assets/retrospective/2/duplicity.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -102,8 +103,12 @@ const DevlogEntry = () => {
           </li>
         </ul>
         
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+         leftWeight={2}
+         rightWeight={1}
+         rightBorder={true}
+        >
+          <>
             And naturally, a few things were suggested or made which ultimately didn&apos;t get into the final version
             of the game. Here&apos;s the first two notable ones, and there will certainly be many more in the future:
             <ul>
@@ -117,14 +122,14 @@ const DevlogEntry = () => {
                 as a reality Glyph effect far in the future, but then all traces were removed)
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow">
+          </>
+          <>
             <CaptionedFigure
               imgPath={duplicity}
               caption={"The teaser image Omsi posted of a Glyph of Duplicity and its effect"}
             />
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         As people reached the end of the existing content (3rd row of Reality Upgrades), it became clear that glyph
         effect values needed some very serious rebalancing. The actual values in the Glyph effect formulas started off
         as throwing numbers at the wall and seeing what stuck, and this resulted in wildly inconsistent relative

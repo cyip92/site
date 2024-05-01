@@ -4,6 +4,7 @@ import event from "../../assets/retrospective/26/automator_event_log.gif";
 import blobCode from "../../assets/retrospective/26/automator_blob.png";
 import blob from "../../assets/blob.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -80,8 +81,12 @@ const DevlogEntry = () => {
         we&apos;ll see later on.
 
         <h3>Lack of Hindsight</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             There was a bit more development on Looping Pelle, which was mostly visual prototyping
             (which got forgotten) and some UI layout changes since the initial implementation was still
             extremely rough. The button for entering Pelle&apos;s content was still a tiny default button
@@ -92,14 +97,12 @@ const DevlogEntry = () => {
             having another design conversation with Jazz about it. The brief summary is that it somehow managed
             to suffer from the same problems which plagued old versions of Ra and Lai&apos;tela - lack of player
             choice and varied pacing, along with too much automation.
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={doomed}
-              caption={"An animation Omsi made for upgrades disabled when Doomed"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={doomed}
+            caption={"An animation Omsi made for upgrades disabled when Doomed"}
+          />
+        </TwoColumn>
         <div className="c-centered-img">
           <CaptionedFigure
             imgPath={pelle}
@@ -195,8 +198,11 @@ const DevlogEntry = () => {
             one-to-one with what gets shown to the player.
           </li>
         </ul>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+        >
+          <>
             Needless to say, this caused me to gain a much larger appreciation for IDEs (Integrated Development
             Environments) for programming after doing this, because at this point the Automator
             now <i>had</i> an extremely basic one which many of us had all contributed to writing.
@@ -208,13 +214,9 @@ const DevlogEntry = () => {
               className="c-inline-icon"
               src={blob}
             />
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={blobCode}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure imgPath={blobCode} />
+        </TwoColumn>
         <br />
         <i>
           Now that we fixed and implemented what we wanted to and many of the new testers were waiting on

@@ -2,6 +2,7 @@ import effects from "../../assets/retrospective/5/effect_order.png";
 import protGlyphs from "../../assets/retrospective/5/protected_glyphs.png";
 import disper from "../../assets/retrospective/5/disper_lore.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -14,8 +15,12 @@ const DevlogEntry = () => {
         This Celestial was a bit more disjointed in development compared to the previous one. While Hevi implemented
         the entirety of the first one on his own, this one was a lot more of a collaborative effort due to the
         mechanics being more involved. Most of the original ideas stuck through until release:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             <ul>
               <li>Theming is Glyph-based with a new celestial-specific resource</li>
               <li>You can modify the weighted sum for Glyph level</li>
@@ -35,15 +40,12 @@ const DevlogEntry = () => {
             <br />
             Glyph presets didn&apos;t exist yet - those would come much later. Similarly, relic shards were
             a pure currency used only for the unlocks; the Glyph rarity boost also didn&apos;t exist either.
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={effects}
-              caption={"An earlier filter version just kept the glyph with the highest effect on a list you specified"}
-            />
-          </div>
-        </div>
-        <br />
+          </>
+          <CaptionedFigure
+            imgPath={effects}
+            caption={"An earlier filter version just kept the glyph with the highest effect on a list you specified"}
+          />
+        </TwoColumn>
         <br />
         I made the first version of this Celestial&apos;s Reality and it mostly stayed unchanged until release except
         for some minor rebalancing. I was never really satisfied with how this Reality turned out and hoped I would
@@ -119,14 +121,16 @@ const DevlogEntry = () => {
         stopped after unlocking the 2nd Celestial. We later ended up removing this mechanic before release.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={protGlyphs}
-              caption={"A forgotten prototype of protected slot rendering"}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={3}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={protGlyphs}
+            caption={"A forgotten prototype of protected slot rendering"}
+          />
+          <>
             Garnet took it upon himself to largely redo the Glyph tab layout and generally fix a lot of odd lingering
             bugs related to Glyphs. He also made a mock-up of protected slots which unfortunately never made it into
             the game. It looked nice, but I suspect it was forgotten amongst all the other things since the protected
@@ -137,8 +141,8 @@ const DevlogEntry = () => {
             for offline progress. Initially the they didn&apos;t work offline at all, and then they just applied the
             average speed boost for the offline duration. He and Garnet discussed the details a bunch and he eventually
             wrote some standalone code that split up offline ticks to give similar results to leaving the game open.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
 
         <h3>Not Very Robust</h3>
         Dan and Garnet were seeing inconsistency with the game&apos;s behavior, having to do with intermittent huge

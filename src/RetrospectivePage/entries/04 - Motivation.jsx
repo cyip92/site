@@ -2,6 +2,7 @@ import glyphSac from "../../assets/retrospective/4/old_sacrifice.png";
 import newUI from "../../assets/retrospective/4/new_UI.png";
 import multipliers from "../../assets/retrospective/4/console_mults.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -92,15 +93,17 @@ const DevlogEntry = () => {
         Challenge² mechanic in the incremental <a href="https://trimps.github.io/">Trimps</a>.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={glyphSac}
-              caption={`We were bad at color contrast back then, but this was the only example image I could find
-                of the old effects`}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={glyphSac}
+            caption={`We were bad at color contrast back then, but this was the only example image I could find
+              of the old effects`}
+          />
+          <>
             The Reality reward was never changed; it was always a massive Glyph sacrifice boost after the first
             completion which altered how sacrifice affected the game overall. However, three effects
             ended up being changed later on; at this point, they were different:
@@ -124,16 +127,20 @@ const DevlogEntry = () => {
               * Cosmic Conglomerate&apos;s old effect was actually the second half of Scour to Empower, which
               initially only let you sacrifice Power and Time Glyphs.
             </i>
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         
         <h3>Pre-Celestial Changes</h3>
         As much as we were trying to push forward and get the ball rolling on new features, that wasn&apos;t
         everything that was going on. There were three fairly notable changes to earlier content which got
         mentioned:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
-            <ul>
+        <ul>
+          <TwoColumn
+            leftWeight={5}
+            rightWeight={6}
+            rightBorder={true}
+          >
+            <>
               <li>
                 <b>Modern UI</b> - An idea Hevi came along with, which prompted a discussion about how other
                 incrementals had done UI overhauls which weren&apos;t well-received. He then clarified:&nbsp;
@@ -150,27 +157,27 @@ const DevlogEntry = () => {
                 script. Initial intervals were 12-8-6-4-2 hours per completion, but it would be shortened multiple
                 times over development.
               </li>
-              <li>
-                <b>Multiple Hotkeys</b> - The functionality to hold multiple hotkeys at once was only mentioned
-                in passing by Omsi, but it would become a very well-liked feature as testing went on.
-              </li>
-            </ul>
-          </div>
-          <div className="c-col-narrow">
+            </>
             <CaptionedFigure
               imgPath={newUI}
               caption={"An early prototype of the Modern UI"}
             />
-          </div>
-        </div>
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
+          </TwoColumn>
+          <li>
+            <b>Multiple Hotkeys</b> - The functionality to hold multiple hotkeys at once was only mentioned
+            in passing by Omsi, but it would become a very well-liked feature as testing went on.
+          </li>
+        </ul>
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
             <CaptionedFigure
               imgPath={multipliers}
               caption={"The initial \"Multiplier Tab\" was basically a long console printout"}
             />
-          </div>
-          <div className="c-col-wide">
+          <>
             I brought up the idea of a multiplier tab a few more times, although this time our conversations actually
             went somewhere now that Razen and Garnet were around and able to offer more informed feedback due to
             having some amount of professional programming experience. We spitballed a few ideas of structuring
@@ -186,8 +193,8 @@ const DevlogEntry = () => {
             <br />
             I wrote a very minimal multiplier listing in the dev functions which was helpful for a short period of
             time though.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         There was some mild annoyance brought up about Reality not being split up into two updates, considering
         the magnitude of all the added content and the apparent trend that it wasn&apos;t slowing down any time soon.

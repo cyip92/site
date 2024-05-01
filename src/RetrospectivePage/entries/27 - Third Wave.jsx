@@ -1,6 +1,7 @@
 import list from "../../assets/retrospective/27/AP_list.png";
 import set from "../../assets/retrospective/27/old_set_preview.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -89,9 +90,7 @@ const DevlogEntry = () => {
         </ul>
 
         <div className="c-centered-img">
-          <CaptionedFigure
-            imgPath={list}
-          />
+          <CaptionedFigure imgPath={list} />
         </div>
 
         Our solution to this was an unlock system where you needed a total of 100 &quot;Automator
@@ -182,43 +181,43 @@ const DevlogEntry = () => {
         half a day of progress, and the laughs we had were all in good fun.
 
         <h3>Other Various Changes</h3>
-        
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
-            We made a bunch of smaller, less notable changes from feedback:
-            <ul>
-              <li>
-                The perk tree was given preset positions and the ability to disable physics. One common
-                thing across all tester waves was a large amount of amusement from playing around with
-                the perk tree, which we used
-                the <a href="https://visjs.github.io/vis-network/docs/network/index.html">Vis Network</a> library
-                for.
-              </li>
-              <li>
-                Cloud save conflict tracking and a broad &quot;progress comparison&quot; code was added to
-                determine if it was safe to overwrite data. This ended up having enough weird edge cases
-                that we&apos;d be chasing down bugs for this for a while.
-              </li>
-              <li>
-                A modal to display groups of Glyphs was made. A large amount of motivation to make this
-                was to make it easier for players to share a set of Glyphs, whether it was a set to use
-                or a set of choices for next Reality. Omsi massively improved the layout after my
-                initial prototypes.
-              </li>
-              <li>
-                Many of the older testers, mainly the two writers of the game (Jazz and Saturnus) and a
-                few of the 2nd wave testers, together drafted up the missing in-game lore for
-                Celestials 4-6.
-              </li>
-            </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={set}
-              caption="An old prototype of the Glyph set modal"
-            />
-          </div>
-        </div>
+        We made a bunch of smaller, less notable changes from feedback:
+        <ul>
+          <li>
+            The perk tree was given preset positions and the ability to disable physics. One common
+            thing across all tester waves was a large amount of amusement from playing around with
+            the perk tree, which we used
+            the <a href="https://visjs.github.io/vis-network/docs/network/index.html">Vis Network</a> library
+            for.
+          </li>
+          <li>
+            Cloud save conflict tracking and a broad &quot;progress comparison&quot; code was added to
+            determine if it was safe to overwrite data. This ended up having enough weird edge cases
+            that we&apos;d be chasing down bugs for this for a while.
+          </li>
+        </ul>
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={8}
+        >
+          <ul>
+            <li>
+              A modal to display groups of Glyphs was made. A large amount of motivation to make this
+              was to make it easier for players to share a set of Glyphs, whether it was a set to use
+              or a set of choices for next Reality. Omsi massively improved the layout after my
+              initial prototypes.
+            </li>
+            <li>
+              Many of the older testers, mainly the two writers of the game (Jazz and Saturnus) and a
+              few of the 2nd wave testers, together drafted up the missing in-game lore for
+              Celestials 4-6.
+            </li>
+          </ul>
+          <CaptionedFigure
+            imgPath={set}
+            caption="An old prototype of the Glyph set modal"
+          />
+        </TwoColumn>
 
         <h3>New Developers</h3>
         Out of all the new people in the 3rd wave, 6 of them wanted to help with coding the game

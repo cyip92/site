@@ -5,6 +5,7 @@ import e6kNerf from "../../assets/retrospective/19/first_reality_nerf.png";
 import companion from "../../assets/retrospective/19/old_companion.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -76,7 +77,11 @@ const DevlogEntry = () => {
             name="Dan"
             text={`Pop quiz, what's the issue with this in lategame?`}
           />
-          <img src={infSac} className="c-dialogue-indented c-col-narrow--borderless" />
+          <img
+            src={infSac}
+            className="c-dialogue-indented"
+            style={{ width: "40%" }}
+          />
           <ConversationLine
             name="Jazz"
             text={`8th ID buy10 not applying?`}
@@ -186,9 +191,12 @@ const DevlogEntry = () => {
         return to the game after the update releases only to have their fun unintentionally ruined by their
         actions more than a year ago.
         <br />
-        <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={3}
+          rightBorder={true}
+        >
+          <>
             Combining these two things together, we realized the core problem was the fact that we
             didn&apos;t intend for the player to be rewarded more than a handful of Reality Machines
             after their first reality, but theoretically unbounded EP meant theoretically unbounded
@@ -198,14 +206,12 @@ const DevlogEntry = () => {
             <br />
             This wasn&apos;t discussed at the time, but we also ultimately capped first-reality RM at
             the value corresponding to 1e8000 EP later on.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={e6kNerf}
-              caption={"The reduced RM curve"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={e6kNerf}
+            caption={"The reduced RM curve"}
+          />
+        </TwoColumn>
         
         <h3>A Trophy</h3>
         After we decided on the reduction above 1e6000 EP, some discussion followed about how
@@ -226,14 +232,12 @@ const DevlogEntry = () => {
         <br />
         Our compromise between the two was a special cosmetic Glyph which <i>everyone</i> was given,
         called the Companion Glyph:
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={companion}
-              caption={""}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+        >
+          <CaptionedFigure imgPath={companion} />
+          <>
             <div className="o-quote-box">
               <ConversationLine
                 name="Hevi"
@@ -267,8 +271,8 @@ const DevlogEntry = () => {
             Companion Glyphs are very overtly a reference to the game Portal, and we even added a
             few custom messages that pop up if you try to delete your Companion Glyph which are more
             or less direct quotes from Portal as well.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         <i>
           These were basically the last steps we had planned in preparation for the second wave of

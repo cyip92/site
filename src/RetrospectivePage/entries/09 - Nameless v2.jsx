@@ -4,6 +4,7 @@ import inf from "../../assets/retrospective/9/break_inf_bug.png";
 import codefactor from "../../assets/retrospective/9/codefactor.png";
 import CaptionedFigure from "../common/CaptionedFigure";
 import ConversationLine from "../common/ConversationLine";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -21,15 +22,17 @@ const DevlogEntry = () => {
         willingness to change older content.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={redaction}
-              caption={`The spoiler agreement led to some interesting-looking conversations. Deleted
-                User is Dan's old account.`}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={redaction}
+            caption={`The spoiler agreement led to some interesting-looking conversations. Deleted
+              User is Dan's old account.`}
+          />
+          <>
             The spoiler policy was an informal agreement that was based on trust. Some content
             relied on the player figuring out a trick without the game explicitly telling them,
             and we didn&apos;t have a good way of gauging how well someone could do that on their
@@ -50,8 +53,8 @@ const DevlogEntry = () => {
             content. Devs started to make tweaks with the mindset that while it would be ideal to keep things the
             same, it&apos;s still fine as long as it&apos;s &quot;close enough&quot; to the past. We also started
             making minor changes in favor of the player for parts of the game which were annoying or disliked.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         
         <h3>The Nameless Puzzle</h3>
         As alluded to previously, Garnet took it upon himself to turn The Nameless Ones&apos;s Reality into
@@ -79,8 +82,12 @@ const DevlogEntry = () => {
         <br />
         There were many interesting ideas put forth by both Garnet and Dan, although some of them didn&apos;t
         make it into the final version:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             <ul>
               <li>
                 A severe cap to AD8 which doesn&apos;t affect AD6 so if you&apos;re in IC1 you can get more galaxies
@@ -136,14 +143,12 @@ const DevlogEntry = () => {
                 appear in Nameless
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={cel3}
-              caption={`The restrictions of Nameless, as they exist on the released version of the game`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={cel3}
+            caption={`The restrictions of Nameless, as they exist on the released version of the game`}
+          />
+        </TwoColumn>
         The reward for finishing Nameless Reality was an effect that raised Infinity Dimension purchase
         caps based on your free tickspeed upgrades from Time Dimensions. This was in response to Infinity
         Dimensions being very weak at this point due to many of them hitting their purchase caps.

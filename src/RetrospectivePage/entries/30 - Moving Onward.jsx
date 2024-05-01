@@ -4,6 +4,7 @@ import cel7AM from "../../assets/retrospective/30/cel7_AM_mult_ref.png";
 import bars from "../../assets/retrospective/30/all_bars.png";
 import commits from "../../assets/retrospective/30/commit_graph.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -20,8 +21,12 @@ const DevlogEntry = () => {
         throw something together. He took bits and pieces of each idea and combined them together into
         what we had upon release. Pelle was largely meant to be a victory lap through the pre-Reality
         stage of the game; it wasn&apos;t supposed to be difficult but rather just... differently balanced:
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             <ul>
               <li>
                 Armageddon and the Doomed state were kept; entering Pelle for the first time <i>Doomed</i> your
@@ -47,16 +52,14 @@ const DevlogEntry = () => {
                 filling all 5 rifts, the final ending sequence of the game begins.
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={cel7AM}
-              caption={`A reference sheet we put together when coming up with an AD multiplier Pelle upgrade.
-                Currency values increased surprisingly smoothly when placed on a logarithmic scale, but this still
-                resulted with a wacky formula.`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={cel7AM}
+            caption={`A reference sheet we put together when coming up with an AD multiplier Pelle upgrade.
+              Currency values increased surprisingly smoothly when placed on a logarithmic scale, but this still
+              resulted with a wacky formula.`}
+          />
+        </TwoColumn>
         The ending of the game starts when you unlock a Galaxy Generator, which gets limited unless you
         intentionally drain all your rifts one by one. Upon draining all rifts, the Generator becomes
         unlimited and the game gives the appearance of gradually corrupting itself as all your numbers
@@ -181,8 +184,12 @@ const DevlogEntry = () => {
         in the past few years to was locked up in a Github repository which was inaccessible to the public.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             About a month later, I reached out to Hevi to see how development was going. When I left, the
             game&apos;s content was fully complete all the way to the ending - in principle it only needed
             bug fixing in order to be released. I had also heard unofficially that the other dev was saying
@@ -198,14 +205,12 @@ const DevlogEntry = () => {
             I put those thoughts aside for a while and checked back in again in May, two months later, only
             to be told that the 2nd wave dev had also become much less active and progress drastically
             slowed after the first month.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={commits}
-              caption={`A graph showing code commit frequency, posted on the server during the lull in activity`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={commits}
+            caption={`A graph showing code commit frequency, posted on the server during the lull in activity`}
+          />
+        </TwoColumn>
         <br />
         <i>
           Seeing the apparent lack of progress over the 3 months I was gone from development, especially

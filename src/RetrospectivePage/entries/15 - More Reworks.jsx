@@ -2,6 +2,7 @@ import triad from "../../assets/retrospective/15/triad_sketch.png";
 import glyphTest from "../../assets/retrospective/15/glyph_tester.png";
 import infGlyph from "../../assets/retrospective/15/inf_glyph.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -86,21 +87,23 @@ const DevlogEntry = () => {
         become the Triad Studies, which required all three studies of each group to be purchased first.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
-            <CaptionedFigure
-              imgPath={triad}
-              caption={"A very old mock-up of what Triads would be"}
-            />
-          </div>
-          <div className="c-col-narrow--borderless">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={triad}
+            caption={"A very old mock-up of what Triads would be"}
+          />
+          <>
             To smooth out the experience of the main part of V, we modified the &quot;locked studies&quot; to
             cost different numbers of V-Achievements and added a set of upgrades which you gained purely from
             having a certain number of V-Achievements. This went a long way towards making progression within
             V more &quot;granular&quot; - there was meaningful progression beyond simply getting a massive boost
             from the extra Replicanti Galaxy Time Studies on the Active/Passive/Idle split.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
 
         <h3>Glyph Testing</h3>
         In the process of the second rebalance of V, Garnet made a very heavy-duty Glyph-testing function
@@ -108,24 +111,21 @@ const DevlogEntry = () => {
         parts of the game state. This was a pretty crucial tool for the actual numerical changes he made
         during the V rebalance.
         <br />
-        <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-              Pichu mentioned that this seemed basically like the &quot;Celestial Judgement&quot; idea he wanted
-            which would simulate a Glyph set for you, but then Garnet mentioned that it was a lot more limited,
-            very slow, and couldn&apos;t work as a general-purpose function:
-            <div className="o-quote-box">
-              so the thing this does is reload a save, put some glyphs on, and run whatever automator script
-              is selected, then see how far it gets after 5 seconds. For celestial judgement, you have a more
-              complex thing to run besides &quot;wait 5 seconds&quot;
-            </div> 
-          </div>
-          <div className="c-col-wide">
+        <div className="c-centered-img">
+          <div className="o-small-center-img">
             <CaptionedFigure
               imgPath={glyphTest}
               caption={"An example print-out of the Glyph tester"}
             />
           </div>
+        </div>
+        Pichu mentioned that this seemed basically like the &quot;Celestial Judgement&quot; idea he wanted
+        which would simulate a Glyph set for you, but then Garnet mentioned that it was a lot more limited,
+        very slow, and couldn&apos;t work as a general-purpose function:
+        <div className="o-quote-box">
+          so the thing this does is reload a save, put some glyphs on, and run whatever automator script
+          is selected, then see how far it gets after 5 seconds. For celestial judgement, you have a more
+          complex thing to run besides &quot;wait 5 seconds&quot;
         </div>
         <br />
         Garnet ended up using his Glyph tester fairly regularly to test out what balancing looked like in
@@ -156,15 +156,17 @@ const DevlogEntry = () => {
         yet were extremely crucial for balancing for more or less the entirety of the game.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={infGlyph}
-              caption={`Garnet discovering the sneaky Infinity Glyph. The numbers are Effarig Glyphs
-                with different sets of effects.`}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={8}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={infGlyph}
+            caption={`Garnet discovering the sneaky Infinity Glyph. The numbers are Effarig Glyphs
+              with different sets of effects.`}
+          />
+          <>
             This was when Jazz had the idea to take the sloppy and poorly-explained hardcap and bring it
             into the spotlight as a repeatable upgrade, and Garnet added to the idea by suggesting that
             the cost curve should be extremely steep in order to distinguish it from other repeatable
@@ -179,9 +181,8 @@ const DevlogEntry = () => {
             had some serious pacing issues. For obvious reasons we would have to pace out all that content
             again, but at this point it was worth it since it seemed to be a more future-proof upgrade
             than what we already had.
-          </div>
-        </div>
-        <br />
+          </>
+        </TwoColumn>
 
         <h3>A Fun Diversion</h3>
         We decided that it would be a fun event to gradually publicly reveal the names of all the

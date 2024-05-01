@@ -3,6 +3,7 @@ import momentum from "../../assets/retrospective/23/old_momentum.png";
 import unbroken from "../../assets/retrospective/23/unbroken_wolfram.png";
 import timeskip from "../../assets/retrospective/23/mobile_timeskip.jpg";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -82,8 +83,12 @@ const DevlogEntry = () => {
         whole new set of upgrades becomes available, and the game&apos;s content continues upward.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             The core concept for <i>Unbroken</i> was essentially, &quot;What if Break Infinity didn&apos;t
             exist?&quot; The general game flow until that upgrade would remain largely the same, but things
             would change when you would unlock Break Infinity. The only notable difference would be that
@@ -107,14 +112,12 @@ const DevlogEntry = () => {
             <br />
             There&apos;s still the possibility of <i>simulating</i> the game in some modified way to perform
             the calculation, but at that point the details were involved enough that we put the idea to the side.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={unbroken}
-              caption={"A short snippet of the calculation conversation"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={unbroken}
+            caption={"A short snippet of the calculation conversation"}
+          />
+        </TwoColumn>
         <br />
         This idea came up again much more recently (about a week ago) in a casual conversation
         on the community Discord server, and it led to the realisation that it doesn&apos;t really

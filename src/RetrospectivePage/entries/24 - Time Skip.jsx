@@ -3,6 +3,7 @@ import dil from "../../assets/retrospective/24/old_dil.gif";
 import memories from "../../assets/retrospective/24/prototype_ra_memories.png";
 import loop from "../../assets/retrospective/24/looped_cel7.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -109,9 +110,9 @@ const DevlogEntry = () => {
           </li>
         </ul>
         <div className="c-centered-img">
-            <CaptionedFigure
-              imgPath={loop}
-            />
+          <CaptionedFigure
+            imgPath={loop}
+          />
         </div>
         Once he figured out all the basic ideas he wanted in this third version of Pelle, he started work on
         implementing content and got up to around when Eternity Challenges would normally exist, around 1e20
@@ -136,8 +137,12 @@ const DevlogEntry = () => {
           -decrease the memory/chunk gain accordingly, and perhaps scale levels more
         </div>
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             In terms of actual mechanics, this was a very minimal change - the only new thing was that now you
             had to click a button to level up (instead of it happening automatically) and some new basic upgrades
             altered the progression curve enough that you had to actually interact with the game in order to not
@@ -149,14 +154,12 @@ const DevlogEntry = () => {
             what ended up being the final version of Ra&apos;s content that you can experience in the game now.
             This was definitely in part due to multiple people expressing the sentiment that we just wanted
             something that &quot;worked well enough&quot; so that we could finally release the game.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={memories}
-              caption={"An initial prototype for the new memory upgrades in the UI"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={memories}
+            caption={"An initial prototype for the new memory upgrades in the UI"}
+          />
+        </TwoColumn>
 
         <h3>More Disagreement</h3>
         Jazz and Hevi didn&apos;t quite see eye to eye with the design concept for MAD Pelle, partly due

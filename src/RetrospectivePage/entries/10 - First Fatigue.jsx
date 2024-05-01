@@ -4,6 +4,7 @@ import shop from "../../assets/retrospective/10/shop_tab.png";
 import vGoals from "../../assets/retrospective/10/V_difficulty.png";
 import reactivity from "../../assets/retrospective/10/reactive.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -21,14 +22,13 @@ const DevlogEntry = () => {
         ON ME.
 
         <h3>The Last Two Celestials</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-equal">
-            <img src={cel6} className="c-inset-img" />
-          </div>
-          <div className="c-col-equal">
-            <img src={cel7} className="c-inset-img" />
-          </div>
-        </div>
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={3}
+        >
+          <img src={cel6} className="c-inset-img" />
+          <img src={cel7} className="c-inset-img" />
+        </TwoColumn>
         A very bare-bones version of the 6th Celestial (Lai&apos;tela, The Celestial of Dimensions) was added
         to the game, with the main idea being a set of four new Dimensions which produced resources on a
         slower interval. All of the surrounding mechanics which these new Dimensions were meant to feed into
@@ -64,8 +64,12 @@ const DevlogEntry = () => {
         Shop and then (much later down the line) offering a different upgrade which raised these caps.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          rightBorder={true}
+        >
+          <>
             Dan started testing through V and found that, while he believed the overall concept was solid,
             it needed quite a few fixes and changes:
             <ul>
@@ -87,14 +91,12 @@ const DevlogEntry = () => {
                 almost immediately.
               </li>
             </ul>  
-          </div>
-          <div className="c-col-wide">
-            <CaptionedFigure
-              imgPath={vGoals}
-              caption={`A snippet of code changes showing just how much V's goals needed to be increased`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={vGoals}
+            caption={`A snippet of code changes showing just how much V's goals needed to be increased`}
+          />
+        </TwoColumn>
         <br />
         Dan moved the very first step of the V unlock to an achievement only attainable within
         Nameless, which technically meant that it was possible to start on V before actually completing

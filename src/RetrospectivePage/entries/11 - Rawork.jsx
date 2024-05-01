@@ -5,6 +5,7 @@ import reality from "../../assets/retrospective/11/reality_glyph_conditions.png"
 import automatorPR from "../../assets/retrospective/11/automator_size.png";
 import blockmato from "../../assets/retrospective/11/blockmato_prototype.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -55,8 +56,12 @@ const DevlogEntry = () => {
           </li>
         </ul>
         <img src={upgrades} className="c-centered-img" />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             It was at this point that I realized that while I could code in Javascript pretty confidently,
             I had no idea how to do anything beyond basic HTML without any CSS. This was pretty evident
             from the fact that the initial interface for Ra was very large, copy-pasted from the old visual
@@ -70,14 +75,12 @@ const DevlogEntry = () => {
             scaled on different things which were impossible to maximize simultaneously. The Reality now
             acted as a switch, which you would primarily enter in order to change which Celestial&apos;s
             memories you wanted to focus on.
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={mults}
-              caption={`The "other resources" tooltip with the different multipliers`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={mults}
+            caption={`The "other resources" tooltip with the different multipliers`}
+          />
+        </TwoColumn>
 
         <h3>Glyph Alchemy</h3>      
         Glyph Alchemy is the “capstone mechanic” for Ra-Effarig. It was originally suggested
@@ -122,13 +125,14 @@ const DevlogEntry = () => {
         aversion to decaying mechanics on the testing team, we were never able to accomplish that.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={sketch}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+        >
+          <CaptionedFigure
+            imgPath={sketch}
+          />
+          <>
             Balancing all the reaction coefficients was a bit tricky, so in order to do so I went with
             three constraints:&nbsp;
             <b>
@@ -147,8 +151,8 @@ const DevlogEntry = () => {
               Pull Request that added Glyph Alchemy to the game
             </a>
             &nbsp;very much being a joint effort between the two of us.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         The final mechanic of the Glyph Alchemy system was that the central resource would allow you to
         create a new Glyph type - Reality Glyphs. Initially, Reality Glyphs were simply a hybrid Glyph
@@ -160,8 +164,12 @@ const DevlogEntry = () => {
         </div>
 
         <h3>New Automator</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={5}
+          rightWeight={2}
+          rightBorder={true}
+        >
+          <>
             Garnet started working with Razen on the Automator lexer and parser, which together formed the
             backend code that turns all the text you type into something that the game can run as a sequence
             of commands. Through this month there was a lot of back and forth between Garnet and the team
@@ -190,19 +198,16 @@ const DevlogEntry = () => {
             in his appearances within the testing channel due to some craziness going on with his life. However there
             was one day in particular where Hevi was around, got into a groove, and wrote the majority of the block
             editor&apos;s code all at once.
-            <br />
-            <br />
-            He and Garnet basically took over the testing channel with Automator discussion that day, and
-            by the end there were nearly a thousand messages between the two of them. From basically nothing,
-            there was now a functional block editor for the Automator:
-          </div>
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={automatorPR}
-              caption={`Some of the team's reaction to Garnet's Automator rework`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={automatorPR}
+            caption={`Some of the team's reaction to Garnet's Automator rework`}
+          />
+        </TwoColumn>
+        <br />
+        He and Garnet basically took over the testing channel with Automator discussion that day, and
+        by the end there were nearly a thousand messages between the two of them. From basically nothing,
+        there was now a functional block editor for the Automator:
         <div className="c-centered-img">
           <img src={blockmato} className="o-small-center-img" />
         </div>

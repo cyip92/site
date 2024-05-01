@@ -5,6 +5,7 @@ import reduction from "../../assets/retrospective/17/max_reduction.png";
 import oldReality from "../../assets/retrospective/17/old_reality.gif";
 import navV from "../../assets/retrospective/17/nav_V_unlock.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -35,8 +36,12 @@ const DevlogEntry = () => {
         arrangement was extremely likely to raise lots of questions that none of us really wanted to answer.
 
         <h3>Too Advanced</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={3}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             A few of the testers made comments about how the Glyph filter was hard to understand and use
             properly, since the only viable options were the Rarity Threshold mode and the Effect Score
             mode (called &quot;Advanced Mode&quot; back then). Effect Score mode technically gave full
@@ -60,20 +65,18 @@ const DevlogEntry = () => {
             10 messages happened a lot more often.
             <br />
             <br />
-            We were at a relative standstill for a few months until Dan returned to the server. By the
-            time that happened, Garnet and Razen had largely left the dev team - not due to anything
-            that happened amongst the team, but because their priorities had shifted towards
-            work and caring for ill family. Obviously we still had numerous playtesters, but that only
-            left Hevi, Dan, and me as the three remaining coders on the team moving forward.
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={effect}
-              caption={`A prototype version of Specified Effect mode, showing the older Glyph Filter
-                interface and my relative lack of experience with CSS`}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={effect}
+            caption={`A prototype of Specified Effect mode, showing the older Glyph Filter
+              interface and my relative lack of experience with CSS`}
+          />
+        </TwoColumn>
+        We were at a relative standstill for a few months until Dan returned to the server. By the
+        time that happened, Garnet and Razen had largely left the dev team - not due to anything
+        that happened amongst the team, but because their priorities had shifted towards
+        work and caring for ill family. Obviously we still had numerous playtesters, but that only
+        left Hevi, Dan, and me as the three remaining coders on the team moving forward.
 
         <h3>Grinding Past</h3>
         Most parts of the game have a fallback mechanic of some sorts which allows you to grind something
@@ -84,15 +87,17 @@ const DevlogEntry = () => {
         to look up a guide instead of playing through the game on their own.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={reduction}
-              caption={`Initially goal reduction didn't have a limit, leading to some odd behaviour. Now
-                it can't go below the easiest tier's goal.`}
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={reduction}
+            caption={`Initially goal reduction didn't have a limit, leading to some odd behaviour. Now
+              it can't go below the easiest tier's goal.`}
+          />
+          <>
             Our fix was to make it so that the player could reduce goals for V-Achievements by spending
             some other resource that is very easy to grind. We first tried relic shards, somewhat because
             we felt weird about the fact that we introduced a new resource and then proceeded to not use
@@ -104,12 +109,16 @@ const DevlogEntry = () => {
             a linear function of time spent. We changed the goal reduction to use perk points instead,
             due to the fact that reality time doesn&apos;t get much faster at that point of the game and
             performing fast realities doesn&apos;t require a specialized setup.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
 
         <h3>Reality Glyphs</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={2}
+          rightWeight={1}
+          rightBorder={true}
+        >
+          <>
             The old mechanics of Reality Glyphs, which let you choose any combination
             of 4/20 &quot;basic&quot; Glyph effects to place on a single Glyph, caused options to massively
             expand at that point in a way which was hard to manage. If there was a particular set of 4
@@ -137,14 +146,12 @@ const DevlogEntry = () => {
                 in <Link to="/ADdevlog/2">one of the first entries</Link>)
               </li>
             </ul>
-          </div>
-          <div className="c-col-narrow--borderless">
-            <CaptionedFigure
-              imgPath={oldReality}
-              caption={"This version of Reality Glyphs"}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={oldReality}
+            caption={"This version of Reality Glyphs"}
+          />
+        </TwoColumn>
 
         <h3>Continuing Onward</h3>
         While Garnet had (for practical purposes) left the dev team, he still had the beginnings of

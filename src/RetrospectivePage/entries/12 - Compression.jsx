@@ -3,6 +3,7 @@ import glyphSets from "../../assets/retrospective/12/glyph_sets_tickspeed.png";
 import nameless from "../../assets/retrospective/12/Hevi_Nameless_runaway.png";
 import squish from "../../assets/retrospective/12/softcap_RM.png";
 import CaptionedFigure from "../common/CaptionedFigure";
+import TwoColumn from "../../common/TwoColumn";
 
 const DevlogEntry = () => {
   return (
@@ -87,20 +88,21 @@ const DevlogEntry = () => {
         parts of the game. It was almost the textbook definition of &quot;having to support awful legacy code.&quot;
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-narrow--borderless">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+        >
+          <>
             Hevi would eventually test Nameless as well and once again things didn&apos;t work as
             intended - this time in the form of an unexpected runaway. In the interim, I had implemented the
             DBNR perk (which made Dimension Boosts no longer reset resources) and it wasn&apos;t properly
             accounting for how Challenges worked within Nameless. Naturally, this wouldn&apos;t be the last
             time something like this happened either.
-          </div>
-          <div className="c-col-wide">
-            <CaptionedFigure
-              imgPath={nameless}
-            />
-          </div>
-        </div>
+          </>
+          <CaptionedFigure
+            imgPath={nameless}
+          />
+        </TwoColumn>
         
         <h3>Other Testing</h3>
         I had an idea which was meant to slightly speed up gameplay by making the Achievement multiplier
@@ -138,14 +140,16 @@ const DevlogEntry = () => {
         game itself.
 
         <h3>Hubris</h3>
-        <div className="c-entries-columns">
-          <div className="c-col-narrow">
-            <CaptionedFigure
-              imgPath={glyphSets}
-              caption="A snippet of a spreadsheet I posted which compared Glyphs in late Ra"
-            />
-          </div>
-          <div className="c-col-wide">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+          leftBorder={true}
+        >
+          <CaptionedFigure
+            imgPath={glyphSets}
+            caption="A snippet of a spreadsheet I posted which compared Glyphs in late Ra"
+          />
+          <>
             Now that the numbers in the game seemed to be properly in control, we took that as a free
             license to go nuts with the new upgrades in Glyph Alchemy and Time Compression. Everything
             seemed to go smoothly, but we experienced a different form of game mechanics running away.
@@ -167,8 +171,8 @@ const DevlogEntry = () => {
             less aware of mechanics as they were being made. From his perspective, he only saw things being
             added to the game as the primary testing branch was updated, which meant that he only saw Ra
             content once the majority of it was reworked and both Alchemy and Compression were added at once.
-          </div>
-        </div>
+          </>
+        </TwoColumn>
         <br />
         There were a few instances of numbers overflowing&nbsp;
         <span className="o-code-text">break_infinity.js</span> - that is, the results

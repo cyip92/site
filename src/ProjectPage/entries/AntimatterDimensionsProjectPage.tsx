@@ -4,13 +4,18 @@ import React from "react";
 import titleImg from "../../assets/projects/antimatterdimensions/AD_title_image.png";
 import dimensions from "../../assets/projects/antimatterdimensions/dim_cascade.png";
 import automator from "../../assets/projects/antimatterdimensions/automator.png";
+import TwoColumn from "../../common/TwoColumn";
 import ".././ProjectPage.css";
-import "./AntimatterDimensionsProjectPage.css";
 
 const AntimatterDimensionsProjectPage = () => {
+  const bgStyle = {
+    backgroundImage: `url("/bg/Project_AD.png")`,
+    filter: "blur(0.1rem)",
+  };
+
   return (
     <>
-      <div className="c-image-bg c-project-ad-bg" />
+      <div className="c-image-bg" style={bgStyle} />
       <div className="c-centered-image">
         <img src={titleImg} className="o-header-image" />
       </div>
@@ -25,18 +30,22 @@ const AntimatterDimensionsProjectPage = () => {
         game to focus on the <i>secondary</i> game loop (ie. what the player chooses to do on longer time scales).
         <br />
         <br />
-        This typically takes a game based on repetitive grinding or waiting and turns it into a game of
-        resource allocation or automation management. As an example, one could imagine taking a game where the player
-        is a worker in an assembly line, and turning it into a different game by replacing the worker with a robot
-        and then telling the player that their job is now to manage all the robots working on the assembly line.
-        <br />
-        <br />
-        <div className="c-entries-columns">
-          <div className="c-col-img-dimensions">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={2}
+        >
+          <>
             <img src={dimensions} className="c-inset-img" />
             <i>An sample of the game&apos;s dimension counts</i>
-          </div>
-          <div className="c-col-text-dimensions">
+          </>
+          <>
+            This typically takes a game based on repetitive grinding or waiting and turns it into a game of
+            resource allocation or automation management. As an example, one could imagine taking a game where the
+            player is a worker in an assembly line, and turning it into a different game by replacing the worker with
+            a robot and then telling the player that their job is now to manage all the robots working on the assembly
+            line.
+            <br />
+            <br />
             In Antimatter Dimensions, the main objective is to generate extremely large amounts of antimatter, reaching
             amounts of 10 to the power of multiple quadrillions by the end of the game. This is done automatically
             through a set of 8 dimensions which cascade; the 8th dimension produces 7th dimensions, each 7th dimension
@@ -47,9 +56,8 @@ const AntimatterDimensionsProjectPage = () => {
             are introduced which allow gameplay decisions on longer time spans to be made. At the same time, older
             features are continually automated away so that the player&apos;s attention can stay focused on a sliding
             window of a relatively small set of mechanics, even as the game complexity ramps up.
-          </div>
-        </div>
-        
+          </>
+        </TwoColumn>
 
         <u><h3>My role</h3></u>
         The development team for Antimatter Dimensions consisted of about 5 developers and 20 playtesters in
@@ -63,10 +71,11 @@ const AntimatterDimensionsProjectPage = () => {
         give general gameplay feedback, and report bugs. I was brought on to the team near the end of the Time Dilation
         update, but made the vast majority of my contributions to the Reality Update - the final content update of the
         game which took 4.5 years to finish.
-        <br />
-        <br />
-        <div className="c-entries-columns">
-          <div className="c-col-text-dimensions">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={1}
+        >  
+          <>
             In the Autumn of 2018, during the earliest stages of the Reality Update, I rapidly transitioned from being
             a playtester to being a full-on game developer who would fix bugs, implement player suggestions for
             improvements, rebalance game mechanics as needed, and give code reviews to other developers when requested.
@@ -76,13 +85,12 @@ const AntimatterDimensionsProjectPage = () => {
             primary UI/UX designer for most of the later content, implementing most of the mid-to-late game content,
             maintaining the game&apos;s built-in custom automation scripting language and fixing the majority of the
             remaining pre-release bugs due to the other developers being unavailable or having moved on.
-          </div>
-          <div className="c-col-img-automator">
+          </>
+          <>
             <img src={automator} className="c-inset-img" />
             <i>An image of the editor for the in-game Automator and its associated documentation page</i>
-          </div>
-        </div>
-        <br />
+          </>
+        </TwoColumn>
         <br />
         The game was released during December 2022; from that point onward I was the sole developer in charge of
         fixing any post-release bugs submitted by the community and otherwise maintaining the code in a usable state.

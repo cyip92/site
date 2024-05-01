@@ -5,13 +5,17 @@ import periodicTable from "../../assets/projects/physics/IUPAC_Periodic_Table.jp
 import thesis from "../../assets/projects/physics/Holmium_Thesis.pdf";
 import zeeman from "../../assets/projects/physics/Holmium_Zeeman.gif";
 import atoms from "../../assets/projects/physics/atoms_false_color.png";
+import TwoColumn from "../../common/TwoColumn";
 import ".././ProjectPage.css";
-import "./PhysicsProjectPage.css";
 
 const PhysicsProjectPage = () => {
+  const bgStyle = {
+    backgroundImage: `url("/bg/Project_Physics.png")`,
+  };
+
   return (
     <>
-      <div className="c-image-bg c-project-physics-bg" />
+      <div className="c-image-bg" style={bgStyle} />
       <div className="c-centered-image">
         <img src={titleImg} className="o-header-image" />
       </div>
@@ -39,18 +43,22 @@ const PhysicsProjectPage = () => {
         process, they are confined into a volume of a few cubic microns using another&nbsp;
         <a href="https://en.wikipedia.org/wiki/Optical_tweezers">high power and highly-focused laser beam</a> so that
         they can be used for further experiments.
-
-
-        <u><h3>My role</h3></u>
-        For my first two years of research towards my PhD, I was in training under the previous PhD
-        candidate and postdoctoral researcher on the experiment. They taught me much of what I know about atomic
-        physics and techniques in experimental laser physics, as well as how to work with the accompanying
-        vacuum chamber hardware, radio-frequency electronics, and&nbsp;
-        <a href="https://github.com/QuantumQuadrate/CsPyController">experiment control software</a>.
         <br />
         <br />
-        <div className="c-entries-columns">
-          <div className="c-col-wide">
+
+        <TwoColumn
+          leftWeight={3}
+          rightWeight={2}
+        >
+          <>
+            <u><h3>My role</h3></u>
+            For my first two years of research towards my PhD, I was in training under the previous PhD
+            candidate and postdoctoral researcher on the experiment. They taught me much of what I know about atomic
+            physics and techniques in experimental laser physics, as well as how to work with the accompanying
+            vacuum chamber hardware, radio-frequency electronics, and&nbsp;
+            <a href="https://github.com/QuantumQuadrate/CsPyController">experiment control software</a>.
+            <br />
+            <br />
             As my degree progressed, the other PhD student on the experiment graduated and the postdoc tended to spend
             more time on the other experiment in the lab he was assigned to. Much of the following four years was spent
             in charge of doing independent research on the setup, with a few other researchers (undergraduate and
@@ -62,26 +70,24 @@ const PhysicsProjectPage = () => {
             the project. Notable examples were code for simulating the slowing effect of lasers on hot atoms,
             calculating energy levels of holmium&apos;s numerous atomic states when altered by magnetic fields, and
             analyzing of data from high-noise laser and photodiode signals.
-            <br />
-            <br />
+          </>
+          <>
+            <img src={zeeman} className="c-inset-img" />
             <i>
-              To the right is an image depicting the structure of the internal levels within holmium&apos;s lowest
+              An image depicting the structure of the internal levels within holmium&apos;s lowest
               state, as the magnetic field is gradually increased.
             </i>
-          </div>
-          <div className="c-col-img-zeeman">
-            <img src={zeeman} className="c-inset-img" />
-          </div>
-        </div>
-
+          </>
+        </TwoColumn>
 
         <u><h3>Results</h3></u>
         
-        <div className="c-entries-columns">
-          <div className="c-col-img-atoms">
-            <img src={atoms} className="c-inset-img" />
-          </div>
-          <div className="c-col-text-results">
+        <TwoColumn
+          leftWeight={1}
+          rightWeight={6}
+        >
+          <img src={atoms} className="c-inset-img" />
+          <>
             I was able to demonstrate the first case of optically trapped cold Holmium, in a cloud with an approximate
             kinetic temperature of 150 microkelvin and radius of 10 microns. Additionally, I made significant progress
             towards measuring individual holmium atoms within our optical trap - a crucial step for using them for the
@@ -92,12 +98,13 @@ const PhysicsProjectPage = () => {
               The image to the left is a false-color image of one of the earliest datasets of optically trapped
               cold holmium atoms, taken from a CCD camera installed on the experiment.
             </i>
-          </div>
-        </div>
-        <br />
-        I now hold a Physics PhD in the subfield of Atomic Physics, from the University of Wisconsin-Madison.
-        My doctoral thesis, which contains significantly more detail of my research during this project,
-        can be found <a href={thesis}>here</a>.
+            <br />
+            <br />
+            I now hold a Physics PhD in the subfield of Atomic Physics, from the University of Wisconsin-Madison.
+            My doctoral thesis, which contains significantly more detail of my research during this project,
+            can be found <a href={thesis}>here</a>.
+          </>
+        </TwoColumn>
       </div>
     </>
   )

@@ -116,45 +116,13 @@ button:disabled{
   text-align: left;
 }
 
-.c-entries-columns {
+.c-two-columns {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.c-col-narrow {
-  position: relative;
-  text-align: center;
-  border: 0.15rem solid #888;
-  width: calc(33% - 2rem);
-  padding: 1rem;
-}
-
-.c-col-narrow--borderless {
-  position: relative;
-  width: 33%;
-}
-
-.c-col-wide {
-  position: relative;
-  width: 65%;
-}
-
-.c-col-equal {
-  position: relative;
-  width: calc(50% - 2rem);
-  padding: 1rem;
-}
-
-.c-col-equal--bordered {
-  position: relative;
-  text-align: center;
-  border: 0.15rem solid #888;
-  width: calc(50% - 2rem);
-  padding: 1rem;
 }
 
 .c-inset-img {
