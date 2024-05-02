@@ -47,9 +47,19 @@
   margin-bottom: 1rem;
 }
 
+.o-sidebar-year {
+  background-color: #666;
+  border: 0.15rem solid #888;
+  padding: 0.2rem;
+}
+
 .o-devlog-dates {
-  color: #888;
-  margin: -1.5rem 0 1rem;
+  color: #ccc;
+  background-color: #444;
+  margin: -1rem 0 1rem;
+  border: 0.15rem solid #888;
+  border-style: outset;
+  padding: 0.5rem;
 }
 
 .c-footer-nav {

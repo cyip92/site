@@ -92,7 +92,7 @@ button:disabled{
 
 .c-grayscale-content-bg {
   background: linear-gradient(to right, transparent 0%,
-    rgba(100, 110, 110, 0.8) 2%, rgba(100, 110, 110, 0.8) 98%,
+    rgba(100, 110, 110, 0.85) 2%, rgba(100, 110, 110, 0.85) 98%,
     transparent 100%);
 }
 

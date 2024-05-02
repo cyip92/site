@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 import DevlogSidebar from "./DevlogSidebar.jsx";
 import DevlogNav from "./DevlogNav.js";
+import HeaderDateInfo from "./HeaderDateInfo.js";
 import "./styles/DevlogPage.css";
 import "./styles/Entries.css";
 
@@ -49,13 +50,21 @@ const DevlogPage = props => {
         />
         <div className="c-devlog-main-content">
           <h1>{ entry.title }</h1>
-          <div className="o-devlog-dates">
-            <i>
-              { entry.posted ? `Entry Posted: ${entry.posted}` : null }
-              <br />
-              { entry.span ? `Development: ${entry.span}` : null }
-            </i>
-          </div>
+          {
+            entry.posted || entry.span
+              ? <div className="o-devlog-dates">
+                  <HeaderDateInfo
+                    name="Entry Posted"
+                    info={entry.posted}
+                  />
+                  <br />
+                  <HeaderDateInfo
+                    name="Development Period"
+                    info={entry.span}
+                  />
+                </div>
+              : null
+          }
           <entry.content />
           <DevlogNav
             entry={entry}
