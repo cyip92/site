@@ -1,6 +1,7 @@
 import Introduction from "./entries/Introduction.jsx"
 import FAQ from "./entries/FAQ.jsx";
 import MissingEntry from "./entries/MissingEntry.jsx";
+import Epilogue from "./entries/Epilogue.tsx";
 
 // Note: These imports generally won't follow standard naming conventions (matching the import name
 // to the file name) for the sake of keeping the contents of said files easier to search through and edit
@@ -35,13 +36,14 @@ import Disagreement from "./entries/28 - Internal Disagreement.jsx";
 import Elephant from "./entries/29 - The Elephant.jsx";
 import Leaving from "./entries/30 - Moving Onward.jsx";
 import DistantDevelopment from "./entries/31 - Distant Development.jsx";
+import FinalEntry from "./entries/32 - We Did It.jsx";
 
 const SpecialEntries = {
   Introduction: {
     content: Introduction,
     bgImage: "devlog_intro.png",
     bgFilter: "brightness(15%)",
-    route: "/",
+    route: "/intro",
     title: "A Retrospective for The Reality Update",
     next: "FAQ",
   },
@@ -59,6 +61,14 @@ const SpecialEntries = {
     bgImage: "devlog_intro.png",
     bgFilter: "brightness(15%)",
     title: "Retrospective Entry Not Found"
+  },
+  Epilogue: {
+    content: Epilogue,
+    bgImage: "devlog_intro.png",
+    bgFilter: "brightness(60%)",
+    route: "/epilogue",
+    title: "Epilogue",
+    prev: "Entry32",
   }
 };
 
@@ -310,6 +320,15 @@ const ListedEntries = {
     title: "Distant Development",
     posted: "April 26th, 2024",
     span: "June 2022 to August 2022",
+  },
+  32: {
+    content: FinalEntry,
+    bgImage: "devlog_final.png",
+    bgFilter: "blur(0.05rem)",
+    title: "We Did It!",
+    posted: "May 3rd, 2024",
+    span: "September 2022 to December 2022",
+    next: "Epilogue",
   },
 };
 

@@ -61,10 +61,7 @@ const DevlogSidebar = ({ currentRoute, routeCallback } :
       </div>
       <div className="o-divider" />
       <br />
-      { 
-        // Note: Will cause a duplicate key error in the console until the page is added
-        //singleLink(LogEntries.FAQ, "Epilogue (placeholder)", routeCallback)
-      }
+      { singleLink(LogEntries.Epilogue, "Epilogue", routeCallback) }
     </div>
   )
 };
