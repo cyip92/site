@@ -6,7 +6,7 @@ import { LogEntryType } from "./index.ts";
 import EntryGroup from "./EntryGroup.tsx";
 import "./styles/DevlogPage.css";
 
-export function singleLink(entry, text) {
+export function singleLink(entry, text, callback) {
   const route = `/ADdevlog${entry.route}`;
   const isCurrentRoute = useLocation().pathname === route;
   return (
@@ -16,7 +16,12 @@ export function singleLink(entry, text) {
           ? <span className="o-current-sidebar-indicator">◆</span>
           : null
       }
-      <Link to={route}>{text}</Link> 
+      <Link
+        to={route}
+        onClick={() => callback(entry.route)}
+      >
+        {text}
+      </Link> 
     </div>
   )
 };
@@ -25,7 +30,9 @@ export function singleLink(entry, text) {
 const startYear = 2018;
 const startIndex = [0, 4, 16, 23, 28, 32];
 
-const DevlogSidebar = () => {
+const DevlogSidebar = ({ currentRoute, routeCallback } :
+  { currentRoute: string, routeCallback: (arg: string) => void }) => {
+
   const listEntries = Object.values(LogEntries).filter(entry => entry.posted);
   const listGroups: Array<Array<LogEntryType>> = [];
   for (let i = 0; i < startIndex.length - 1; i++) {
@@ -34,8 +41,8 @@ const DevlogSidebar = () => {
 
   return (
     <div className="c-devlog-sidebar">
-      { singleLink(LogEntries.Introduction, "Introduction") }
-      { singleLink(LogEntries.FAQ, "FAQ Page") }
+      { singleLink(LogEntries.Introduction, "Introduction", routeCallback) }
+      { singleLink(LogEntries.FAQ, "FAQ Page", routeCallback) }
       <br />
       <div className="o-divider" />
       <div>
@@ -46,7 +53,8 @@ const DevlogSidebar = () => {
               key={group[0].key}
               year={startYear + index}
               entries={group}
-              initHide={!group.some(e => `/ADdevlog${e.route}` === useLocation().pathname)}
+              currentRoute={currentRoute}
+              routeCallback={routeCallback}
             />
           )
         }
@@ -55,7 +63,7 @@ const DevlogSidebar = () => {
       <br />
       { 
         // Note: Will cause a duplicate key error in the console until the page is added
-        singleLink(LogEntries.FAQ, "Epilogue (placeholder)")
+        //singleLink(LogEntries.FAQ, "Epilogue (placeholder)", routeCallback)
       }
     </div>
   )

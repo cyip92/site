@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 
+import { LogEntryType } from "./index.js";
 import LogEntries from "./index.js";
 
-const DevlogNav = props => {
-  const prevEntry = LogEntries[props.entry.prev];
-  const nextEntry = LogEntries[props.entry.next];
+const DevlogNav = ({ entry, routeCallback } : { entry: LogEntryType, routeCallback: (arg: string) => void }) => {
+  const prevEntry = LogEntries[entry.prev!];
+  const nextEntry = LogEntries[entry.next!];
 
   return (
     <div className="c-footer-nav">
@@ -15,7 +15,12 @@ const DevlogNav = props => {
           ? <div className="o-footer-left">
               ← Previous Entry
               <br />
-              <Link to={`/ADdevlog${prevEntry.route}`}>{ prevEntry.title }</Link>
+              <Link
+                to={`/ADdevlog${prevEntry.route}`}
+                onClick={() => routeCallback(prevEntry.route)}
+              >
+                { prevEntry.title }
+              </Link>
             </div>
           : <div />
       }
@@ -24,16 +29,17 @@ const DevlogNav = props => {
           ? <div className="o-footer-right">
               Next Entry →
               <br />
-              <Link to={`/ADdevlog${nextEntry.route}`}>{ nextEntry.title }</Link>
+              <Link
+                to={`/ADdevlog${nextEntry.route}`}
+                onClick={() => routeCallback(nextEntry.route)}
+              >
+                { nextEntry.title }
+              </Link>
             </div>
           : null
       }
     </div>
   )
-};
-
-DevlogNav.propTypes = {
-  entry: PropTypes.object
 };
 
 export default DevlogNav;
