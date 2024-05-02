@@ -29,12 +29,13 @@ const Introduction = () => {
         getting around to writing everything up.
         <br />
         <br />
-        Have a question or two about this? I answered all the questions which immediately came to
-        mind on a dedicated <Link to="/ADdevlog/FAQ">FAQ Page</Link>.
-        <br />
-        <br />
-        Want to get going on reading what this was all about?
+        Have a question or two about this? I answered all the questions which immediately came to mind on a
+        dedicated <Link to="/ADdevlog/FAQ">FAQ Page</Link>. Want to get going on reading what this was all about?
         Here&apos;s the <Link to="/ADdevlog/1">first entry</Link>.
+        <br />
+        <br />
+        As curious as you might be, I would recommend against reading the entire retrospctive in one sitting unless
+        you have a lot of spare time; I estimate it&apos;s about a 1.5 to 2 hour read from start to finish.
       </div>
     </>
   )

@@ -96,6 +96,11 @@ const AntimatterDimensionsProjectPage = () => {
         fixing any post-release bugs submitted by the community and otherwise maintaining the code in a usable state.
         In July 2023, we declared the game complete, made the code open-source, and have decided that it is no longer
         receiving further updates.
+        <br />
+        <br />
+        I also wrote <Link to="/ADdevlog">a long-form retrospective</Link> summarizing the development journey
+        which the whole team went through for this content update in much greater detail. This started in September 2023
+        and received weekly posts until the final entry in May 2024.
 
 
         <u><h3>Results</h3></u>
@@ -103,12 +108,9 @@ const AntimatterDimensionsProjectPage = () => {
         <a href="https://ivark.github.io/AntimatterDimensions/"> web browsers </a>
         and <a href="https://store.steampowered.com/app/1399720/Antimatter_Dimensions/"> Steam</a>.
         Chrome, Firefox, and Edge are the officially supported browsers; while the web version is playable to an extent
-        on mobile browsers, those are not supported and may be buggy and/or have usability issues.
-        <br />
-        <br />
-        I am also writing <Link to="/ADdevlog">a long-form retrospective</Link> summarizing the development journey
-        which the whole team went through for this content update in much greater detail. This is still ongoing and
-        being updated weekly.
+        on mobile browsers, those are not supported and may be buggy and/or have usability issues. A mobile port to
+        Android devices was also released on the Google Play Store in April 2024, with an interface properly optimised
+        for mobile resolutions and inputs.
       </div>
     </>
   )
