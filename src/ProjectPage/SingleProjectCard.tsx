@@ -23,7 +23,7 @@ const SingleProjectCard = props => {
           {
             proj.component
               ? <Link to={`/projects/${proj.id}`}><button>More Information</button></Link>
-              : <button disabled>Info Unavailable</button>
+              : <button disabled>More Info Unavailable</button>
           }
         </div>
       </div>

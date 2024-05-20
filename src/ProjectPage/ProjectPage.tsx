@@ -6,6 +6,7 @@ import PhysicsProjectPage from "./entries/PhysicsProjectPage";
 import AntimatterDimensionsProjectPage from "./entries/AntimatterDimensionsProjectPage";
 import physicsCard from "../assets/projects/physics/vacuum_chamber.png";
 import adCard from "../assets/projects/AD_loading.png";
+import glydeCard from "../assets/projects/glyde_flight_path.png";
 import missingCard from "../assets/projects/no_image.png";
 import "./ProjectPage.css";
 
@@ -33,24 +34,24 @@ export const Projects: Array<ProjectType> = [
     cardImg: adCard,
   },
   {
-    id: "platformer",
-    title: "2D Puzzle Platformer",
+    id: "mana_forest",
+    title: "Mana Forest Idle",
     category: "Game Development",
-    date: "Ongoing, rewriting due to Unity changes",
-    fields: "Godot, GDScript",
-    description: `A 2D puzzle platformer game with a movement gimmick and set of mechanics which we would
-      rather remain confidential until we can present a Minimum Viable Product.`,
-    cardImg: missingCard,
-  },
-  {
-    id: "incremental",
-    title: "Idle/Incremental Webgame",
-    category: "Game Development",
-    date: "Ongoing, design drafting started February 2023",
+    date: "Ongoing, active development started May 2024",
     fields: "HTML, CSS, Javascript, Vue.js",
     description: `An incremental game centered around a resource system which appears to be novel and
       not seen in other incrementals, together with the Lead Design Consultant for Antimatter Dimensions.`,
     cardImg: missingCard,
+  },
+  {
+    id: "glyde",
+    title: "Glyde",
+    category: "Game Development",
+    date: "Ongoing, active development started April 2024",
+    fields: "Unreal Engine 5, Unreal Blueprints, C++",
+    description: `A casual and relaxing flight-based open world exploration game, based in a sky environment
+      with numerous floating islands. Still in the very early stages of development.`,
+    cardImg: glydeCard,
   },
 ];
 
