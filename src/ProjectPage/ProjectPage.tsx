@@ -34,16 +34,6 @@ export const Projects: Array<ProjectType> = [
     cardImg: adCard,
   },
   {
-    id: "mana_forest",
-    title: "Mana Forest Idle",
-    category: "Game Development",
-    date: "Ongoing, active development started May 2024",
-    fields: "HTML, CSS, Javascript, Vue.js",
-    description: `An incremental game centered around a resource system which appears to be novel and
-      not seen in other incrementals, together with the Lead Design Consultant for Antimatter Dimensions.`,
-    cardImg: missingCard,
-  },
-  {
     id: "glyde",
     title: "Glyde",
     category: "Game Development",
@@ -52,6 +42,16 @@ export const Projects: Array<ProjectType> = [
     description: `A casual and relaxing flight-based open world exploration game, based in a sky environment
       with numerous floating islands. Still in the very early stages of development.`,
     cardImg: glydeCard,
+  },
+  {
+    id: "mana_forest",
+    title: "Mana Forest Idle",
+    category: "Game Development",
+    date: "Ongoing, active development started May 2024",
+    fields: "HTML, CSS, Javascript, Vue.js",
+    description: `An incremental game centered around a resource system which appears to be novel and
+      not seen in other incrementals, together with the Lead Design Consultant for Antimatter Dimensions.`,
+    cardImg: missingCard,
   },
 ];
 

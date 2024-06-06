@@ -25,11 +25,11 @@ const AboutPage = () => {
         >
           <img src={face} className="c-inset-img" />
           <>
-            Hi! My name is Chris Yip, and I am a Physicist and Front-End Web Developer. I completed a Bachelors Degree
+            Hi! My name is Chris Yip, and I am a Physicist and Full-Stack Web Developer. I completed a Bachelors Degree
             with a dual major in Physics and Computer Science in 2014, and then continued on to achieve a Doctorate in
             Physics in 2021. During the tail end of my PhD, I found myself relatively unsatisfied with my work in
             academic research and considered a side project I picked up in web-based game development to be much more
-            fulfilling. As a result, I decided to make a pivot back into software, after completing my Physics degree.
+            fulfilling. As a result, I decided to make a pivot back into software after completing my Physics degree.
             <br />
             <br />
             I was born and raised in the United States of America, but am now currently living in England. I spent my

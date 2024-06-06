@@ -32,7 +32,7 @@ const App = () => {
         <ScrollToTop />
         <div className="c-site-layout">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<AboutPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects">
               <Route index element={<ProjectPage />} />
