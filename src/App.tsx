@@ -3,7 +3,7 @@ import { Routes, Route, HashRouter, useLocation } from "react-router-dom";
 
 import Navbar from "./Navbar/Navbar";
 import SleepPage from "./SleepPage/SleepPage"
-import { Projects, ProjectPage } from "./ProjectPage/ProjectPage"
+import { CompletedProjects, ProjectPage } from "./ProjectPage/ProjectPage"
 import BlobPage from "./BlobPage/BlobPage";
 import DevlogPage from "./RetrospectivePage/DevlogPage";
 import HomePage from "./HomePage/HomePage.tsx";
@@ -37,7 +37,7 @@ const App = () => {
             <Route path="/projects">
               <Route index element={<ProjectPage />} />
               {
-                Projects
+                CompletedProjects
                   .filter(p => p.component)
                   .map(Proj =>
                     <Route

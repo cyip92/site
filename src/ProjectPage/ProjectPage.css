@@ -24,10 +24,8 @@
   padding: 0.5rem;
 }
 
-.o-project-intro {
-  font-size: 1.2rem;
-  text-align: left;
-  width: 100%;
+.o-project-card-title {
+  font-size: 1.8rem;
 }
 
 /* #region Common Project elements */

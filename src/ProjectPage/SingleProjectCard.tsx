@@ -11,13 +11,18 @@ const SingleProjectCard = props => {
     <>
       <div className="c-single-project">
         <img src={proj.cardImg} className="c-img-fixed-size" />
-        <b>{ proj.title }</b>
+        <div className="o-project-card-title">  
+          <b>{ proj.title }</b>
+        </div>
         <i>{ proj.category }</i>
         <i>{ proj.date }</i>
         <i>{ proj.fields }</i>
         <br />
         { proj.description }
         <br />
+        { proj.note
+          ? <i><br />{ proj.note }</i>
+          : "" }
         <br />
         <div>
           {
