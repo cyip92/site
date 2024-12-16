@@ -3,6 +3,7 @@ import { Routes, Route, HashRouter, useLocation } from "react-router-dom";
 
 import Navbar from "./Navbar/Navbar";
 import SleepPage from "./SleepPage/SleepPage"
+import BlenderPage from "./BlenderPage/BlenderPage.tsx";
 import { CompletedProjects, ProjectPage } from "./ProjectPage/ProjectPage"
 import BlobPage from "./BlobPage/BlobPage";
 import DevlogPage from "./RetrospectivePage/DevlogPage";
@@ -49,6 +50,7 @@ const App = () => {
               }
             </Route>
             <Route path="/sleep" element={<SleepPage />} />
+            <Route path="/blender" element={<BlenderPage />} />
             <Route path="/blob" element={<BlobPage />} />
             <Route path="/ADdevlog">
               <Route index element={<DevlogPage entry={LogEntries.Introduction} />} />

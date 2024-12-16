@@ -24,12 +24,12 @@ const TabGroups = [
     name: "Side Projects",
     subtabs: [
       {
-        route: "/sleep",
-        text: "Weekly Sleep Pattern"
-      },
-      {
         route: "/ADdevlog/intro",
         text: "Antimatter Dimensions Retrospective"
+      },
+      {
+        route: "/blender",
+        text: "3D Modeling"
       },
       {
         route: "/blob",

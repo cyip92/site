@@ -1,0 +1,33 @@
+.c-text-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+}
+
+.o-divider {
+  position: relative;
+  border: 0.2rem solid gray;
+  border-radius: 20rem / 0.2rem;
+  width: 90%;
+  height: 0;
+}
+
+.c-faq {
+  width: 100%;
+  text-align: left;
+}
+
+.c-sleep-bg {
+  background-image: url("/bg/sleep.png");
+}
+
+.c-inactive-disclaimer {
+  width: 100%;
+  text-align: left;
+  margin: 1rem 0 -1.5rem;
+  color: red;
+  font-weight: bold;
+}
