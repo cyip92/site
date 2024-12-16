@@ -22,7 +22,13 @@ const PhysicsProjectPage = () => {
 
       <div>
         <u><h3>Description</h3></u>
-        The Holmium experiment in the Saffman Lab was an experiment primarily aimed towards using neutral holmium atoms
+        This page describes my work in the Department of Physics at the University of Wisconsin-Madison, wherein I worked
+        towards and achieved a doctorate in Physics. My research was done in the Saffman Lab under Dr. Mark Saffman as PI,
+        a very prominent name in the field of neutral atom quantum computing. In particular, I worked on his Holmium
+        experiment, whose purpose was to leverage its strong magnetic properties for the purposes of quantum information.
+        <br />
+        <br />
+        The Holmium experiment was an experiment primarily aimed towards using neutral holmium atoms
         for the sake of forming qubits (quantum bits) in a quantum computer. Holmium&apos;s complicated electron shell
         configuration leads to some distinct advantages over other simpler elements in certain quantum computing schemes.
         However, as it is a relatively obscure element, the experiment also encompassed a broader set of scientific

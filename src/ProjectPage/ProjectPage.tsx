@@ -21,9 +21,9 @@ export const CompletedProjects: Array<ProjectType> = [
     date: "September 2014 to March 2021",
     fields: "Atomic/Optical Physics, Electronics, Python",
     description: `Doctoral academic research on the element Holmium, under the guidance of Dr. Mark Saffman. The
-      goal was to control ultracold Holmium atoms for use in neutral-atom Quantum Computing, and through my work
+      goal was to control ultracold Holmium atomsa for use in neutral-atom Quantum Computing, and through my work
       we demonstrated the first ever long-term optically trapped Holmium cloud with a kinetic temperature of around
-      100 micro-Kelvin.`,
+      150 micro-Kelvin.`,
     component: PhysicsProjectPage,
     cardImg: physicsCard,
   },

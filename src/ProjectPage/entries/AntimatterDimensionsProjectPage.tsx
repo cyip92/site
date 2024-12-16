@@ -22,6 +22,14 @@ const AntimatterDimensionsProjectPage = () => {
 
       <div>
         <u><h3>Description</h3></u>
+        This page describes my work on a web-based game in remote collaboration with many other software and Web
+        developers from around the world. My contribution leaned heavily towards the technical end of development,
+        implementing many new game mechanics and addressing numerous bug reports, but I also played a strong role
+        in guiding the design and balancing of the game overall. The game has been officially released and can be
+        played <a href="https://ivark.github.io/AntimatterDimensions/">here</a>, or downloaded to play locally on
+        PC (via Steam) or Android (via the Google Play Store).
+        <br />
+        <br />
         Antimatter Dimensions is an Idle Incremental game originally created by a Finnish developer who goes by the
         online alias of Hevipelle. The distinction between Idle and Incremental games is somewhat disagreed upon, but
         both typically include a primary game loop (ie. the player&apos;s second-by-second actions) which is heavily
@@ -95,7 +103,8 @@ const AntimatterDimensionsProjectPage = () => {
         The game was released during December 2022; from that point onward I was the sole developer in charge of
         fixing any post-release bugs submitted by the community and otherwise maintaining the code in a usable state.
         In July 2023, we declared the game complete, made the code open-source, and have decided that it is no longer
-        receiving further updates.
+        receiving further gameplay-changing updates. However, we are still keeping an eye out for any necessary Node.js
+        package updates we may need to do for security purposes.
         <br />
         <br />
         I also wrote <Link to="/ADdevlog">a long-form retrospective</Link> summarizing the development journey

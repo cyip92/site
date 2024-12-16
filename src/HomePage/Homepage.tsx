@@ -16,11 +16,12 @@ const HomePage = () => {
         <img src={blobthink} />
         <br />
         <br />
-        Welcome to my (semi-)professional website!
+        Welcome to my portfolio website!
         <br />
         <br />
-        This is a portfolio site to describe all the major projects I have done in the past, as well as a hosting place
-        for some of the more minor ones which don&apos;t make sense to host on a standalone site.
+        This is a site to describe and/or show off all the major projects I have done in the past and some which
+        are currently ongoing, as well as a hosting place for some of the more minor ones which don&apos;t make
+        sense to host on a standalone site.
         <br />
         <br />
         I&apos;ll be coming back to make this a more proper and presentable home page at some point in the future.
