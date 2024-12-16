@@ -1,7 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import React from "react";
 
-import "./styles/SleepPage.css";
+import "./styles/BlenderPage.css";
 
 const BlenderPage = () => {
   return (
