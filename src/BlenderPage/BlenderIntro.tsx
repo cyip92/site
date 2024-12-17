@@ -7,17 +7,18 @@ const BlenderIntro = () => {
     <>
       <div className="c-intro">
         <h3>What is this page for?</h3>
-        My partner enjoys a lot of art-related media in his spare time, in particular the content-creating
-        group <a href="https://www.youtube.com/@Drawfee">Drawfee</a>. Drawfee were originally coworkers under
-        College Humor who started making Youtube videos together around 10 years ago, initially focusing on digital
-        art but have more recently branched out into other forms of art such as music, woodworking, and game making.
+        My partner enjoys a lot of art-related media in his spare time, but in particular he watches a lot of
+        videos and streams from the content-creating group <a href="https://www.youtube.com/@Drawfee">Drawfee</a>.
+        Drawfee were originally coworkers together under College Humor who started making Youtube videos together
+        around 10 years ago. Initially they focused on digital art but have more recently branched out into other
+        forms of art such as music, woodworking, and game making.
         <br/>
         <br/>
         This inspired him to get into making digital art himself. The way he drove himself to do this was by basically
         forcing himself to do a drawing every single day no matter what, starting in November 2023. A bit over a year
-        later (December 2024), he has only missed a single-digit number of days of drawing. His art has massively
-        improved over time, and only a few months in he received his first commission - to draw someone's original
-        D&D character.
+        later (December 2024), he has only missed a single-digit number of days in this habit. His art has massively
+        improved over time, and even only a few months in he received his first commission - to draw someone's
+        original D&D character.
         <br/>
         <br/>
         Seeing his journey from no prior experience to having actual tangible results made me happy for
@@ -26,12 +27,13 @@ const BlenderIntro = () => {
         myself to some kind of a consistent habit which I could also use as a creative outlet.
         <br/>
         <br/>
-        I would consider myself to have a passing interest and/or appreciation for most forms of art. In particular
-        I have some previous experience in music (4 years of marching band and 3 years of Jazz) and a very
-        strong propensity for rhythm games (26 years). However that felt like the easy way out, and amongst my group
-        of friends who want to develop games together, we already have a couple other musically-inclined people.
-        Considering that, I decided it would be a good idea to throw myself into something completely new and also
-        fill in a gap of skills for our team.
+        I would consider myself to have a passing interest and/or appreciation for most forms of art.
+        I have some previous experience in music (4 years of Marching and Jazz band) and a very
+        strong propensity for rhythm games (25 years, starting from the release of Beatmania IIDX),
+        but I felt like I needed to broaden my skills. And amongst my group of friends who want to develop games
+        together, we already have a couple other musically-inclined people. Considering that, I decided it would
+        be a good idea to throw myself into something completely new and also fill in a gap of skills for our
+        casual game development team.
         <br/>
         <br/>
         My decision was to teach myself how to make 3D models using Blender. In order to stay on track

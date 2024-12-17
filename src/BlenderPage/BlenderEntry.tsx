@@ -14,11 +14,16 @@ const BlenderEntry = (props) => {
         collapsed
           ?
             <div className="c-collapsed-entry">
-              <img className="o-collapsed-entry-img" src={ info.image } />
+              <img
+                src={ info.image } 
+                className="c-img" 
+                onClick={toggleState}
+              />
               <div className="c-collapsed-entry-info">
                 <div>
                   <b>Week { info.week } - {info.title}</b> (<i>{ info.date }</i>)
                 </div>
+                <br />
                 { info.short }
                 <span
                   className="o-collapse-toggle"
@@ -49,7 +54,11 @@ const BlenderEntry = (props) => {
             }
             <div dangerouslySetInnerHTML={{ __html: info.description }} />
             <br />
-            <img src={ info.image } />
+            <img 
+              src={ info.image } 
+              className="c-img" 
+              onClick={toggleState}
+            />
             <br />
             <div dangerouslySetInnerHTML={{ __html: info.technical }} />
           </div>
