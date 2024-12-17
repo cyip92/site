@@ -1,33 +1,48 @@
-.c-text-elements {
+
+.c-intro {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.c-projects {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.o-collapse-toggle {
+  width: 6rem;
+  background-color: #666;
+  border: 0.15rem solid #888;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.c-collapsed-entry {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 60%;
+}
+
+.o-collapsed-entry-img {
+  width: 100%;
+}
+
+.c-collapsed-entry-info {
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: space-around;
   text-align: left;
 }
 
-.o-divider {
-  position: relative;
-  border: 0.2rem solid gray;
-  border-radius: 20rem / 0.2rem;
-  width: 90%;
-  height: 0;
-}
-
-.c-faq {
+.c-expanded-entry {
   width: 100%;
   text-align: left;
+  border: 0.1rem dashed black;
+  padding: 1rem;
 }
 
-.c-sleep-bg {
-  background-image: url("/bg/sleep.png");
-}
-
-.c-inactive-disclaimer {
-  width: 100%;
-  text-align: left;
-  margin: 1rem 0 -1.5rem;
-  color: red;
-  font-weight: bold;
+.c-blender-bg {
+  background-image: url("/bg/blender.png");
 }
