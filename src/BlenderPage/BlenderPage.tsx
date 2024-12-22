@@ -15,6 +15,7 @@ import week06 from "../assets/blender/06-sword_kirby.png";
 import week07 from "../assets/blender/07-ror2_assets_2.png";
 import week08 from "../assets/blender/08-BBG.png";
 import week09 from "../assets/blender/09-pichu.png";
+import week10 from "../assets/blender/10-pigeon.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -167,6 +168,26 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       separate object and extruding it outward a tiny bit. Overall I'm kinda proud of this one, even though it felt
       like I was fighting to get the correct body proportions the entire time.`,
     image: week09,
+  },
+  {
+    week: 10,
+    title: "Pigeon",
+    date: "22 December 2024",
+    short: `A silly-looking pigeon`,
+    description: `I felt like giving another attempt at making some kind of bird this week, and for a bit I was
+      trying to decide between a cockatiel and a Rowlet (a pokemon). While I was out for some errands, I happened
+      across a flock of nearly a hundred pigeons in the park - and they were all just calmly wandering
+      around. I always thought pigeons were cute, so I decided to stick around and take a lot of reference
+      pictures; the plan for this week was now a pigeon.`,
+    technical: `I didn't really do a whole lot of new stuff this week, but it was a good run through almost
+      everything I learned so far. I really dove into making textures for pretty much every visible surface on
+      the model, although I'm not particularly satisfied with how the feather textures turned out. Next time I
+      make a bird, I might look into making actual feathers rather than trying to texture it procedurally.
+      <br /><br />
+      The pigeon itself looks a bit weird to me looking back on it all, and there's clear bits where it could
+      use more polish (eg. where different textures/surfaces meet) but unfortunately I didn't give myself as
+      much time on this as I wanted to. I'm at least somewhat proud of the feet though.`,
+    image: week10,
   },
 ];
 
