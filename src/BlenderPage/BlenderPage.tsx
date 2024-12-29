@@ -16,6 +16,7 @@ import week07 from "../assets/blender/07-ror2_assets_2.png";
 import week08 from "../assets/blender/08-BBG.png";
 import week09 from "../assets/blender/09-pichu.png";
 import week10 from "../assets/blender/10-pigeon.png";
+import week11 from "../assets/blender/11-kirby_food.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -188,6 +189,25 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       use more polish (eg. where different textures/surfaces meet) but unfortunately I didn't give myself as
       much time on this as I wanted to. I'm at least somewhat proud of the feet though.`,
     image: week10,
+  },
+  {
+    week: 11,
+    title: "Kirby at Dinner",
+    date: "29 December 2024",
+    short: `Kirby eating a bunch of food`,
+    description: `My Christmas was full of lots of food, so I thought it would be fun to make this week's
+      project themed similarly. Of course, with the overall relaxing atmosphere of the holiday season, I also
+      wanted to do something a bit less serious as well. I glanced at my Kirby plush with the idea of food in
+      mind, and a very obvious idea presented itself.`,
+    technical: `I did a small bit of new shader work this time, but I think the biggest thing I realised this
+      week was the fact that this idea had a lot of smaller individual components. I figured out partway in that
+      I'd be working on this forever if I spent too long on every single individual asset in the scene, so I
+      prioritised finishing single objects instead of spending forever perfecting shaders and shaping.
+      <br /><br />
+      I am honestly kind of proud of how this one turned out! Of course the scene could have been filled out
+      with even more food objects and maybe some kind of a background, but for a simpler setting I am pretty
+      satisfied with what I put together.`,
+    image: week11,
   },
 ];
 
