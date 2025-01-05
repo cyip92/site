@@ -17,6 +17,7 @@ import week08 from "../assets/blender/08-BBG.png";
 import week09 from "../assets/blender/09-pichu.png";
 import week10 from "../assets/blender/10-pigeon.png";
 import week11 from "../assets/blender/11-kirby_food.png";
+import week12 from "../assets/blender/12-katamari_ball.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -208,6 +209,28 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       with even more food objects and maybe some kind of a background, but for a simpler setting I am pretty
       satisfied with what I put together.`,
     image: week11,
+  },
+  {
+    week: 12,
+    title: "Katamari Ball",
+    date: "05 January 2025",
+    short: `A colourful Karamari from the game series Katamari Damacy`,
+    description: `Partway through the week I watched my partner play through We Love Katamari REROLL, which
+      was interesting to see from the perspective of someone wanting to pick up 3D modeling skills. The game
+      is full of a lot of low-poly objects which still have enough detail to communicate what they are in a fun
+      stylized way. I am still unsure right now, but I think that may be the style of modeling I want to aim for
+      in the long run myself.`,
+    technical: `I chose this in particular because I realised that a lot of my other projects so far have been
+      mostly soft and/or very round objects which have shapes which can very easily hide mistakes and
+      imperfections. The karamari ball may be round, but it is also very geometric with some particular
+      visual aspects which are crucial to get correct. I figured this would be my chance to replicate an object
+      which has a lot less wiggle room for sloppiness.
+      <br /><br />
+      Looking back on this, I think I should learn how to make Blender objects with scripts when necessary. I
+      made this via lots of composing, cutting, and simplifying meshes - it ended up being somewhat of a pain,
+      and the final product is still a very cluttered mesh (~5000 triangles). In hindsight it would have probably
+      produced a better result if I started with scripting instead.`,
+    image: week12,
   },
 ];
 
