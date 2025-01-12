@@ -18,6 +18,7 @@ import week09 from "../assets/blender/09-pichu.png";
 import week10 from "../assets/blender/10-pigeon.png";
 import week11 from "../assets/blender/11-kirby_food.png";
 import week12 from "../assets/blender/12-katamari_ball.png";
+import week13 from "../assets/blender/13-carrot_cake.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -214,7 +215,7 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
     week: 12,
     title: "Katamari Ball",
     date: "05 January 2025",
-    short: `A colourful Karamari from the game series Katamari Damacy`,
+    short: `A colourful Katamari from the game series Katamari Damacy`,
     description: `Partway through the week I watched my partner play through We Love Katamari REROLL, which
       was interesting to see from the perspective of someone wanting to pick up 3D modeling skills. The game
       is full of a lot of low-poly objects which still have enough detail to communicate what they are in a fun
@@ -231,6 +232,27 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       and the final product is still a very cluttered mesh (~5000 triangles). In hindsight it would have probably
       produced a better result if I started with scripting instead.`,
     image: week12,
+  },
+  {
+    week: 13,
+    title: "Carrot Cake",
+    date: "12 January 2025",
+    short: `A slice of carrot cake on a kitchen counter`,
+    description: `My birthday was this week, and my partner decided to bake me a carrot cake as a birthday cake!
+      I mostly took this week easy and didn't put a whole lot of time into Blender, and then ended up doing the
+      whole thing on Sunday again. I don't want to drop the ongoing habit, and regardless I still enjoy making
+      things in Blender once I get going on an idea.`,
+    technical: `Despite putting this together in one go, I still wanted to give it the proper amount of time and
+      attention. I decided that for a piece that was otherwise going to be pretty simple, I would direct a lot more
+      effort into the smaller details in shaping and texturing. As a result, a lot of the individual assets are
+      more intricately shaped than many of my previous weeks. I spent a fair bit of time comparing what was on my
+      screen to the actual physical objects in my hand or in the kitchen this time.
+      <br /><br />
+      I think I might spend less time trying to make really detailed shaders for a bit, at least until I have
+      the proper knowledge and/or experience to come up with something that looks properly good. The surface is
+      relatively faithful to our actual kitchen countertop, but the carrot cake texture leaves much to be improved
+      upon.`,
+    image: week13,
   },
 ];
 
