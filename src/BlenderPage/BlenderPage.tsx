@@ -19,6 +19,7 @@ import week10 from "../assets/blender/10-pigeon.png";
 import week11 from "../assets/blender/11-kirby_food.png";
 import week12 from "../assets/blender/12-katamari_ball.png";
 import week13 from "../assets/blender/13-carrot_cake.png";
+import week14 from "../assets/blender/14-walking_kirby.gif";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -253,6 +254,31 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       relatively faithful to our actual kitchen countertop, but the carrot cake texture leaves much to be improved
       upon.`,
     image: week13,
+  },
+  {
+    week: 14,
+    title: "Walking Kirby",
+    date: "19 January 2025",
+    short: `An animated Kirby walking down a Path`,
+    description: `My partner and I were planning out what needs to be done for a game he needs to make for his
+      Uni work, and one set of tasks on his Gantt Chart was entirely focussed on visual design. He is of course
+      perfectly capable of handling and 2D art and design himself, but things didn't work out when grouping up
+      with classmates from other disciplines - the 3D modeler he was supposed to be working with ended
+      up having to repeat some classes and therefore couldn't work with him this year.
+      <br />
+      <br />
+      I decided this would be as good a time as any to offer my help, and he pointed out that while I've
+      definitely improved a lot since I started, I still needed to learn a pretty crucial thing in order to make
+      something usable in games - 3D model rigging. Onward to the next step in my journey!`,
+    technical: `This one's a little rough around the edges if you look really closely, but overall I'm actually
+      very happy with it! Of course, with this being my first time going into rigging and animation, I
+      fell back to a simpler shape again just so I could get my bearings. Kirby's shape being pretty much a set of
+      spheres individually connected to the centre body made it very easy to animate him.
+      <br />
+      <br />
+      I had a lot of fun making this, it felt like a great combination between the modeling skills I've been
+      picking up lately and some pretty basic scripting and programming in Python for the rigging.`,
+    image: week14,
   },
 ];
 
