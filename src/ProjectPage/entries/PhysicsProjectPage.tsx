@@ -10,7 +10,7 @@ import ".././ProjectPage.css";
 
 const PhysicsProjectPage = () => {
   const bgStyle = {
-    backgroundImage: `url("/bg/Project_Physics.png")`,
+    backgroundImage: `url("${window.rootURL}/bg/Project_Physics.png")`,
   };
 
   return (

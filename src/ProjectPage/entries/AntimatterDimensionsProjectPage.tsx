@@ -9,7 +9,7 @@ import ".././ProjectPage.css";
 
 const AntimatterDimensionsProjectPage = () => {
   const bgStyle = {
-    backgroundImage: `url("/bg/Project_AD.png")`,
+    backgroundImage: `url("${window.rootURL}/bg/Project_AD.png")`,
     filter: "blur(0.1rem)",
   };
 
