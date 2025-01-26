@@ -20,6 +20,7 @@ import week11 from "../assets/blender/11-kirby_food.png";
 import week12 from "../assets/blender/12-katamari_ball.png";
 import week13 from "../assets/blender/13-carrot_cake.png";
 import week14 from "../assets/blender/14-walking_kirby.gif";
+import week15 from "../assets/blender/15-cardinal.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -279,6 +280,51 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       I had a lot of fun making this, it felt like a great combination between the modeling skills I've been
       picking up lately and some pretty basic scripting and programming in Python for the rigging.`,
     image: week14,
+  },
+  {
+    week: 15,
+    title: "Cardinal",
+    date: "26 January 2025",
+    short: `A small, cute red bird`,
+    description: `Last weekend was the <a href="https://puzzles.mit.edu/">MIT Mystery Hunt</a>, which is an event
+      called a puzzle hunt. Puzzle hunts are a series of riddle-like puzzles which typically demand a
+      combination of broad knowledge, a bit of expertise in common ciphers and encodings, and an eye for extracting
+      information hidden in otherwise innocuous formats. Answers to individual puzzles are often words or phrases
+      which are inputs to metapuzzles, which themselves have an answer typically reliant on solving enough of the
+      individual feeder puzzles. This often culminates in one final metapuzzle for the entire hunt - a puzzle which
+      can effectively be considered the marker for completing the hunt when solved.
+      <br />
+      <br />
+      The MIT Mystery Hunt is particularly notable because it happens yearly and is widely regarded as the largest
+      and most significant hunt of the year within puzzle-hunting communities. Besides a temporary pause during the
+      pandemic, MITMH occurrs on-campus at MIT and many people fly in from around the US (and even some
+      internationally) just to participate in it. The puzzles from the 2025 hunt in particular are
+      accessible <a href="https://www.two-pi-noir.agency">here</a> through a public access login.
+      <br />
+      <br />
+      I was participating in the hunt on Team Cardinality and a lot of our tools, Discord servers, and our own
+      puzzle hunts use a red cardinal as part of the iconography. We ended up winning this year, being the first
+      team to complete the final puzzle before any other teams. Everyone on the team was pretty satisfied with
+      our group efforts overall, and mentally speaking I was riding that good feeling for most of the week. To
+      probably no surprise, that inspired me to make a cardinal for this week's project.`,
+    technical: `I took the time to watch a few videos about using Blender which were targetted at using more nuanced
+      techniques. One of the things I found out very quickly was that some of the tutorials I looked at when
+      starting out were more oriented towards getting a task done and not learning how to properly use Blender. More
+      importantly however, I also learned that Blender is extremely powerful and has a lot of capabilities which
+      I simply haven't been taking advantage of.
+      <br />
+      <br />
+      Needless to say, I have a better sense of where I stand in my learning at this point. I think I know enough
+      of the basics that I could make most things in Blender given enough time. It seems like I'm at the point
+      where I need to learn to optimise my workflow so that I can spend less time on simpler tasks and thus free
+      up additional time to put into extra details instead.
+      <br />
+      <br />
+      With that in mind I went pretty heavily into learning how to use various modifiers as time-saving measures
+      as well as tools to do things which I would've otherwise written off as impractical due to being too
+      time-consuming. This week's much more detailed bird is the end result of that, and I'm fairly happy with
+      how it turned out!`,
+    image: week15,
   },
 ];
 
