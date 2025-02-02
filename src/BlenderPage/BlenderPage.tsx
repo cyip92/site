@@ -21,6 +21,7 @@ import week12 from "../assets/blender/12-katamari_ball.png";
 import week13 from "../assets/blender/13-carrot_cake.png";
 import week14 from "../assets/blender/14-walking_kirby.gif";
 import week15 from "../assets/blender/15-cardinal.png";
+import week16 from "../assets/blender/16-cutter_kirby_pt1.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -325,6 +326,44 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       time-consuming. This week's much more detailed bird is the end result of that, and I'm fairly happy with
       how it turned out!`,
     image: week15,
+  },
+  {
+    week: 16,
+    title: "Cutter Kirby (part 1)",
+    date: "02 February 2025",
+    short: `The model for another animated Kirby`,
+    description: `I went through a few more tutorials on rigging which were very good on the technical
+      end, but I was finding it hard to properly absorb the information without an actual project to
+      follow along with applying the techniques. I decided that I wanted to do something related to
+      rigging and animation again this week.
+      <br />
+      <br />
+      One thing that got emphasized was the fact that when rigging up a model, it is very important to
+      understand how the rig will eventually be used - as such, it doesn't make much sense to rig a model
+      without a very clear idea of the final outcome. I was a bit short on ideas for the first half of
+      the week, but I eventually settled on something I'd be satisfied with making.
+      <br />
+      <br />
+      The goal was to make an animation of Kirby using the Cutter copy ability; the Kirby model alone is
+      detailed enough that I wouldn't feel like I was being lazy, and then the rigging and animation
+      would be almost an entirely new process. However, other things in life got in my way this week,
+      and I couldn't spend as much time as I wanted on Blender.`,
+    technical: `I had quite a few false starts on this week's model, at one point scrapping half of what I had
+      done so far because it just didn't have a good foundation and further modifications were getting more and
+      more headache-inducing to make.
+      <br />
+      <br />
+      Somewhere during the process I had an eye-opening moment, Drawfee (ie. the content creators who tangentially
+      inspired this whole thing) had a saying they would sometimes use - "Delete Your Art". Amongst other things,
+      it suggests that you shouldn't be so emotionally attached to your work in progress that you're afraid to get
+      rid of it. I thought it was interesting to experience that myself here, and it was also a neat parallel to
+      draw with similar times where I had to delete or redo large swaths of code as well.
+      <br />
+      <br />
+      My Blender work ended up being pretty slow this week, so all I have to show so far is just the model. Next
+      week I'll be diving into making a proper rig for this model and then animating it throwing the cutter blade
+      like a boomerang, in the same style that Kirby throws it in <i>Kirby and the Forgotten Land</i>.`,
+    image: week16,
   },
 ];
 
