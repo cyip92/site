@@ -22,6 +22,7 @@ import week13 from "../assets/blender/13-carrot_cake.png";
 import week14 from "../assets/blender/14-walking_kirby.gif";
 import week15 from "../assets/blender/15-cardinal.png";
 import week16 from "../assets/blender/16-cutter_kirby_pt1.png";
+import week17 from "../assets/blender/17-cutter_kirby_pt2.gif";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -364,6 +365,36 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       week I'll be diving into making a proper rig for this model and then animating it throwing the cutter blade
       like a boomerang, in the same style that Kirby throws it in <i>Kirby and the Forgotten Land</i>.`,
     image: week16,
+  },
+  {
+    week: 17,
+    title: "Cutter Kirby (part 2)",
+    date: "09 February 2025",
+    short: `A Fully-animated Cutter Kirby`,
+    description: `I got fully into the weeds of animation this week, which unexpectedly ended up being pretty
+      unrelated to the rigging studying I was doing. Nevertheless, I pressed onward and completed my animated Kirby
+      for this week as well. Overall it was actually kind of fun, if a bit tedious since this was my first time
+      animating anything properly.
+      <br />
+      <br />
+      I'm not sure if I'm going to continue learning much more about making animations moving forward. It was
+      a neat learning experience, one which I'm glad I went through, but also it doesn't seem like the best thing
+      to focus on based on my current goal of being able to use these models for game development. Perhaps I might
+      revisit this in the future though.`,
+    technical: `This week was mostly making keyframes and generally learning the basics of animation; I used
+      almost none of the things I learned from rigging so far. Overall it was fairly straightforward, but just
+      very time-consuming. Nevertheless, I think I'm reasonably happy with how the final result came out.
+      <br />
+      <br />
+      The grass definitely behaves weirdly, which I mostly owe due to the fact that it was thrown in there as an
+      afterthought and done entirely within the Blender particle system as opposed to anything more proper such
+      as modeling actual blades of grass. When asking my partner for feedback on this, our conversation led towards
+      making a proper world environment at some point as opposed to just hacking together background things
+      through the particle system.
+      <br />
+      <br />
+      That definitely gives me some ideas for future weeks.`,
+    image: week17,
   },
 ];
 
