@@ -23,6 +23,7 @@ import week14 from "../assets/blender/14-walking_kirby.gif";
 import week15 from "../assets/blender/15-cardinal.png";
 import week16 from "../assets/blender/16-cutter_kirby_pt1.png";
 import week17 from "../assets/blender/17-cutter_kirby_pt2.gif";
+import week18 from "../assets/blender/18-kirby_tree.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -395,6 +396,35 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       <br />
       That definitely gives me some ideas for future weeks.`,
     image: week17,
+  },
+  {
+    week: 18,
+    title: "Kirby and Friends",
+    date: "16 February 2025",
+    short: `A few Kirby series characters in a field of grass`,
+    description: `I went into this week with the initial plan to make more of an environment scene rather than
+      something character-focused or object-focused, but I kind of strayed off and back towards Kirby again once
+      I got started. My initial thought was just to add the Kirby and Waddle Dee in so that it wasn't an empty
+      scene, and then make their background semi-realistic or at least vaguely stylised realism.
+      <br />
+      <br />
+      When I was messing around with the grass, I stumbled upon what the field looks like below, and then realised
+      that having a semi-realistic field of grass and a tree would've been a bit awkward at a minimum and possibly
+      very jarring in the worst case. So I switched gears and decided to keep the rest stylised, and then ended up
+      making Whispy Woods for the tree instead of a realistic one.
+      <br />
+      <br />
+      All in all, I'm fairly satisfied with this even if I strayed away from my original idea.`,
+    technical: `At this point I can make a Kirby from scratch within maybe 15 minutes, but the Waddle Dee ended up
+      being more involved than I expected - mostly due to trying to make the bandana knot look somewhat reasonable.
+      I thought about giving him his iconic spear as well, but ended up deciding against that mostly because it had
+      another cloth knot and I already wasn't terribly satisfied with how the bandana turned out.
+      <br />
+      <br />
+      The grass and everything in Whispy's canopy were my first time messing around with geometry nodes, which
+      were honestly pretty neat to configure overall. It'll probably take me a few more times with those before
+      I can use them in a tactful way just like it took me for shaders though.`,
+    image: week18,
   },
 ];
 
