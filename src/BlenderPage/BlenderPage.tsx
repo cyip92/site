@@ -24,6 +24,7 @@ import week15 from "../assets/blender/15-cardinal.png";
 import week16 from "../assets/blender/16-cutter_kirby_pt1.png";
 import week17 from "../assets/blender/17-cutter_kirby_pt2.gif";
 import week18 from "../assets/blender/18-kirby_tree.png";
+import week19 from "../assets/blender/19-DDR_machine.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -425,6 +426,55 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       were honestly pretty neat to configure overall. It'll probably take me a few more times with those before
       I can use them in a tactful way just like it took me for shaders though.`,
     image: week18,
+  },
+  {
+    week: 19,
+    title: "DDR Machine",
+    date: "23 February 2025",
+    short: `A recreation of a Dance Dance Revolution arcade cabinet from memory`,
+    description: `I was at a loss of ideas when the weekend came around, so I thought about what I've done so far
+      and what I'm ultimately aiming for. There are lots of things I would like to do, although many need my
+      workflow to be more optimised so I don't spend months making each project. One big thing is that I haven't
+      really done anything original yet; most of my projects have been taking references of already-existing objects
+      or concepts, remaking them in Blender, and then possibly arranging them into a scene.
+      <br />
+      <br />
+      I wanted to going to try something at least somewhat new, so this week was completely referenceless for
+      the first time. I also thought a bit about anything else that I had wanted to do but haven't done yet,
+      and I remembered that I haven't done any rigid geometric objects yet either.
+      <br />
+      <br />
+      So I decided that this week I was going to try to make a DDR arcade cabinet from memory. The best part was that
+      it's been probably 4-5 years since I last saw one of these in person. I definitely remembered that a ton of
+      the surfaces had lots of decals, logos, and general fancy graphic designs, although my memory was fuzzy
+      enough that I didn't feel comfortable trying to recreate any of those - so it definitely looks a bit plain.
+      `,
+    technical: `I didn't learn much new in the way of technical skills this week, but the whole experience
+      opened up my eyes a bit more on just being creative. I found that not having a reference was actually quite
+      freeing, because often I'd spend maybe a bit too much time trying to get all the proportions just right. I
+      think moving forward I'm going to do what I can to reduce my reliance on references and see how my skills
+      develop from there.
+      <br />
+      <br />
+      I had the realisation partway through that I was likely mixing design aspects from different generations of
+      arcade cabinets, but I just continued pushing forward and produced something that probably looks realistic at
+      a glance. Overall I'm happy with it, even if it might look really strange to anyone more familiar with dancing
+      rhythm game machines.
+      <br />
+      <br />
+      As I was finishing up this summary, I went and looked up how well I did just out of curiosity. Amusingly, I
+      seem to have made some kind of a mixture of  
+      <a href="https://www.libertygames.co.uk/images/1/products/1587_dance-dance-dance-revolution-supernova.jpg">
+        an older DDR machine
+      </a>, 
+      <a href="https://www.libertygames.co.uk/images/1/products/5664_konami-dance-dance-a.jpg">
+        an newer DDR A machine
+      </a>, and
+      <a href="https://www.arcade-museum.com/images-game/39/in-the-groove-2-39792.jpg">
+        an ITG machine
+      </a>.
+      `,
+    image: week19,
   },
 ];
 
