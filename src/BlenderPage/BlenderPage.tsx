@@ -25,6 +25,7 @@ import week16 from "../assets/blender/16-cutter_kirby_pt1.png";
 import week17 from "../assets/blender/17-cutter_kirby_pt2.gif";
 import week18 from "../assets/blender/18-kirby_tree.png";
 import week19 from "../assets/blender/19-DDR_machine.png";
+import week20 from "../assets/blender/20-beat_saber_kirby.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -475,6 +476,43 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       </a>.
       `,
     image: week19,
+  },
+  {
+    week: 20,
+    title: "Beat Saber Kirby",
+    date: "02 March 2025",
+    short: `Kirby with a VR Headset on, playing Beat Saber`,
+    description: `
+      Considering how long ago I started playing rhythm games, it should be no surprise that I still play them
+      nowadays too. As part of keeping myself healthy and active, I play about an hour of Beat Saber three times
+      a week because it turns out to be very excellent exercise.
+      <br />
+      <br />
+      This week I decided to lean into that this time, while still approaching an idea which would be less reliant
+      on external references; of course I could just keep my VR headset nearby and use it for asset references while
+      I put this together, but I still want to start relying less on those from now on. I think the only thing I
+      referenced this week was the saber colours, since I use custom colours which aren't red/blue when I play.
+      <br />
+      <br />
+      Choosing Kirby as the main subject had two main reasons behind it: I have yet to do a properly humanoid figure
+      so far and learning that at the same time as some other things felt like a bit too much, and I was doubtful
+      any references would exist for Kirby wearing a VR headset (although I didn't look). I'm possibly still
+      approaching this journey of learning a bit on the slow end, but I want to make sure that I continue doing it
+      regularly rather than risk burning out or spending too much time on it over more important things.
+      `,
+    technical: `
+      Due to other things going on, I ended up not getting the chance to work on this until Sunday - so the
+      entire thing was done in one busy afternoon. I feel like there are many things I wanted to spend more time
+      on, but I'm still reasonably satisfied with how it turned out. I had to take a few liberties in the headset
+      design for Kirby since he's basically all head, but it's still nice to slowly ease into making somewhat
+      original things again rather than replicating existing things even more.
+      <br />
+      <br />
+      I was hoping that I would have some time to properly learn more about Blender's lighting system, but doing
+      this in one day didn't really leave me time to look at that once I was finished with the main part of the
+      project unfortunately. Maybe next week I'll be able to give it a try.
+      `,
+    image: week20,
   },
 ];
 
