@@ -26,6 +26,7 @@ import week17 from "../assets/blender/17-cutter_kirby_pt2.gif";
 import week18 from "../assets/blender/18-kirby_tree.png";
 import week19 from "../assets/blender/19-DDR_machine.png";
 import week20 from "../assets/blender/20-beat_saber_kirby.png";
+import week21 from "../assets/blender/21-kirby_skyblock.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -513,6 +514,39 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       project unfortunately. Maybe next week I'll be able to give it a try.
       `,
     image: week20,
+  },
+  {
+    week: 21,
+    title: "Skyblock Kirby",
+    date: "09 March 2025",
+    short: `A sad Kirby playing the old style of vanilla Skyblock`,
+    description: `
+      I think this was the first time I experienced art block, which was interesting. It was the middle of the
+      day on Saturday and I was torn between some kind of a floating sky island and a large spaceship, but I
+      wasn't feeling inspired. I started on a floating island and got nowhere before deciding on something a
+      bit more concrete and based on a meme I was sent earlier in the week.
+      <br />
+      <br />
+      The idea was simple - in the early days of Minecraft, there was a custom map that started you off on a
+      floating island in the middle of an endless void, and all it gave you was a tree, some dirt, and a pair of
+      water and lava buckets. In principle you can grow the tree endlessly, and the water and lava can flow into
+      each other to create cobblestone indefinitely. The concept has since been expanded using mods, resource
+      packs, and even additional vanilla mechanics as the game continues to be updated.
+      <br />
+      <br />
+      I decided that my project this week was going to be a sad Kirby looking at his failed attempt at setting up
+      an infinite cobblestone generator.
+      `,
+    technical: `
+      This week was a very texture and shader-heavy project. I had a lot of fun messing around with generating
+      pixellated textures using noise maps, although admittedly I also went a bit heavier on referencing some
+      of the original assets in Minecraft in order to keep the colour palette and look similar.
+      <br />
+      <br />
+      I'm actually really proud of this one, which is satisfying to say because I feel like this is happening
+      more as I pick up more experience.
+      `,
+    image: week21,
   },
 ];
 
