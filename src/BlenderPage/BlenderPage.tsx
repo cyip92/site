@@ -27,6 +27,7 @@ import week18 from "../assets/blender/18-kirby_tree.png";
 import week19 from "../assets/blender/19-DDR_machine.png";
 import week20 from "../assets/blender/20-beat_saber_kirby.png";
 import week21 from "../assets/blender/21-kirby_skyblock.png";
+import week22 from "../assets/blender/22-kirby_poses.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -547,6 +548,46 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       more as I pick up more experience.
       `,
     image: week21,
+  },
+  {
+    week: 22,
+    title: "Kirby Poses",
+    date: "16 March 2025",
+    short: `Kirby in various poses to show off a model rig`,
+    description: `
+      I realised that I was somehow spending both less and more time on every Kirby I've made so far. I can
+      throw together the basic shape of a Kirby in about 5-10 minutes, but I've ended up spending more time
+      refining it to have increased detail and/or modifiability. Overall it's been helpful in
+      teaching and reinforcing Blender skills, but in the long run I would like to make larger and more
+      detailed pieces - spending 30-40 minutes every week on Kirby wouldn't be a good use of my time. 
+      <br />
+      <br />
+      So I spent the time to make a proper Kirby model this week, with carefully-adjusted proportions and
+      various modifiers and constraints applied to make it adjustable and multi-purpose enough to be dropped
+      into any future projects. I told myself I would hold off on this because I was wary of constantly
+      importing a bad model, but I think I am now skilled enough to make a decent one to use moving forward.
+      <br />
+      <br />
+      It's kind of funny to think about how the reason I've made so many Kirby pieces is because I have a Kirby
+      plush sitting on my desk, but it's still been helpful in many ways.
+      `,
+    technical: `
+      The main thing I did this week was model rigging. Once I set up all the constraints and component
+      relationships, I thought I could just pose Kirby in various different ways and be done with
+      it. However, it became a lot clearer in different poses that I had a lot of tweaking to do to get the
+      body part proportions and shapes to look good.
+      <br />
+      <br />
+      I also figured it would be a really simple straightforward rig, since Kirby is basically a ball surrounded
+      by 4 smaller balls. But when looking up various reference images of Kirby in various poses, I realised
+      that having a few extra pivot points really adds a lot in terms of his pose expressiveness. By the end, my
+      Kirby rig had more or less a human limb structure for arms and legs to get that extra detail.
+      <br />
+      <br />
+      I have an Kirby-based animation planned for next week, so this week's Blender project will be particularly
+      useful for that one in terms of laying down groundwork.
+      `,
+    image: week22,
   },
 ];
 
