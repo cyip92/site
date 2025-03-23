@@ -28,6 +28,7 @@ import week19 from "../assets/blender/19-DDR_machine.png";
 import week20 from "../assets/blender/20-beat_saber_kirby.png";
 import week21 from "../assets/blender/21-kirby_skyblock.png";
 import week22 from "../assets/blender/22-kirby_poses.png";
+import week23 from "../assets/blender/23-pressed_blob.gif";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -588,6 +589,45 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       useful for that one in terms of laying down groundwork.
       `,
     image: week22,
+  },
+  {
+    week: 21,
+    title: "Pressed Blob",
+    date: "23 March 2025",
+    short: `A blob getting squished by Kirby operating a mechanical press`,
+    description: `
+      I've been playing Minecraft with friends on and off over the past month and I have a fairly large collection
+      of animated Google Blob emoji. I thought it would be fun to combine both of those together, which gave me
+      a clear idea of a goal while also allowing some creative liberties due to it likely being original.
+      <br />
+      <br />
+      The visual inspiration was taken from a fairly popular Minecraft mod called Create, where the core thing it
+      adds is a rotary power system and a collection of machines that use it. The first power source you
+      can access is a manual hand crank, which I decided to use my Kirby rig for. It definitely saved a lot of
+      work for the cranking animation.
+      <br />
+      <br />
+      Create is a very satisfying-looking mod and often lends itself to making builds which are a mixture of
+      visually striking <i>and</i> functional, which makes it one of my favourite mods in modern Minecraft. A fun
+      note that I didn't realize until I was pretty deep into making this - you can't actually use this
+      configuration in-game, the hand crank doesn't give enough power to the press with this gear ratio.
+      `,
+    technical: `
+      This one was pretty heavy on textures and drivers. I am enjoying making procedural pixel textures, although
+      I might consider using something like Aseprite in the future so I can properly fine-tune the appearance.
+      Regardless, I got a lot of practice with adjusting UV maps so that all the textures fit the models properly.
+      <br />
+      <br />
+      I started using Python scripts with the drivers to simplify some of the animations and make certain attributes
+      more consistent. I'm also very glad that I gave my Kirby rig the extra flexibility, because I needed it in
+      order to stretch and squish his body to make the animation look a bit more natural.
+      <br />
+      <br />
+      I'm very proud of this one, despite it effectively taking two weeks to finish. I think I might
+      continue the trend of larger multi-week projects moving forward, although that depends on what I end
+      up thinking about doing next week.
+      `,
+    image: week23,
   },
 ];
 
