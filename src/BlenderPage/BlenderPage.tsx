@@ -29,6 +29,7 @@ import week20 from "../assets/blender/20-beat_saber_kirby.png";
 import week21 from "../assets/blender/21-kirby_skyblock.png";
 import week22 from "../assets/blender/22-kirby_poses.png";
 import week23 from "../assets/blender/23-pressed_blob.gif";
+import week24 from "../assets/blender/24-cook_kirby.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -591,7 +592,7 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
     image: week22,
   },
   {
-    week: 21,
+    week: 23,
     title: "Pressed Blob",
     date: "23 March 2025",
     short: `A blob getting squished by Kirby operating a mechanical press`,
@@ -628,6 +629,36 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       up thinking about doing next week.
       `,
     image: week23,
+  },
+  {
+    week: 24,
+    title: "Cook Kirby",
+    date: "30 March 2025",
+    short: `A quick and simple Kirby with the Cook copy ability`,
+    description: `
+      It was my partner's birthday this weekend, so we ended up going out to get the ingredients for
+      a special lunch that day - Sichuan mala hot pot. We both already love cooking, so it was a fun
+      time in the kitchen overall for both of us. Needless to say, that was my inspiration for this week.
+      <br />
+      <br />
+      I typically do most of my Blender stuff on the weekends, so for better or worse spending a bunch
+      of time together on Saturday for his birthday meant that I lost most of the time I would normally
+      spend on this habit. Combine that with a particularly busy work week and a somewhat busy early
+      Sunday, and that left me with basically just the evening to do this and write up
+      something quick to put on my site.
+      <br />
+      <br />
+      Finally, with the general lack of ideas I had this week for what to do with Blender, I ended up
+      throwing this together in about an hour or two since I still needed to do my workout that I also
+      typically do on Saturdays. So this week is a simple model instead of a more in-depth one.
+      `,
+    technical: `
+      There's honestly not really much detail to give about this one, other than the fact that it made
+      me buckle down and see just how much I could do when placed into a time crunch. I'm fairly
+      satisfied that what I can accomplish is a short time has come this far, because earlier on
+      something of this level of detail would've probably taken me the whole day instead.
+      `,
+    image: week24,
   },
 ];
 
