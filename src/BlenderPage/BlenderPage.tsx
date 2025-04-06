@@ -30,6 +30,7 @@ import week21 from "../assets/blender/21-kirby_skyblock.png";
 import week22 from "../assets/blender/22-kirby_poses.png";
 import week23 from "../assets/blender/23-pressed_blob.gif";
 import week24 from "../assets/blender/24-cook_kirby.png";
+import week25 from "../assets/blender/25-air_ride_formation1.png";
 
 export const BlenderEntryContent: Array<BlenderEntryType> = [
   {
@@ -659,6 +660,33 @@ export const BlenderEntryContent: Array<BlenderEntryType> = [
       something of this level of detail would've probably taken me the whole day instead.
       `,
     image: week24,
+  },
+  {
+    week: 25,
+    title: "Air Ride Formation (part 1)",
+    date: "06 April 2025",
+    short: `A set of three Kirbies on Air Ride machines`,
+    description: `
+      I had a burst of inspiration for this one and decided that it was a big enough project
+      to devote two weeks to. It came from I was watching the Nintendo Direct earlier in the
+      week, where a lot of new games were being shown for the upcoming Switch 2. A sequel to the
+      (very old) racing game Kirby Air Ride was announced, and I <i>immediately</i> knew that I
+      had to make this week's Blender project about the original game. I spent so much time
+      playing that game as a kid and I wanted to give a proper tribute to it now.
+      <br />
+      <br />
+      The overall idea was to make a group of 4 Kirbies, each riding some of my favourite machines
+      in the game. I made three of them so far, and I am planning to make the last one (whose
+      machine will be a much more detailed model) next week. If I have the time, I might also
+      give all of them copy ability hats.
+      `,
+    technical: `
+      I didn't really learn to do anything new this week, but I've definitely been starting to use
+      various hotkeys more regularly and just generally streamline my workflow through the amount
+      of practice I've been getting. Next week I'm hoping to dive into Blender's lighting and rendering
+      system properly, as I haven't had the chance to do so yet.
+      `,
+    image: week25,
   },
 ];
 
